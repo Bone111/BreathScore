@@ -1,0 +1,1097 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>sscore_synth.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}body {border: 0px; margin: 0px;}div {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}td {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}span.hd_tocAccessSpace { display: block; font-size: 1px; height: 3px; min-height: 3px; }span.hd_tocGroupSpace { display: block; font-size: 1px; height: 3px; min-height: 3px; }span.hd_tocGroup { display: block; font-weight: bold; font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000; margin-left: 0px; padding-left: 40px; }span.hd_tocGroup + span.hd_tocAccess { padding-top: 5px; }td.toc_contents_text {font-size: 11pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000; }li.tocSubEntry {font-size: 11pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}p {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}h2.h2tight { margin-top: 0px; padding-top: 0px; }h1 { margin-top: 13px; padding-top: 0px; }h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}h5 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10.1pt; font-weight: bold;}pre {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666; font-size: 10pt;}pre a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}pre a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}code a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}code a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}tt a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}tt a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}body  {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt; padding-left: 0px; padding-top: 0px; margin-left: 0px; margin-top: 0px; border: none; }#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }.afterName { display: none; }.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; min-height: 12px; vertical-align: middle; }.declaration_indent pre { margin-top: 20px; padding-top: 0px; margin-bottom: 20px; padding-bottom: 0px; }.gapBeforeFooter { display: none; }hr { height: 0px; min-height: 0px; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #909090;}hr.afterHeader { display: none }.param_group_indent { margin-left: 25px; }.param_indent { margin-left: 40px; margin-top: 0px; padding-top: 0px; }.param_indent dl { margin-top: 4px; padding-top: 0px; }dl dd > p:first-child { margin-top: 2px; padding-top: 0px; }.param_indent dl dd > p:first-child { margin-top: 2px; padding-top: 0px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.note_indent { margin-left: 40px; }h3 {       color: #3C4C6C;}.tight {       margin-top: 2px; margin-bottom: 0px;       padding-top: 0px; padding-bottom: 0px;}h3 a {       color: #3C4C6C;	font-size: 16px;	font-style: normal;	font-variant: normal;	font-weight: bold;	height: 0px;	line-height: normal;}.hd_tocAccess { display: block; margin-left: 40px; font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }.tocSubheading { margin-bottom: 4px; }--></style>
+<style><!--
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.toc_contents_text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul.tocSubEntryList li.tocSubEntry {
+    list-style: none;
+}
+
+#colorbox {
+		display: none;
+}
+.spec_sheet_line {
+		margin-bottom: 1px;
+}
+.collapsible {
+		display: none;
+}
+.toc_leadspace {
+		width: 10; min-width: 10;
+}
+.disclosure_triangle_td {
+		width: 14; min-width: 14;
+		font-size: 10px;
+		vertical-align: middle;
+}
+.specbox td {
+		font-size: 13px;
+}
+.specbox td a {
+		font-size: 13px;
+}
+.specbox td code {
+		font-size: 13px;
+}
+.specbox td tt {
+		font-size: 13px;
+}
+.specbox td pre {
+		font-size: 13px;
+}
+.specbox a {
+		font-size: 12px;
+}
+.disclosure_triangle_td a {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:link {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:active {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:visited:hover {
+		text-decoration: none;
+}
+.disclosure_triangle_td a:hover {
+		text-decoration: none;
+}
+.hd_toc_box {
+		padding-top: 10px;
+		padding-right: 15px;
+}.tocSeparator {
+		margin-top: 15px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+.tocSubEntryList {
+		margin-left: 0px;
+		padding-left: 40px;
+		padding-top: 0px;
+		margin-top: 2px;
+		padding-bottom: 0px;
+		margin-bottom: 8px;
+}
+.hd_toc_heading_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.hd_toc_entry_table {
+		margin-top: 2px;
+		margin-bottom: 2px;
+}
+.tocSubEntry {
+		margin-left: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 1px;
+}
+.tocSubEntry a {
+		font-size: 10pt;
+}
+.tocSubheading {
+		padding-left: 14px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 0px;
+		font-size: 16px;
+		color: #808080;
+}
+
+#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }
+#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }
+#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }
+
+#tocMenu {
+		border-right: 1px solid #c0c0c0;
+		background-color: #f4f4ff;
+		top:0px;
+		left:0px;
+		width:230px;
+		height:100%;
+}
+#bodyContents {
+		width: auto;
+		padding-left: 15px;
+}
+--></style>
+<style id="disable_before_iOS_5"><!--
+#tocMenu {
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+#bodyContents {
+		width: auto;
+		left: 235px;
+		right: 0;
+		padding-left: 15px;
+		position: fixed;
+		height: 100%;
+		overflow-y: scroll;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+    if (navigator.platform && (navigator.platform.match(/iPad/) || navigator.platform.match(/iPhone/) || navigator.platform.match(/iPod/))) {
+        if (navigator.userAgent.match(/OS 1(_\d)+/) ||
+            navigator.userAgent.match(/OS 2(_\d)+/) ||
+            navigator.userAgent.match(/OS 3(_\d)+/) ||
+            navigator.userAgent.match(/OS 4(_\d)+/)) {
+                /* Earlier iOS versions require different scrolling gestures with position: fixed. */
+                var del_style_elt = document.getElementById("disable_before_iOS_5");
+                if (del_style_elt) del_style_elt.parentNode.removeChild(del_style_elt);
+        }
+    }
+// --></script><script language="JavaScript" type="text/javascript"><!--
+function getNewHTTPObject()
+{
+        var xmlhttp;
+
+        /** Special IE only code ... */
+        /*@cc_on
+          @if (@_jscript_version >= 5)
+              try
+              {
+                  xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+              }
+              catch (e)
+              {
+                  try
+                  {
+                      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                  }
+                  catch (E)
+                  {
+                      xmlhttp = false;
+                  }
+             }
+          @else
+             xmlhttp = false;
+        @end @*/
+
+        /** Every other browser on the planet */
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined')
+        {
+            try
+            {
+                xmlhttp = new XMLHttpRequest();
+            }
+            catch (e)
+            {
+                xmlhttp = false;
+            }
+        }
+
+        return xmlhttp;
+}
+
+function hidetoc() {
+	var toc = document.getElementById('tocMenu');
+	var src = toc.getAttribute('src');
+	var xhr = getNewHTTPObject();
+	xhr.open('GET', src, true);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			var toc = document.getElementById('tocMenu');
+			toc.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.send(null);
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var body = document.getElementById('bodyContents');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+
+function disclosure_triangle(elt) {
+   var linkelt = elt;
+   while (elt && elt.tagName != 'TABLE') { elt = elt.parentNode;}
+   if (!elt) { return; }
+   while (elt && elt.tagName != 'DIV') { elt = elt.nextSibling;}
+   if (!elt) { return; }
+   if (parseInt(linkelt.getAttribute('state'))) {
+      // It's open.  Close it
+      linkelt.innerHTML = '&#x25B7;';
+      linkelt.setAttribute('state', 0);
+      linkelt.setAttribute('class', 'closed_disclosure_triangle');
+      elt.style.display = 'none';
+   } else {
+      // It's closed.  Open it
+      linkelt.innerHTML = '&#x25BC;';
+      linkelt.setAttribute('state', 1);
+      linkelt.setAttribute('class', 'open_disclosure_triangle');
+      elt.style.display = 'block';
+   }
+}
+--></script><style type="text/css"><!--.char {background: #ffffff; color:#0000ff;}.comment {background:#ffffff; color:#236e25}.function {background:#ffffff; color:#000000;}.keyword {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.param {background:#ffffff; color:#000000;}.preprocessor {background:#ffffff; color:#236e25}.string {background: #ffffff; color:#891315;}.template {background:#ffffff; color:#761550;}.type {background:#ffffff; color:#761550;}.var {background:#ffffff; color:#000000;}body {border: 0px; margin: 0px;}div {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}td {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}span.hd_tocAccessSpace { display: block; font-size: 1px; height: 3px; min-height: 3px; }span.hd_tocGroupSpace { display: block; font-size: 1px; height: 3px; min-height: 3px; }span.hd_tocGroup { display: block; font-weight: bold; font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000; margin-left: 0px; padding-left: 40px; }span.hd_tocGroup + span.hd_tocAccess { padding-top: 5px; }td.toc_contents_text {font-size: 11pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000; }li.tocSubEntry {font-size: 11pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}p {font-size: 10pt; text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #36c;}h2.h2tight { margin-top: 0px; padding-top: 0px; }h1 { margin-top: 13px; padding-top: 0px; }h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}h5 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10.1pt; font-weight: bold;}pre {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666; font-size: 10pt;}pre a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}pre a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}pre a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}code a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}code a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}code a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}tt a { font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt;}tt a:link { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:visited { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:visited:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:active { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}tt a:hover { font-family: Courier, Consolas, monospace; color: #36c;font-size: 10pt;}body  {text-decoration: none; font-family: Courier, Consolas, monospace; color: #666;font-size: 10pt; padding-left: 0px; padding-top: 0px; margin-left: 0px; margin-top: 0px; border: none; }#hd_outermost_table { margin-left: 0px; border-spacing: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; }#hd_outermost_table > tbody > tr { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-left: 0px; padding-top: 0px; border: none; }#hd_outermost_table > tbody > tr > td { border-spacing: 0px; margin-left: 0px; margin-top: 0px; padding-top: 3px; }.afterName { display: none; }.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; min-height: 12px; vertical-align: middle; }.declaration_indent pre { margin-top: 20px; padding-top: 0px; margin-bottom: 20px; padding-bottom: 0px; }.gapBeforeFooter { display: none; }hr { height: 0px; min-height: 0px; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #909090;}hr.afterHeader { display: none }.param_group_indent { margin-left: 25px; }.param_indent { margin-left: 40px; margin-top: 0px; padding-top: 0px; }.param_indent dl { margin-top: 4px; padding-top: 0px; }dl dd > p:first-child { margin-top: 2px; padding-top: 0px; }.param_indent dl dd > p:first-child { margin-top: 2px; padding-top: 0px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.note_indent { margin-left: 40px; }h3 {       color: #3C4C6C;}.tight {       margin-top: 2px; margin-bottom: 0px;       padding-top: 0px; padding-bottom: 0px;}h3 a {       color: #3C4C6C;	font-size: 16px;	font-style: normal;	font-variant: normal;	font-weight: bold;	height: 0px;	line-height: normal;}.hd_tocAccess { display: block; margin-left: 40px; font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }.tocSubheading { margin-bottom: 4px; }--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/sscore_synth.h;   name=sscore_synth.h -->
+<a name="//apple_ref/doc/header/sscore_synth.h"></a>
+<table id="hd_outermost_table" height="100%" width="100%"><tr>
+<td valign="top" id="tocMenu" src="toc.html"></td>
+<td id="bodyContents" valign="top">
+<a name="top"></a>
+<h1><a name="sscore_synth.h">sscore_synth.h</a></h1>
+<div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr>
+<td scope="row"><b>Includes:</b></td>
+<td><div style="margin-bottom:1px"><div class="content_text">
+<a machinegenerated="true" href="../sscore_h/index.html#//apple_ref/doc/header/sscore.h" logicalPath="//apple_ref/doc/header/sscore.h" target="_top">"sscore.h"</a><br><a machinegenerated="true" href="../sscore_playdata_h/index.html#//apple_ref/doc/header/sscore_playdata.h" logicalPath="//apple_ref/doc/header/sscore_playdata.h" target="_top">"sscore_playdata.h"</a><br><!-- a logicalPath="//apple_ref/doc/header/stdbool.h" machineGenerated="true" -->&lt;stdbool.h&gt;<!-- /a -->
+</div></div></td>
+</tr></table></div>
+<h2>Introduction</h2>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/doc/header/sscore_synth.h;name=start --><p>The C interface to SeeScoreLib sound synthesizer
+<!-- headerDoc=discussion;uid=//apple_ref/doc/header/sscore_synth.h;name=end --><!-- end discussion -->
+</p>
+<hr class="afterClassOrHeaderInfo">
+<br><a name="HeaderDoc_classes"></a>
+<h2 class="h2tight">C Pseudoclasses</h2>
+<dl>
+<dt><tt><a href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" target="_top">sscore_synth</a></tt></dt>
+<dd><p>the abstract sound synthesizer
+</p></dd>
+</dl>
+<hr class="afterClassEmbeddedTOC">
+<br><a name="HeaderDoc_functions"></a>
+<h2 class="h2tight">Functions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_addsampledinstrument" target="_top">sscore_sy_addsampledinstrument</a></tt></dt>
+<dd><p>create a sampled instrument for the synth to use from a set of file sound samples, 1 for each midi note
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_addsynthesizedinstrument" target="_top">sscore_sy_addsynthesizedinstrument</a></tt></dt>
+<dd><p>create a synthesized instrument (metronome tick) for the synth to use 
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_changedcontrols" target="_top">sscore_sy_changedcontrols</a></tt></dt>
+<dd><p>notification that the controls have changed so the sscore_sy_controls needs to be reread
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_createsynth" target="_top">sscore_sy_createsynth</a></tt></dt>
+<dd><p>create a new synth and return it
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_createsynth_plus" target="_top">sscore_sy_createsynth_plus</a></tt></dt>
+<dd><p>create a new synth and return it
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_disposesynth" target="_top">sscore_sy_disposesynth</a></tt></dt>
+<dd><p>dispose the synth
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_isplaying" target="_top">sscore_sy_isplaying</a></tt></dt>
+<dd><p>detect if the synth is playing
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_pause" target="_top">sscore_sy_pause</a></tt></dt>
+<dd><p>pause playing
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_playingbar" target="_top">sscore_sy_playingbar</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_removeinstrument" target="_top">sscore_sy_removeinstrument</a></tt></dt>
+<dd><p>remove an instrument previously added with sscore_sy_addsampledinstrument or sscore_sy_addsynthesizedinstrument
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_reset" target="_top">sscore_sy_reset</a></tt></dt>
+<dd><p>stop playing and reset to the start of the score
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_setmetronomevolume" target="_top">sscore_sy_setmetronomevolume</a></tt></dt>
+<dd><p>change the volume of the metronome
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_setnextplaybar" target="_top">sscore_sy_setnextplaybar</a></tt></dt>
+<dd><p>set the next play bar while playing (eg when the user taps a bar in the score)
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_setpartvolume" target="_top">sscore_sy_setpartvolume</a></tt></dt>
+<dd><p>change the volume of a part
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_setup" target="_top">sscore_sy_setup</a></tt></dt>
+<dd><p>setup the synth with playdata.
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_startat" target="_top">sscore_sy_startat</a></tt></dt>
+<dd><p>start playing the notes in playdata after the given delay
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/sscore_sy_updatetempo" target="_top">sscore_sy_updatetempo</a></tt></dt>
+<dd><p>notification that the user has changed the tempo (viz. sscore_pd_usertempo)
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_addsampledinstrument;   name=sscore_sy_addsampledinstrument --><a name="//apple_ref/c/func/sscore_sy_addsampledinstrument"></a>
+<h3><a name="sscore_sy_addsampledinstrument">sscore_sy_addsampledinstrument</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_addsampledinstrument;name=start --><!-- begin abstract --></p>
+<p>create a sampled instrument for the synth to use from a set of file sound samples, 1 for each midi note
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_addsampledinstrument;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_addsampledinstrument;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_instrumentid //apple_ref/c/tdef/sscore_sy_instrumentid //apple_ref/c/tag/sscore_sy_instrumentid //apple_ref/c/struct/sscore_sy_instrumentid //apple_ref/c/intf/sscore_sy_instrumentid //apple_ref/doc/anysymbol/sscore_sy_instrumentid" machineGenerated="true" --><span class="type">sscore_sy_instrumentid</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_addsampledinstrument" logicalPath="//apple_ref/c/instm/sscore_sy_addsampledinstrument //apple_ref/c/clm/sscore_sy_addsampledinstrument //apple_ref/c/intfcm/sscore_sy_addsampledinstrument //apple_ref/c/intfm/sscore_sy_addsampledinstrument //apple_ref/c/func/sscore_sy_addsampledinstrument" target="_top"><span class="function">sscore_sy_addsampledinstrument</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>, 
+    <span class="keyword">const</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo" logicalPath="//apple_ref/c/cl/sscore_sy_sampledinstrumentinfo //apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo" target="_top"><span class="type">sscore_sy_sampledinstrumentinfo</span></a> <span class="type">*</span><span class="param">info</span>, 
+    <span class="keyword">enum</span> <!-- a logicalPath="//apple_ref/c/econst/sscore_error //apple_ref/c/data/sscore_error //apple_ref/c/clconst/sscore_error " machineGenerated="true" --><span class="var">sscore_error</span><!-- /a --> <span class="var">*</span><span class="param">err</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_addsampledinstrument;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_addsampledinstrument/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_addsampledinstrument/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth returned from sscore_sy_createsynth</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_addsampledinstrument/info;   name=info -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_addsampledinstrument/info"></a>
+<code>info</code>
+</dt>
+<dd><p>a struct defining the sample file naming, and various instrument parameters</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_addsampledinstrument/err;   name=err -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_addsampledinstrument/err"></a>
+<code>err</code>
+</dt>
+<dd><p>returns any error</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>a unique identifier for the instrument
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_addsynthesizedinstrument;   name=sscore_sy_addsynthesizedinstrument --><a name="//apple_ref/c/func/sscore_sy_addsynthesizedinstrument"></a>
+<h3><a name="sscore_sy_addsynthesizedinstrument">sscore_sy_addsynthesizedinstrument</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_addsynthesizedinstrument;name=start --><!-- begin abstract --></p>
+<p>create a synthesized instrument (metronome tick) for the synth to use 
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_addsynthesizedinstrument;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_addsynthesizedinstrument;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_instrumentid //apple_ref/c/tdef/sscore_sy_instrumentid //apple_ref/c/tag/sscore_sy_instrumentid //apple_ref/c/struct/sscore_sy_instrumentid //apple_ref/c/intf/sscore_sy_instrumentid //apple_ref/doc/anysymbol/sscore_sy_instrumentid" machineGenerated="true" --><span class="type">sscore_sy_instrumentid</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_addsynthesizedinstrument" logicalPath="//apple_ref/c/instm/sscore_sy_addsynthesizedinstrument //apple_ref/c/clm/sscore_sy_addsynthesizedinstrument //apple_ref/c/intfcm/sscore_sy_addsynthesizedinstrument //apple_ref/c/intfm/sscore_sy_addsynthesizedinstrument //apple_ref/c/func/sscore_sy_addsynthesizedinstrument" target="_top"><span class="function">sscore_sy_addsynthesizedinstrument</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>, 
+    <span class="keyword">const</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo" logicalPath="//apple_ref/c/cl/sscore_sy_synthesizedinstrumentinfo //apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo" target="_top"><span class="type">sscore_sy_synthesizedinstrumentinfo</span></a> <span class="type">*</span><span class="param">info</span>, 
+    <span class="keyword">enum</span> <!-- a logicalPath="//apple_ref/c/econst/sscore_error //apple_ref/c/data/sscore_error //apple_ref/c/clconst/sscore_error " machineGenerated="true" --><span class="var">sscore_error</span><!-- /a --> <span class="var">*</span><span class="param">err</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_addsynthesizedinstrument;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_addsynthesizedinstrument/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_addsynthesizedinstrument/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth returned from sscore_sy_createsynth</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_addsynthesizedinstrument/info;   name=info -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_addsynthesizedinstrument/info"></a>
+<code>info</code>
+</dt>
+<dd><p>a struct defining the synthesized sound (only tick available)</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_addsynthesizedinstrument/err;   name=err -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_addsynthesizedinstrument/err"></a>
+<code>err</code>
+</dt>
+<dd><p>returns any error</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>a unique identifier for the instrument
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_changedcontrols;   name=sscore_sy_changedcontrols --><a name="//apple_ref/c/func/sscore_sy_changedcontrols"></a>
+<h3><a name="sscore_sy_changedcontrols">sscore_sy_changedcontrols</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_changedcontrols;name=start --><!-- begin abstract --></p>
+<p>notification that the controls have changed so the sscore_sy_controls needs to be reread
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_changedcontrols;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_changedcontrols;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_changedcontrols" logicalPath="//apple_ref/c/instm/sscore_sy_changedcontrols //apple_ref/c/clm/sscore_sy_changedcontrols //apple_ref/c/intfcm/sscore_sy_changedcontrols //apple_ref/c/intfm/sscore_sy_changedcontrols //apple_ref/c/func/sscore_sy_changedcontrols" target="_top"><span class="function">sscore_sy_changedcontrols</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_changedcontrols;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_changedcontrols/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_changedcontrols/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_createsynth;   name=sscore_sy_createsynth --><a name="//apple_ref/c/func/sscore_sy_createsynth"></a>
+<h3><a name="sscore_sy_createsynth">sscore_sy_createsynth</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_createsynth;name=start --><!-- begin abstract --></p>
+<p>create a new synth and return it
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_createsynth;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_createsynth;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_createsynth" logicalPath="//apple_ref/c/instm/sscore_sy_createsynth //apple_ref/c/clm/sscore_sy_createsynth //apple_ref/c/intfcm/sscore_sy_createsynth //apple_ref/c/intfm/sscore_sy_createsynth //apple_ref/c/func/sscore_sy_createsynth" target="_top"><span class="function">sscore_sy_createsynth</span></a>(
+    <span class="keyword">const</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tdef/sscore_sy_controls" logicalPath="//apple_ref/c/cl/sscore_sy_controls //apple_ref/c/tdef/sscore_sy_controls" target="_top"><span class="type">sscore_sy_controls</span></a> <span class="type">*</span><span class="param">controls</span>,
+    <span class="keyword">const</span> <a machinegenerated="true" href="../sscore_h/index.html#//apple_ref/c/tdef/sscore_libkeytype" logicalPath="//apple_ref/c/cl/sscore_libkeytype //apple_ref/c/tdef/sscore_libkeytype" target="_top"><span class="type">sscore_libkeytype</span></a> <span class="type">*</span><span class="param">key</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_createsynth;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_createsynth/controls;   name=controls -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_createsynth/controls"></a>
+<code>controls</code>
+</dt>
+<dd><p>synth ui controls defined above</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_createsynth/key;   name=key -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_createsynth/key"></a>
+<code>key</code>
+</dt>
+<dd><p>the key defining licenses owned by the user. If this key does not include a synth licence
+then the synth will operate for a limited time only after the app is started</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>the synth
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_createsynth_plus;   name=sscore_sy_createsynth_plus --><a name="//apple_ref/c/func/sscore_sy_createsynth_plus"></a>
+<h3><a name="sscore_sy_createsynth_plus">sscore_sy_createsynth_plus</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_createsynth_plus;name=start --><!-- begin abstract --></p>
+<p>create a new synth and return it
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_createsynth_plus;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_createsynth_plus;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_createsynth_plus" logicalPath="//apple_ref/c/instm/sscore_sy_createsynth_plus //apple_ref/c/clm/sscore_sy_createsynth_plus //apple_ref/c/intfcm/sscore_sy_createsynth_plus //apple_ref/c/intfm/sscore_sy_createsynth_plus //apple_ref/c/func/sscore_sy_createsynth_plus" target="_top"><span class="function">sscore_sy_createsynth_plus</span></a>(
+    <span class="keyword">const</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tdef/sscore_sy_controls_plus" logicalPath="//apple_ref/c/cl/sscore_sy_controls_plus //apple_ref/c/tdef/sscore_sy_controls_plus" target="_top"><span class="type">sscore_sy_controls_plus</span></a> <span class="type">*</span><span class="param">controls</span>,
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/sscore_synth_options //apple_ref/c/tdef/sscore_synth_options //apple_ref/c/tag/sscore_synth_options //apple_ref/c/struct/sscore_synth_options //apple_ref/c/intf/sscore_synth_options //apple_ref/doc/anysymbol/sscore_synth_options" machineGenerated="true" --><span class="type">sscore_synth_options</span><!-- /a --> <span class="type">*</span><span class="param">options</span>,
+    <span class="keyword">const</span> <a machinegenerated="true" href="../sscore_h/index.html#//apple_ref/c/tdef/sscore_libkeytype" logicalPath="//apple_ref/c/cl/sscore_libkeytype //apple_ref/c/tdef/sscore_libkeytype" target="_top"><span class="type">sscore_libkeytype</span></a> <span class="type">*</span><span class="param">key</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_createsynth_plus;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_createsynth_plus/controls;   name=controls -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_createsynth_plus/controls"></a>
+<code>controls</code>
+</dt>
+<dd><p>synth ui controls with extra functions defined above</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_createsynth_plus/options;   name=options -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_createsynth_plus/options"></a>
+<code>options</code>
+</dt>
+<dd><p>unused at present - can be null</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_createsynth_plus/key;   name=key -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_createsynth_plus/key"></a>
+<code>key</code>
+</dt>
+<dd><p>the key defining licenses owned by the user. If this key does not include a synth licence
+then the synth will operate for a limited time only after the app is started</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>the synth
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_disposesynth;   name=sscore_sy_disposesynth --><a name="//apple_ref/c/func/sscore_sy_disposesynth"></a>
+<h3><a name="sscore_sy_disposesynth">sscore_sy_disposesynth</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_disposesynth;name=start --><!-- begin abstract --></p>
+<p>dispose the synth
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_disposesynth;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_disposesynth;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_disposesynth" logicalPath="//apple_ref/c/instm/sscore_sy_disposesynth //apple_ref/c/clm/sscore_sy_disposesynth //apple_ref/c/intfcm/sscore_sy_disposesynth //apple_ref/c/intfm/sscore_sy_disposesynth //apple_ref/c/func/sscore_sy_disposesynth" target="_top"><span class="function">sscore_sy_disposesynth</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_disposesynth;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_disposesynth/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_disposesynth/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth returned from sscore_sy_createsynth</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_isplaying;   name=sscore_sy_isplaying --><a name="//apple_ref/c/func/sscore_sy_isplaying"></a>
+<h3><a name="sscore_sy_isplaying">sscore_sy_isplaying</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_isplaying;name=start --><!-- begin abstract --></p>
+<p>detect if the synth is playing
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_isplaying;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_isplaying;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/bool //apple_ref/c/tdef/bool //apple_ref/c/tag/bool //apple_ref/c/struct/bool //apple_ref/c/intf/bool //apple_ref/doc/anysymbol/bool" machineGenerated="true" --><span class="type">bool</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_isplaying" logicalPath="//apple_ref/c/instm/sscore_sy_isplaying //apple_ref/c/clm/sscore_sy_isplaying //apple_ref/c/intfcm/sscore_sy_isplaying //apple_ref/c/intfm/sscore_sy_isplaying //apple_ref/c/func/sscore_sy_isplaying" target="_top"><span class="function">sscore_sy_isplaying</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_isplaying;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_isplaying/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_isplaying/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>true if playing
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_pause;   name=sscore_sy_pause --><a name="//apple_ref/c/func/sscore_sy_pause"></a>
+<h3><a name="sscore_sy_pause">sscore_sy_pause</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_pause;name=start --><!-- begin abstract --></p>
+<p>pause playing
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_pause;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_pause;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_pause" logicalPath="//apple_ref/c/instm/sscore_sy_pause //apple_ref/c/clm/sscore_sy_pause //apple_ref/c/intfcm/sscore_sy_pause //apple_ref/c/intfm/sscore_sy_pause //apple_ref/c/func/sscore_sy_pause" target="_top"><span class="function">sscore_sy_pause</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_pause;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_pause/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_pause/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_playingbar;   name=sscore_sy_playingbar --><a name="//apple_ref/c/func/sscore_sy_playingbar"></a>
+<h3><a name="sscore_sy_playingbar">sscore_sy_playingbar</a></h3>
+<hr class="afterName">
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_playingbar;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_playingbar" logicalPath="//apple_ref/c/instm/sscore_sy_playingbar //apple_ref/c/clm/sscore_sy_playingbar //apple_ref/c/intfcm/sscore_sy_playingbar //apple_ref/c/intfm/sscore_sy_playingbar //apple_ref/c/func/sscore_sy_playingbar" target="_top"><span class="function">sscore_sy_playingbar</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_playingbar;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_playingbar/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_playingbar/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>the index of the bar playing
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_removeinstrument;   name=sscore_sy_removeinstrument --><a name="//apple_ref/c/func/sscore_sy_removeinstrument"></a>
+<h3><a name="sscore_sy_removeinstrument">sscore_sy_removeinstrument</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_removeinstrument;name=start --><!-- begin abstract --></p>
+<p>remove an instrument previously added with sscore_sy_addsampledinstrument or sscore_sy_addsynthesizedinstrument
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_removeinstrument;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_removeinstrument;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_removeinstrument" logicalPath="//apple_ref/c/instm/sscore_sy_removeinstrument //apple_ref/c/clm/sscore_sy_removeinstrument //apple_ref/c/intfcm/sscore_sy_removeinstrument //apple_ref/c/intfm/sscore_sy_removeinstrument //apple_ref/c/func/sscore_sy_removeinstrument" target="_top"><span class="function">sscore_sy_removeinstrument</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>,
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_instrumentid //apple_ref/c/tdef/sscore_sy_instrumentid //apple_ref/c/tag/sscore_sy_instrumentid //apple_ref/c/struct/sscore_sy_instrumentid //apple_ref/c/intf/sscore_sy_instrumentid //apple_ref/doc/anysymbol/sscore_sy_instrumentid" machineGenerated="true" --><span class="type">sscore_sy_instrumentid</span><!-- /a --> <span class="param">iid</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_removeinstrument;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_removeinstrument/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_removeinstrument/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth returned from sscore_sy_createsynth</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_removeinstrument/iid;   name=iid -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_removeinstrument/iid"></a>
+<code>iid</code>
+</dt>
+<dd><p>the identifier returned from sscore_sy_addXXXinstrument</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_reset;   name=sscore_sy_reset --><a name="//apple_ref/c/func/sscore_sy_reset"></a>
+<h3><a name="sscore_sy_reset">sscore_sy_reset</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_reset;name=start --><!-- begin abstract --></p>
+<p>stop playing and reset to the start of the score
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_reset;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_reset;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_reset" logicalPath="//apple_ref/c/instm/sscore_sy_reset //apple_ref/c/clm/sscore_sy_reset //apple_ref/c/intfcm/sscore_sy_reset //apple_ref/c/intfm/sscore_sy_reset //apple_ref/c/func/sscore_sy_reset" target="_top"><span class="function">sscore_sy_reset</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_reset;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_reset/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_reset/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_setmetronomevolume;   name=sscore_sy_setmetronomevolume --><a name="//apple_ref/c/func/sscore_sy_setmetronomevolume"></a>
+<h3><a name="sscore_sy_setmetronomevolume">sscore_sy_setmetronomevolume</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_setmetronomevolume;name=start --><!-- begin abstract --></p>
+<p>change the volume of the metronome
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_setmetronomevolume;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_setmetronomevolume;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_setmetronomevolume" logicalPath="//apple_ref/c/instm/sscore_sy_setmetronomevolume //apple_ref/c/clm/sscore_sy_setmetronomevolume //apple_ref/c/intfcm/sscore_sy_setmetronomevolume //apple_ref/c/intfm/sscore_sy_setmetronomevolume //apple_ref/c/func/sscore_sy_setmetronomevolume" target="_top"><span class="function">sscore_sy_setmetronomevolume</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>,
+    <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/struct/float //apple_ref/c/intf/float //apple_ref/doc/anysymbol/float" machineGenerated="true" --><span class="type">float</span><!-- /a --> <span class="param">volume</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_setmetronomevolume;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_setmetronomevolume/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_setmetronomevolume/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_setmetronomevolume/volume;   name=volume -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_setmetronomevolume/volume"></a>
+<code>volume</code>
+</dt>
+<dd><p>the volume [0..1]</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_setnextplaybar;   name=sscore_sy_setnextplaybar --><a name="//apple_ref/c/func/sscore_sy_setnextplaybar"></a>
+<h3><a name="sscore_sy_setnextplaybar">sscore_sy_setnextplaybar</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_setnextplaybar;name=start --><!-- begin abstract --></p>
+<p>set the next play bar while playing (eg when the user taps a bar in the score)
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_setnextplaybar;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_setnextplaybar;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/bool //apple_ref/c/tdef/bool //apple_ref/c/tag/bool //apple_ref/c/struct/bool //apple_ref/c/intf/bool //apple_ref/doc/anysymbol/bool" machineGenerated="true" --><span class="type">bool</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_setnextplaybar" logicalPath="//apple_ref/c/instm/sscore_sy_setnextplaybar //apple_ref/c/clm/sscore_sy_setnextplaybar //apple_ref/c/intfcm/sscore_sy_setnextplaybar //apple_ref/c/intfm/sscore_sy_setnextplaybar //apple_ref/c/func/sscore_sy_setnextplaybar" target="_top"><span class="function">sscore_sy_setnextplaybar</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>,
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <span class="param">barindex</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/long //apple_ref/c/tdef/long //apple_ref/c/tag/long //apple_ref/c/struct/long //apple_ref/c/intf/long //apple_ref/doc/anysymbol/long" machineGenerated="true" --><span class="type">long</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/long //apple_ref/c/tdef/long //apple_ref/c/tag/long //apple_ref/c/struct/long //apple_ref/c/intf/long //apple_ref/doc/anysymbol/long" machineGenerated="true" --><span class="type">long</span><!-- /a --> <span class="param">restart_time</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_setnextplaybar;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_setnextplaybar/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_setnextplaybar/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_setnextplaybar/barindex;   name=barindex -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_setnextplaybar/barindex"></a>
+<code>barindex</code>
+</dt>
+<dd><p>the index of the bar to restart playing from</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_setnextplaybar/restart_time;   name=restart_time -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_setnextplaybar/restart_time"></a>
+<code>restart_time</code>
+</dt>
+<dd><p>the (system-dependent) time to restart playing</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>true if success
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_setpartvolume;   name=sscore_sy_setpartvolume --><a name="//apple_ref/c/func/sscore_sy_setpartvolume"></a>
+<h3><a name="sscore_sy_setpartvolume">sscore_sy_setpartvolume</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_setpartvolume;name=start --><!-- begin abstract --></p>
+<p>change the volume of a part
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_setpartvolume;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_setpartvolume;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_setpartvolume" logicalPath="//apple_ref/c/instm/sscore_sy_setpartvolume //apple_ref/c/clm/sscore_sy_setpartvolume //apple_ref/c/intfcm/sscore_sy_setpartvolume //apple_ref/c/intfm/sscore_sy_setpartvolume //apple_ref/c/func/sscore_sy_setpartvolume" target="_top"><span class="function">sscore_sy_setpartvolume</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>,
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <span class="param">partindex</span>,
+    <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/struct/float //apple_ref/c/intf/float //apple_ref/doc/anysymbol/float" machineGenerated="true" --><span class="type">float</span><!-- /a --> <span class="param">volume</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_setpartvolume;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_setpartvolume/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_setpartvolume/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_setpartvolume/partindex;   name=partindex -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_setpartvolume/partindex"></a>
+<code>partindex</code>
+</dt>
+<dd><p>the index of the part</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_setpartvolume/volume;   name=volume -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_setpartvolume/volume"></a>
+<code>volume</code>
+</dt>
+<dd><p>the volume [0..1]</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_setup;   name=sscore_sy_setup --><a name="//apple_ref/c/func/sscore_sy_setup"></a>
+<h3><a name="sscore_sy_setup">sscore_sy_setup</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_setup;name=start --><!-- begin abstract --></p>
+<p>setup the synth with playdata.
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_setup;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_setup;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <span class="keyword">enum</span> <!-- a logicalPath="//apple_ref/c/econst/sscore_error //apple_ref/c/data/sscore_error //apple_ref/c/clconst/sscore_error " machineGenerated="true" --><span class="var">sscore_error</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_setup" logicalPath="//apple_ref/c/instm/sscore_sy_setup //apple_ref/c/clm/sscore_sy_setup //apple_ref/c/intfcm/sscore_sy_setup //apple_ref/c/intfm/sscore_sy_setup //apple_ref/c/func/sscore_sy_setup" target="_top"><span class="function">sscore_sy_setup</span></a>(
+    <!-- a logicalPath="//apple_ref/c/econst/sscore_synth //apple_ref/c/data/sscore_synth //apple_ref/c/clconst/sscore_synth " machineGenerated="true" --><span class="var">sscore_synth</span><!-- /a --> <span class="var">*</span><span class="param">synth</span>,
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/econst/sscore_playdata //apple_ref/c/data/sscore_playdata //apple_ref/c/clconst/sscore_playdata " machineGenerated="true" --><span class="var">sscore_playdata</span><!-- /a --> <span class="var">*</span><span class="param">playdata</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_setup;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_setup/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_setup/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_setup/playdata;   name=playdata -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_setup/playdata"></a>
+<code>playdata</code>
+</dt>
+<dd><p>returned from sscore_pd_newplaydata</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>any error
+
+<!-- end return value --></p>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/func/sscore_sy_setup;name=start --><p>You must add instruments before calling setup
+<!-- headerDoc=discussion;uid=//apple_ref/c/func/sscore_sy_setup;name=end --><!-- end discussion -->
+</p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_startat;   name=sscore_sy_startat --><a name="//apple_ref/c/func/sscore_sy_startat"></a>
+<h3><a name="sscore_sy_startat">sscore_sy_startat</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_startat;name=start --><!-- begin abstract --></p>
+<p>start playing the notes in playdata after the given delay
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_startat;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_startat;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <span class="keyword">enum</span> <!-- a logicalPath="//apple_ref/c/econst/sscore_error //apple_ref/c/data/sscore_error //apple_ref/c/clconst/sscore_error " machineGenerated="true" --><span class="var">sscore_error</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_startat" logicalPath="//apple_ref/c/instm/sscore_sy_startat //apple_ref/c/clm/sscore_sy_startat //apple_ref/c/intfcm/sscore_sy_startat //apple_ref/c/intfm/sscore_sy_startat //apple_ref/c/func/sscore_sy_startat" target="_top"><span class="function">sscore_sy_startat</span></a>(
+    <!-- a logicalPath="//apple_ref/c/econst/sscore_synth //apple_ref/c/data/sscore_synth //apple_ref/c/clconst/sscore_synth " machineGenerated="true" --><span class="var">sscore_synth</span><!-- /a --> <span class="var">*</span><span class="param">synth</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/econst/long //apple_ref/c/data/long //apple_ref/c/clconst/long " machineGenerated="true" --><span class="var">long</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/long //apple_ref/c/data/long //apple_ref/c/clconst/long " machineGenerated="true" --><span class="var">long</span><!-- /a --> <span class="param">start_time</span>,
+    <!-- a logicalPath="//apple_ref/c/econst/int //apple_ref/c/data/int //apple_ref/c/clconst/int " machineGenerated="true" --><span class="var">int</span><!-- /a --> <span class="param">barindex</span>,
+    <!-- a logicalPath="//apple_ref/c/econst/bool //apple_ref/c/data/bool //apple_ref/c/clconst/bool " machineGenerated="true" --><span class="var">bool</span><!-- /a --> <span class="param">delayStartForCountIn</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_startat;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_startat/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_startat/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_startat/start_time;   name=start_time -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_startat/start_time"></a>
+<code>start_time</code>
+</dt>
+<dd><p>the (system-dependent) time to start playing
+NB This should be at least 1 or 2 seconds in the future to allow time for the setup to complete</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value --></p>
+<p>any error
+
+<!-- end return value --></p>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=func;  uid=//apple_ref/c/func/sscore_sy_updatetempo;   name=sscore_sy_updatetempo --><a name="//apple_ref/c/func/sscore_sy_updatetempo"></a>
+<h3><a name="sscore_sy_updatetempo">sscore_sy_updatetempo</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_updatetempo;name=start --><!-- begin abstract --></p>
+<p>notification that the user has changed the tempo (viz. sscore_pd_usertempo)
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/func/sscore_sy_updatetempo;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_updatetempo;name=start --><!-- a logicalPath="//apple_ref/c/cl/EXPORT //apple_ref/c/tdef/EXPORT //apple_ref/c/tag/EXPORT //apple_ref/c/struct/EXPORT //apple_ref/c/intf/EXPORT //apple_ref/doc/anysymbol/EXPORT" machineGenerated="true" --><span class="type">EXPORT</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> <a machinegenerated="true" href="index.html#//apple_ref/c/func/sscore_sy_updatetempo" logicalPath="//apple_ref/c/instm/sscore_sy_updatetempo //apple_ref/c/clm/sscore_sy_updatetempo //apple_ref/c/intfcm/sscore_sy_updatetempo //apple_ref/c/intfm/sscore_sy_updatetempo //apple_ref/c/func/sscore_sy_updatetempo" target="_top"><span class="function">sscore_sy_updatetempo</span></a>(
+    <a machinegenerated="true" href="Classes/sscore_synth/index.html#//apple_ref/c/cl/sscore_synth" logicalPath="//apple_ref/c/cl/sscore_synth" target="_top"><span class="type">sscore_synth</span></a> <span class="type">*</span><span class="param">synth</span>,
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/long //apple_ref/c/tdef/long //apple_ref/c/tag/long //apple_ref/c/struct/long //apple_ref/c/intf/long //apple_ref/doc/anysymbol/long" machineGenerated="true" --><span class="type">long</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/long //apple_ref/c/tdef/long //apple_ref/c/tag/long //apple_ref/c/struct/long //apple_ref/c/intf/long //apple_ref/doc/anysymbol/long" machineGenerated="true" --><span class="type">long</span><!-- /a --> <span class="param">restart_time</span>);  <!-- headerDoc=declaration;uid=//apple_ref/c/func/sscore_sy_updatetempo;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_updatetempo/synth;   name=synth -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_updatetempo/synth"></a>
+<code>synth</code>
+</dt>
+<dd><p>the synth from sscore_sy_createsynth</p></dd>
+<dt>
+<!-- headerDoc=functionparam;  uid=//apple_ref/doc/functionparam/sscore_sy_updatetempo/restart_time;   name=restart_time -->
+<a name="//apple_ref/doc/functionparam/sscore_sy_updatetempo/restart_time"></a>
+<code>restart_time</code>
+</dt>
+<dd><p>the (system-dependent) time to restart playing the current bar with the new tempo</p></dd>
+</dl>
+</div>
+<hr class="betweenSections">
+<a name="HeaderDoc_datatypes"></a>
+<h2 class="h2tight">Typedefs</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/sscore_sampledinstrumentinfo" target="_top">sscore_sampledinstrumentinfo</a></tt></dt>
+<dd><p>info defining a sampled instrument
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/sscore_sy_controls" target="_top">sscore_sy_controls</a></tt></dt>
+<dd><p>link to UI which defines playing parameters
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/sscore_sy_controls_plus" target="_top">sscore_sy_controls_plus</a></tt></dt>
+<dd><p>link to UI which defines playing parameters with extra function
+partStaffEnabled which permits playing of a single staff in a part
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo" target="_top">sscore_sy_sampledinstrumentinfo</a></tt></dt>
+<dd><p>info defining a sampled instrument
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo" target="_top">sscore_sy_synthesizedinstrumentinfo</a></tt></dt>
+<dd><p>info defining a synthesized instrument (metronome tick only supported at present)
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/sscore_sampledinstrumentinfo;   name=sscore_sampledinstrumentinfo --><a name="//apple_ref/c/tdef/sscore_sampledinstrumentinfo"></a>
+<h3><a name="sscore_sampledinstrumentinfo">sscore_sampledinstrumentinfo</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/sscore_sampledinstrumentinfo;name=start --><!-- begin abstract --></p>
+<p>info defining a sampled instrument
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/sscore_sampledinstrumentinfo;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/sscore_sampledinstrumentinfo;name=start --><span class="keyword">typedef</span> <span class="keyword">struct</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo" logicalPath="//apple_ref/c/cl/sscore_sy_sampledinstrumentinfo //apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo" target="_top"><span class="type">sscore_sy_sampledinstrumentinfo</span></a> { 
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/instrument_name //apple_ref/c/data/instrument_name //apple_ref/c/clconst/instrument_name " machineGenerated="true" --><span class="var">instrument_name</span><!-- /a -->; <span class="comment">// the name of the instrument</span> 
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/base_filename //apple_ref/c/data/base_filename //apple_ref/c/clconst/base_filename " machineGenerated="true" --><span class="var">base_filename</span><!-- /a -->; <span class="comment">// the start of the filename before the .(midipitch)</span> 
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/extn //apple_ref/c/data/extn //apple_ref/c/clconst/extn " machineGenerated="true" --><span class="var">extn</span><!-- /a -->; <span class="comment">// the filename extension</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/base_midipitch //apple_ref/c/data/base_midipitch //apple_ref/c/clconst/base_midipitch " machineGenerated="true" --><span class="var">base_midipitch</span><!-- /a -->; <span class="comment">// the lowest midi pitch file</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/numfiles //apple_ref/c/data/numfiles //apple_ref/c/clconst/numfiles " machineGenerated="true" --><span class="var">numfiles</span><!-- /a -->; <span class="comment">// the number of sample files with sequential midi values from base_midipitch</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/struct/float //apple_ref/c/intf/float //apple_ref/doc/anysymbol/float" machineGenerated="true" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/volume //apple_ref/c/data/volume //apple_ref/c/clconst/volume " machineGenerated="true" --><span class="var">volume</span><!-- /a -->; <span class="comment">// for adjustment of balance with other instruments</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/attack_time_ms //apple_ref/c/data/attack_time_ms //apple_ref/c/clconst/attack_time_ms " machineGenerated="true" --><span class="var">attack_time_ms</span><!-- /a -->; <span class="comment">// time from start of sample play to beat reference point</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/decay_time_ms //apple_ref/c/data/decay_time_ms //apple_ref/c/clconst/decay_time_ms " machineGenerated="true" --><span class="var">decay_time_ms</span><!-- /a -->; <span class="comment">// 90% to 10% sigmoid decay time</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/overlap_time_ms //apple_ref/c/data/overlap_time_ms //apple_ref/c/clconst/overlap_time_ms " machineGenerated="true" --><span class="var">overlap_time_ms</span><!-- /a -->; <span class="comment">// overlap with following note</span> 
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/alternativenames //apple_ref/c/data/alternativenames //apple_ref/c/clconst/alternativenames " machineGenerated="true" --><span class="var">alternativenames</span><!-- /a -->; <span class="comment">// comma-separated (lower case) alternative names for matching part name, eg "cello,violoncello"</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/pitch_offset //apple_ref/c/data/pitch_offset //apple_ref/c/clconst/pitch_offset " machineGenerated="true" --><span class="var">pitch_offset</span><!-- /a -->; <span class="comment">// the pitch offset for a transposing instrument</span> 
+    <span class="keyword">enum</span> <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_instrumentfamily //apple_ref/c/data/sscore_sy_instrumentfamily //apple_ref/c/clconst/sscore_sy_instrumentfamily " machineGenerated="true" --><span class="var">sscore_sy_instrumentfamily</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/family //apple_ref/c/data/family //apple_ref/c/clconst/family " machineGenerated="true" --><span class="var">family</span><!-- /a -->; <span class="comment">// type of instrument</span> 
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/econst/flags //apple_ref/c/data/flags //apple_ref/c/clconst/flags " machineGenerated="true" --><span class="var">flags</span><!-- /a -->; <span class="comment">// bit set of sscore_sy_sampledinstrument_flags</span> 
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/econst/samplesflags //apple_ref/c/data/samplesflags //apple_ref/c/clconst/samplesflags " machineGenerated="true" --><span class="var">samplesflags</span><!-- /a -->; <span class="comment">// bit set of sscore_sy_sampledinstrument_samples_flags</span> 
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/econst/dummy //apple_ref/c/data/dummy //apple_ref/c/clconst/dummy " machineGenerated="true" --><span class="var">dummy</span><!-- /a -->[<span class="number">13</span>]; 
+} <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_sampledinstrumentinfo //apple_ref/c/data/sscore_sy_sampledinstrumentinfo //apple_ref/c/clconst/sscore_sy_sampledinstrumentinfo " machineGenerated="true" --><span class="var">sscore_sy_sampledinstrumentinfo</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/sscore_sampledinstrumentinfo;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/tdef/sscore_sampledinstrumentinfo;name=start --><p>a sampled instrument requires a set of files, one for each note, included in the Resources for the app
+The file naming scheme is defined: sample files have the name (base_filename).(midipitch).extn eg "Piano.60.m4a"
+base_filename and extn are defined below; base_midipitch and numfiles define the range of (midipitch).
+Parameters attack_time_ms, decay_time_ms and overlap_time_ms need to be 'tweaked' to make a sequence sound right when
+played against a metronome tick.
+alternativenames is used for instrument name matching
+pitch_offset is used to transpose the instrument, eg it can be used to mimic a clarinet when playing an
+_untransposed_ score. Note that a score scored for transposing instrument should specify the transposition and in this
+case pitch_offset should be zero
+<!-- headerDoc=discussion;uid=//apple_ref/c/tdef/sscore_sampledinstrumentinfo;name=end --><!-- end discussion -->
+</p>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo" logicalPath="//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo" target="_top">sscore_sy_sampledinstrumentinfo</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/sscore_sy_controls;   name=sscore_sy_controls --><a name="//apple_ref/c/tdef/sscore_sy_controls"></a>
+<h3><a name="sscore_sy_controls">sscore_sy_controls</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/sscore_sy_controls;name=start --><!-- begin abstract --></p>
+<p>link to UI which defines playing parameters
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/sscore_sy_controls;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/sscore_sy_controls;name=start --><span class="keyword">typedef</span> <span class="keyword">struct</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tdef/sscore_sy_controls" logicalPath="//apple_ref/c/cl/sscore_sy_controls //apple_ref/c/tdef/sscore_sy_controls" target="_top"><span class="type">sscore_sy_controls</span></a> { 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_bool_intfn //apple_ref/c/tdef/sscore_sy_bool_intfn //apple_ref/c/tag/sscore_sy_bool_intfn //apple_ref/c/struct/sscore_sy_bool_intfn //apple_ref/c/intf/sscore_sy_bool_intfn //apple_ref/doc/anysymbol/sscore_sy_bool_intfn" machineGenerated="true" --><span class="type">sscore_sy_bool_intfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/partEnabled //apple_ref/c/data/partEnabled //apple_ref/c/clconst/partEnabled " machineGenerated="true" --><span class="var">partEnabled</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_uint_intfn //apple_ref/c/tdef/sscore_sy_uint_intfn //apple_ref/c/tag/sscore_sy_uint_intfn //apple_ref/c/struct/sscore_sy_uint_intfn //apple_ref/c/intf/sscore_sy_uint_intfn //apple_ref/doc/anysymbol/sscore_sy_uint_intfn" machineGenerated="true" --><span class="type">sscore_sy_uint_intfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/partInstrument //apple_ref/c/data/partInstrument //apple_ref/c/clconst/partInstrument " machineGenerated="true" --><span class="var">partInstrument</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_float_intfn //apple_ref/c/tdef/sscore_sy_float_intfn //apple_ref/c/tag/sscore_sy_float_intfn //apple_ref/c/struct/sscore_sy_float_intfn //apple_ref/c/intf/sscore_sy_float_intfn //apple_ref/doc/anysymbol/sscore_sy_float_intfn" machineGenerated="true" --><span class="type">sscore_sy_float_intfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/partVolume //apple_ref/c/data/partVolume //apple_ref/c/clconst/partVolume " machineGenerated="true" --><span class="var">partVolume</span><!-- /a -->; <span class="comment">// [0.0..1.0]</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_boolfn //apple_ref/c/tdef/sscore_sy_boolfn //apple_ref/c/tag/sscore_sy_boolfn //apple_ref/c/struct/sscore_sy_boolfn //apple_ref/c/intf/sscore_sy_boolfn //apple_ref/doc/anysymbol/sscore_sy_boolfn" machineGenerated="true" --><span class="type">sscore_sy_boolfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/metronomeEnabled //apple_ref/c/data/metronomeEnabled //apple_ref/c/clconst/metronomeEnabled " machineGenerated="true" --><span class="var">metronomeEnabled</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_uintfn //apple_ref/c/tdef/sscore_sy_uintfn //apple_ref/c/tag/sscore_sy_uintfn //apple_ref/c/struct/sscore_sy_uintfn //apple_ref/c/intf/sscore_sy_uintfn //apple_ref/doc/anysymbol/sscore_sy_uintfn" machineGenerated="true" --><span class="type">sscore_sy_uintfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/metronomeInstrument //apple_ref/c/data/metronomeInstrument //apple_ref/c/clconst/metronomeInstrument " machineGenerated="true" --><span class="var">metronomeInstrument</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_floatfn //apple_ref/c/tdef/sscore_sy_floatfn //apple_ref/c/tag/sscore_sy_floatfn //apple_ref/c/struct/sscore_sy_floatfn //apple_ref/c/intf/sscore_sy_floatfn //apple_ref/doc/anysymbol/sscore_sy_floatfn" machineGenerated="true" --><span class="type">sscore_sy_floatfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/metronomeVolume //apple_ref/c/data/metronomeVolume //apple_ref/c/clconst/metronomeVolume " machineGenerated="true" --><span class="var">metronomeVolume</span><!-- /a -->; <span class="comment">// [0.0..1.0]</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/context //apple_ref/c/data/context //apple_ref/c/clconst/context " machineGenerated="true" --><span class="var">context</span><!-- /a -->; 
+} <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_controls //apple_ref/c/data/sscore_sy_controls //apple_ref/c/clconst/sscore_sy_controls " machineGenerated="true" --><span class="var">sscore_sy_controls</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/sscore_sy_controls;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/sscore_sy_controls_plus;   name=sscore_sy_controls_plus --><a name="//apple_ref/c/tdef/sscore_sy_controls_plus"></a>
+<h3><a name="sscore_sy_controls_plus">sscore_sy_controls_plus</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/sscore_sy_controls_plus;name=start --><!-- begin abstract --></p>
+<p>link to UI which defines playing parameters with extra function
+partStaffEnabled which permits playing of a single staff in a part
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/sscore_sy_controls_plus;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/sscore_sy_controls_plus;name=start --><span class="keyword">typedef</span> <span class="keyword">struct</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tdef/sscore_sy_controls_plus" logicalPath="//apple_ref/c/cl/sscore_sy_controls_plus //apple_ref/c/tdef/sscore_sy_controls_plus" target="_top"><span class="type">sscore_sy_controls_plus</span></a> { 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_bool_intfn //apple_ref/c/tdef/sscore_sy_bool_intfn //apple_ref/c/tag/sscore_sy_bool_intfn //apple_ref/c/struct/sscore_sy_bool_intfn //apple_ref/c/intf/sscore_sy_bool_intfn //apple_ref/doc/anysymbol/sscore_sy_bool_intfn" machineGenerated="true" --><span class="type">sscore_sy_bool_intfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/partEnabled //apple_ref/c/data/partEnabled //apple_ref/c/clconst/partEnabled " machineGenerated="true" --><span class="var">partEnabled</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_uint_intfn //apple_ref/c/tdef/sscore_sy_uint_intfn //apple_ref/c/tag/sscore_sy_uint_intfn //apple_ref/c/struct/sscore_sy_uint_intfn //apple_ref/c/intf/sscore_sy_uint_intfn //apple_ref/doc/anysymbol/sscore_sy_uint_intfn" machineGenerated="true" --><span class="type">sscore_sy_uint_intfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/partInstrument //apple_ref/c/data/partInstrument //apple_ref/c/clconst/partInstrument " machineGenerated="true" --><span class="var">partInstrument</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_float_intfn //apple_ref/c/tdef/sscore_sy_float_intfn //apple_ref/c/tag/sscore_sy_float_intfn //apple_ref/c/struct/sscore_sy_float_intfn //apple_ref/c/intf/sscore_sy_float_intfn //apple_ref/doc/anysymbol/sscore_sy_float_intfn" machineGenerated="true" --><span class="type">sscore_sy_float_intfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/partVolume //apple_ref/c/data/partVolume //apple_ref/c/clconst/partVolume " machineGenerated="true" --><span class="var">partVolume</span><!-- /a -->; <span class="comment">// [0.0..1.0]</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_boolfn //apple_ref/c/tdef/sscore_sy_boolfn //apple_ref/c/tag/sscore_sy_boolfn //apple_ref/c/struct/sscore_sy_boolfn //apple_ref/c/intf/sscore_sy_boolfn //apple_ref/doc/anysymbol/sscore_sy_boolfn" machineGenerated="true" --><span class="type">sscore_sy_boolfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/metronomeEnabled //apple_ref/c/data/metronomeEnabled //apple_ref/c/clconst/metronomeEnabled " machineGenerated="true" --><span class="var">metronomeEnabled</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_uintfn //apple_ref/c/tdef/sscore_sy_uintfn //apple_ref/c/tag/sscore_sy_uintfn //apple_ref/c/struct/sscore_sy_uintfn //apple_ref/c/intf/sscore_sy_uintfn //apple_ref/doc/anysymbol/sscore_sy_uintfn" machineGenerated="true" --><span class="type">sscore_sy_uintfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/metronomeInstrument //apple_ref/c/data/metronomeInstrument //apple_ref/c/clconst/metronomeInstrument " machineGenerated="true" --><span class="var">metronomeInstrument</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_floatfn //apple_ref/c/tdef/sscore_sy_floatfn //apple_ref/c/tag/sscore_sy_floatfn //apple_ref/c/struct/sscore_sy_floatfn //apple_ref/c/intf/sscore_sy_floatfn //apple_ref/doc/anysymbol/sscore_sy_floatfn" machineGenerated="true" --><span class="type">sscore_sy_floatfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/metronomeVolume //apple_ref/c/data/metronomeVolume //apple_ref/c/clconst/metronomeVolume " machineGenerated="true" --><span class="var">metronomeVolume</span><!-- /a -->; <span class="comment">// [0.0..1.0]</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/struct/void //apple_ref/c/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/context //apple_ref/c/data/context //apple_ref/c/clconst/context " machineGenerated="true" --><span class="var">context</span><!-- /a -->; 
+    <span class="comment">// version &gt;= 2.17..</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_bool_intintfn //apple_ref/c/tdef/sscore_sy_bool_intintfn //apple_ref/c/tag/sscore_sy_bool_intintfn //apple_ref/c/struct/sscore_sy_bool_intintfn //apple_ref/c/intf/sscore_sy_bool_intintfn //apple_ref/doc/anysymbol/sscore_sy_bool_intintfn" machineGenerated="true" --><span class="type">sscore_sy_bool_intintfn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/partStaffEnabled //apple_ref/c/data/partStaffEnabled //apple_ref/c/clconst/partStaffEnabled " machineGenerated="true" --><span class="var">partStaffEnabled</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_int_fn //apple_ref/c/tdef/sscore_sy_int_fn //apple_ref/c/tag/sscore_sy_int_fn //apple_ref/c/struct/sscore_sy_int_fn //apple_ref/c/intf/sscore_sy_int_fn //apple_ref/doc/anysymbol/sscore_sy_int_fn" machineGenerated="true" --><span class="type">sscore_sy_int_fn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/loopstart //apple_ref/c/data/loopstart //apple_ref/c/clconst/loopstart " machineGenerated="true" --><span class="var">loopstart</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_int_fn //apple_ref/c/tdef/sscore_sy_int_fn //apple_ref/c/tag/sscore_sy_int_fn //apple_ref/c/struct/sscore_sy_int_fn //apple_ref/c/intf/sscore_sy_int_fn //apple_ref/doc/anysymbol/sscore_sy_int_fn" machineGenerated="true" --><span class="type">sscore_sy_int_fn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/loopend //apple_ref/c/data/loopend //apple_ref/c/clconst/loopend " machineGenerated="true" --><span class="var">loopend</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_int_fn //apple_ref/c/tdef/sscore_sy_int_fn //apple_ref/c/tag/sscore_sy_int_fn //apple_ref/c/struct/sscore_sy_int_fn //apple_ref/c/intf/sscore_sy_int_fn //apple_ref/doc/anysymbol/sscore_sy_int_fn" machineGenerated="true" --><span class="type">sscore_sy_int_fn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/looprepeats //apple_ref/c/data/looprepeats //apple_ref/c/clconst/looprepeats " machineGenerated="true" --><span class="var">looprepeats</span><!-- /a -->; <span class="comment">// set to 0 to disable looping</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/sscore_sy_int_fn //apple_ref/c/tdef/sscore_sy_int_fn //apple_ref/c/tag/sscore_sy_int_fn //apple_ref/c/struct/sscore_sy_int_fn //apple_ref/c/intf/sscore_sy_int_fn //apple_ref/doc/anysymbol/sscore_sy_int_fn" machineGenerated="true" --><span class="type">sscore_sy_int_fn</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/dummyfn //apple_ref/c/tdef/dummyfn //apple_ref/c/tag/dummyfn //apple_ref/c/struct/dummyfn //apple_ref/c/intf/dummyfn //apple_ref/doc/anysymbol/dummyfn" machineGenerated="true" --><span class="type">dummyfn</span><!-- /a -->[<span class="number">64</span>]; <span class="comment">// future</span> 
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/cl/dummy //apple_ref/c/tdef/dummy //apple_ref/c/tag/dummy //apple_ref/c/struct/dummy //apple_ref/c/intf/dummy //apple_ref/doc/anysymbol/dummy" machineGenerated="true" --><span class="type">dummy</span><!-- /a -->[<span class="number">64</span>]; <span class="comment">// for future</span> 
+} <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_controls_plus //apple_ref/c/data/sscore_sy_controls_plus //apple_ref/c/clconst/sscore_sy_controls_plus " machineGenerated="true" --><span class="var">sscore_sy_controls_plus</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/sscore_sy_controls_plus;name=end --></pre>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo;   name=sscore_sy_sampledinstrumentinfo --><a name="//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo"></a>
+<h3><a name="sscore_sy_sampledinstrumentinfo">sscore_sy_sampledinstrumentinfo</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo;name=start --><!-- begin abstract --></p>
+<p>info defining a sampled instrument
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo;name=start --><span class="keyword">typedef</span> <span class="keyword">struct</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo" logicalPath="//apple_ref/c/cl/sscore_sy_sampledinstrumentinfo //apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo" target="_top"><span class="type">sscore_sy_sampledinstrumentinfo</span></a> { 
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/instrument_name //apple_ref/c/data/instrument_name //apple_ref/c/clconst/instrument_name " machineGenerated="true" --><span class="var">instrument_name</span><!-- /a -->; <span class="comment">// the name of the instrument</span> 
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/base_filename //apple_ref/c/data/base_filename //apple_ref/c/clconst/base_filename " machineGenerated="true" --><span class="var">base_filename</span><!-- /a -->; <span class="comment">// the start of the filename before the .(midipitch)</span> 
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/extn //apple_ref/c/data/extn //apple_ref/c/clconst/extn " machineGenerated="true" --><span class="var">extn</span><!-- /a -->; <span class="comment">// the filename extension</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/base_midipitch //apple_ref/c/data/base_midipitch //apple_ref/c/clconst/base_midipitch " machineGenerated="true" --><span class="var">base_midipitch</span><!-- /a -->; <span class="comment">// the lowest midi pitch file</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/numfiles //apple_ref/c/data/numfiles //apple_ref/c/clconst/numfiles " machineGenerated="true" --><span class="var">numfiles</span><!-- /a -->; <span class="comment">// the number of sample files with sequential midi values from base_midipitch</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/struct/float //apple_ref/c/intf/float //apple_ref/doc/anysymbol/float" machineGenerated="true" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/volume //apple_ref/c/data/volume //apple_ref/c/clconst/volume " machineGenerated="true" --><span class="var">volume</span><!-- /a -->; <span class="comment">// for adjustment of balance with other instruments</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/attack_time_ms //apple_ref/c/data/attack_time_ms //apple_ref/c/clconst/attack_time_ms " machineGenerated="true" --><span class="var">attack_time_ms</span><!-- /a -->; <span class="comment">// time from start of sample play to beat reference point</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/decay_time_ms //apple_ref/c/data/decay_time_ms //apple_ref/c/clconst/decay_time_ms " machineGenerated="true" --><span class="var">decay_time_ms</span><!-- /a -->; <span class="comment">// 90% to 10% sigmoid decay time</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/overlap_time_ms //apple_ref/c/data/overlap_time_ms //apple_ref/c/clconst/overlap_time_ms " machineGenerated="true" --><span class="var">overlap_time_ms</span><!-- /a -->; <span class="comment">// overlap with following note</span> 
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/alternativenames //apple_ref/c/data/alternativenames //apple_ref/c/clconst/alternativenames " machineGenerated="true" --><span class="var">alternativenames</span><!-- /a -->; <span class="comment">// comma-separated (lower case) alternative names for matching part name, eg "cello,violoncello"</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/pitch_offset //apple_ref/c/data/pitch_offset //apple_ref/c/clconst/pitch_offset " machineGenerated="true" --><span class="var">pitch_offset</span><!-- /a -->; <span class="comment">// the pitch offset for a transposing instrument</span> 
+    <span class="keyword">enum</span> <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_instrumentfamily //apple_ref/c/data/sscore_sy_instrumentfamily //apple_ref/c/clconst/sscore_sy_instrumentfamily " machineGenerated="true" --><span class="var">sscore_sy_instrumentfamily</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/family //apple_ref/c/data/family //apple_ref/c/clconst/family " machineGenerated="true" --><span class="var">family</span><!-- /a -->; <span class="comment">// type of instrument</span> 
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/econst/flags //apple_ref/c/data/flags //apple_ref/c/clconst/flags " machineGenerated="true" --><span class="var">flags</span><!-- /a -->; <span class="comment">// bit set of sscore_sy_sampledinstrument_flags</span> 
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/econst/samplesflags //apple_ref/c/data/samplesflags //apple_ref/c/clconst/samplesflags " machineGenerated="true" --><span class="var">samplesflags</span><!-- /a -->; <span class="comment">// bit set of sscore_sy_sampledinstrument_samples_flags</span> 
+    <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/econst/dummy //apple_ref/c/data/dummy //apple_ref/c/clconst/dummy " machineGenerated="true" --><span class="var">dummy</span><!-- /a -->[<span class="number">13</span>]; 
+} <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_sampledinstrumentinfo //apple_ref/c/data/sscore_sy_sampledinstrumentinfo //apple_ref/c/clconst/sscore_sy_sampledinstrumentinfo " machineGenerated="true" --><span class="var">sscore_sy_sampledinstrumentinfo</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
+<!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo;name=start --><p>a sampled instrument requires a set of files, one for each note, included in the Resources for the app
+The file naming scheme is defined: sample files have the name (base_filename).(midipitch).extn eg "Piano.60.m4a"
+base_filename and extn are defined below; base_midipitch and numfiles define the range of (midipitch).
+Parameters attack_time_ms, decay_time_ms and overlap_time_ms need to be 'tweaked' to make a sequence sound right when
+played against a metronome tick.
+alternativenames is used for instrument name matching
+pitch_offset is used to transpose the instrument, eg it can be used to mimic a clarinet when playing an
+_untransposed_ score. Note that a score scored for transposing instrument should specify the transposition and in this
+case pitch_offset should be zero
+<!-- headerDoc=discussion;uid=//apple_ref/c/tdef/sscore_sy_sampledinstrumentinfo;name=end --><!-- end discussion -->
+</p>
+<p><b>See Also</b></p>
+<div class="list_indent"><dl>
+<dt><p><a href="index.html#//apple_ref/c/tdef/sscore_sampledinstrumentinfo" logicalPath="//apple_ref/c/tdef/sscore_sampledinstrumentinfo" target="_top">sscore_sampledinstrumentinfo</a></p></dt>
+<dd></dd>
+</dl></div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo;   name=sscore_sy_synthesizedinstrumentinfo --><a name="//apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo"></a>
+<h3><a name="sscore_sy_synthesizedinstrumentinfo">sscore_sy_synthesizedinstrumentinfo</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo;name=start --><!-- begin abstract --></p>
+<p>info defining a synthesized instrument (metronome tick only supported at present)
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo;name=start --><span class="keyword">typedef</span> <span class="keyword">struct</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo" logicalPath="//apple_ref/c/cl/sscore_sy_synthesizedinstrumentinfo //apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo" target="_top"><span class="type">sscore_sy_synthesizedinstrumentinfo</span></a> { 
+    <span class="keyword">const</span> <!-- a logicalPath="//apple_ref/c/cl/char //apple_ref/c/tdef/char //apple_ref/c/tag/char //apple_ref/c/struct/char //apple_ref/c/intf/char //apple_ref/doc/anysymbol/char" machineGenerated="true" --><span class="type">char</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/c/econst/instrument_name //apple_ref/c/data/instrument_name //apple_ref/c/clconst/instrument_name " machineGenerated="true" --><span class="var">instrument_name</span><!-- /a -->; <span class="comment">// the name of the instrument</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/struct/int //apple_ref/c/intf/int //apple_ref/doc/anysymbol/int" machineGenerated="true" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/tickpitch //apple_ref/c/data/tickpitch //apple_ref/c/clconst/tickpitch " machineGenerated="true" --><span class="var">tickpitch</span><!-- /a -->; <span class="comment">// defines metronome tick</span> 
+    <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/struct/float //apple_ref/c/intf/float //apple_ref/doc/anysymbol/float" machineGenerated="true" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/volume //apple_ref/c/data/volume //apple_ref/c/clconst/volume " machineGenerated="true" --><span class="var">volume</span><!-- /a -->; <span class="comment">// for adjustment of balance with other instruments</span> 
+    <span class="keyword">enum</span> <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_synthesizedinstrumentvoice //apple_ref/c/data/sscore_sy_synthesizedinstrumentvoice //apple_ref/c/clconst/sscore_sy_synthesizedinstrumentvoice " machineGenerated="true" --><span class="var">sscore_sy_synthesizedinstrumentvoice</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/voice //apple_ref/c/data/voice //apple_ref/c/clconst/voice " machineGenerated="true" --><span class="var">voice</span><!-- /a -->; <span class="keyword">unsigned</span> <!-- a logicalPath="//apple_ref/c/econst/dummy //apple_ref/c/data/dummy //apple_ref/c/clconst/dummy " machineGenerated="true" --><span class="var">dummy</span><!-- /a -->[
+            <span class="number">16</span>]; 
+} <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_synthesizedinstrumentinfo //apple_ref/c/data/sscore_sy_synthesizedinstrumentinfo //apple_ref/c/clconst/sscore_sy_synthesizedinstrumentinfo " machineGenerated="true" --><span class="var">sscore_sy_synthesizedinstrumentinfo</span><!-- /a -->;  <!-- headerDoc=declaration;uid=//apple_ref/c/tdef/sscore_sy_synthesizedinstrumentinfo;name=end --></pre>
+</div>
+<hr class="betweenSections">
+<a name="HeaderDoc_enums"></a>
+<h2 class="h2tight">Enumerated Types</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/tag/sscore_sy_sampledinstrument_samples_flags" target="_top">sscore_sy_sampledinstrument_samples_flags</a></tt></dt>
+<dd><p>bit flags for specifying set of samples for instrument articulation
+</p></dd>
+<dt><tt><a href="index.html#//apple_ref/c/tag/sscore_sy_synthesizedinstrumentvoice" target="_top">sscore_sy_synthesizedinstrumentvoice</a></tt></dt>
+<dd><p>define voices for synthesized instrument (metronome ticks)
+</p></dd>
+</dl>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tag;  uid=//apple_ref/c/tag/sscore_sy_sampledinstrument_samples_flags;   name=sscore_sy_sampledinstrument_samples_flags --><a name="//apple_ref/c/tag/sscore_sy_sampledinstrument_samples_flags"></a>
+<h3><a name="sscore_sy_sampledinstrument_samples_flags">sscore_sy_sampledinstrument_samples_flags</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tag/sscore_sy_sampledinstrument_samples_flags;name=start --><!-- begin abstract --></p>
+<p>bit flags for specifying set of samples for instrument articulation
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tag/sscore_sy_sampledinstrument_samples_flags;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tag/sscore_sy_sampledinstrument_samples_flags;name=start --><span class="keyword">enum</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tag/sscore_sy_sampledinstrument_samples_flags" logicalPath="//apple_ref/c/cl/sscore_sy_sampledinstrument_samples_flags //apple_ref/c/tdef/sscore_sy_sampledinstrument_samples_flags //apple_ref/c/tag/sscore_sy_sampledinstrument_samples_flags" target="_top"><span class="type">sscore_sy_sampledinstrument_samples_flags</span></a> {  
+    <a machinegenerated="true" href="index.html#//apple_ref/c/econst/sscore_sy_normalsamples_flag" logicalPath="//apple_ref/c/econst/sscore_sy_normalsamples_flag" target="_top"><span class="var">sscore_sy_normalsamples_flag</span></a> = <span class="number">1</span>,   
+    <a machinegenerated="true" href="index.html#//apple_ref/c/econst/sscore_sy_shortsamples_flag" logicalPath="//apple_ref/c/econst/sscore_sy_shortsamples_flag" target="_top"><span class="var">sscore_sy_shortsamples_flag</span></a> = <span class="number">1</span>&lt;&lt;<span class="number">1</span>,   
+    <a machinegenerated="true" href="index.html#//apple_ref/c/econst/sscore_sy_pizzicatosamples_flag" logicalPath="//apple_ref/c/econst/sscore_sy_pizzicatosamples_flag" target="_top"><span class="var">sscore_sy_pizzicatosamples_flag</span></a> = <span class="number">1</span>&lt;&lt;<span class="number">2</span>, 
+};  <!-- headerDoc=declaration;uid=//apple_ref/c/tag/sscore_sy_sampledinstrument_samples_flags;name=end --></pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Constants</font></h5>
+<div class="param_indent">
+<dl>
+<dt><a name="//apple_ref/c/econst/sscore_sy_normalsamples_flag"><code>sscore_sy_normalsamples_flag</code></a></dt>
+<dd><p>(required) normal note sample files must be named (base_filename).(midipitch).extn</p></dd>
+<dt><a name="//apple_ref/c/econst/sscore_sy_shortsamples_flag"><code>sscore_sy_shortsamples_flag</code></a></dt>
+<dd><p>(optional) short note sample files must be named (base_filename).short.(midipitch).extn</p></dd>
+<dt><a name="//apple_ref/c/econst/sscore_sy_pizzicatosamples_flag"><code>sscore_sy_pizzicatosamples_flag</code></a></dt>
+<dd><p>(optional) pizz sample files must be named (base_filename).pizz.(midipitch).extn</p></dd>
+</dl>
+</div>
+<hr class="betweenAPIEntries">
+<!-- headerDoc=tag;  uid=//apple_ref/c/tag/sscore_sy_synthesizedinstrumentvoice;   name=sscore_sy_synthesizedinstrumentvoice --><a name="//apple_ref/c/tag/sscore_sy_synthesizedinstrumentvoice"></a>
+<h3><a name="sscore_sy_synthesizedinstrumentvoice">sscore_sy_synthesizedinstrumentvoice</a></h3>
+<hr class="afterName">
+<p><!-- headerDoc=abstract;uid=//apple_ref/c/tag/sscore_sy_synthesizedinstrumentvoice;name=start --><!-- begin abstract --></p>
+<p>define voices for synthesized instrument (metronome ticks)
+<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/c/tag/sscore_sy_synthesizedinstrumentvoice;name=end --></p>
+<div class="declaration_indent">
+<pre><!-- headerDoc=declaration;uid=//apple_ref/c/tag/sscore_sy_synthesizedinstrumentvoice;name=start --><span class="keyword">enum</span> <a machinegenerated="true" href="index.html#//apple_ref/c/tag/sscore_sy_synthesizedinstrumentvoice" logicalPath="//apple_ref/c/cl/sscore_sy_synthesizedinstrumentvoice //apple_ref/c/tdef/sscore_sy_synthesizedinstrumentvoice //apple_ref/c/tag/sscore_sy_synthesizedinstrumentvoice" target="_top"><span class="type">sscore_sy_synthesizedinstrumentvoice</span></a> { 
+    <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_tick1 //apple_ref/c/data/sscore_sy_tick1 //apple_ref/c/clconst/sscore_sy_tick1 " machineGenerated="true" --><span class="var">sscore_sy_tick1</span><!-- /a -->, 
+    <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_tick2 //apple_ref/c/data/sscore_sy_tick2 //apple_ref/c/clconst/sscore_sy_tick2 " machineGenerated="true" --><span class="var">sscore_sy_tick2</span><!-- /a -->, 
+    <!-- a logicalPath="//apple_ref/c/econst/sscore_sy_tick3 //apple_ref/c/data/sscore_sy_tick3 //apple_ref/c/clconst/sscore_sy_tick3 " machineGenerated="true" --><span class="var">sscore_sy_tick3</span><!-- /a --> 
+};  <!-- headerDoc=declaration;uid=//apple_ref/c/tag/sscore_sy_synthesizedinstrumentvoice;name=end --></pre>
+</div>
+<p class="gapBeforeFooter">&nbsp;</p>
+<hr class="afterFooter">
+<div class="hd_copyright_and_timestamp">
+<p class="hd_timestamp">Last Updated: Monday, April 25, 2016
+</p>
+</div>
+</td>
+</tr></table>
+</body>
+</html>

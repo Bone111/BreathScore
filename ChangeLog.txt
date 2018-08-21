@@ -1,0 +1,188 @@
+SeeScore iOS SDK and SeeScoreLib changes
+
+Version 2.33 alpha 25 Apr 2016
+* editing improvements
+* fix colouring problems
+
+Version 2.29 23 Mar 2016
+* add playdata sync support
+
+Version 2.28 18 Mar 2016
+* fix problem with occasional missing notations
+
+Version 2.27 13 Mar 2016
+* editing improvements
+
+Version 2.26 19 Feb 2016
+* fix problem with first metronome not in first bar
+
+Version 2.25 8 Feb 2016
+* Add play loop support
+
+Version 2.22 12 Jan 2016
+* apply compensation for more even note volume when playing
+* staccato notes are played staccato
+* dynamics directions are heeded by player
+
+Version 2.20 30 Dec 2015
+* remove clicking on fast notes
+
+Version 2.18 20 Dec 2015
+* Add feature to play upper or lower staff only for part with  grand staff (ie left or right hand piano)
+* Fix iOS9 errors
+
+Version 2.09 21 Aug 2015
+* fix crash in sample app when no contents licence
+
+Version 2.04 24 July 2015
+* Objective-C interface included in framework
+* sample code is pure Objective-C (all C++ removed) and much simpler
+* new iOS proper framework - much smaller file size (and quicker download)
+* framework is now named SeeScoreLib.framework
+* minor changes to API
+
+Version 2.00 11 June 2015
+* Correct layout of two-stemmed chords
+* Improvements to layout of accidentals on chords
+
+Version 1.99  26 May 2015
+* Added recognition of many articulations and dynamics in direction words so they can be aligned correctly
+* Added support for textual notes above all other items in system. Append a space character to direction words text to use this feature
+* permit no clef
+* better handling of pedal up coincident with pedal down
+* Many layout improvements
+* Add support for creating a MIDI file (sscore_pd_create_midifile())
+* Implement small correction to MusicXML 3.0 spec
+* Tighter grand-staff spacing
+* Added 14 microtone accidentals
+* Support for 0,1,2,3,4,5 stave lines and change of number in any bar
+* Hide part-name if print-object is false
+* improved layout of tuplet brackets
+* Use Gould rules for tuplet/slur spacing
+* More XML errors detected and returned in warnings
+* add support for notehead = none
+
+Version 1.95 21 Dev 2014
+* max 4 count-in beats
+* minor layout improvements
+* remove usage of deprecated iOS API
+
+Version 1.92 28 July 2014
+* Fix fault with fingering placement
+* Better placement of multiple verse lyrics
+* correct placement of accidentals on semibreve chords
+* add sscore_system_print function
+* fix note spacing fault with multiple staves in part
+* layout improvements
+
+Version 1.87 6 June 2014
+* concatenation of dynamics ie <p/><f/><p/> is rendered as pfp
+* layout improvements
+* bug fixes
+
+Version 1.84 15 May 2014
+* add n:m tuplet spec support
+* fix tied notes error in play data
+* add niente support to wedge
+* Add <principal-voice> direction support
+* Add symbols for snap-pizzicato, breath mark, stopped, caesura
+* various layout improvements
+
+Version 1.83 3 April 2014
+* improved layout of dynamics and wedges
+* switch to ignore XML layout (default-x,default-y etc)
+* add api for header (metadata) change and xml file save
+
+Version 1.82 19 Mar 2014
+* improved note spacing
+
+Version 1.81 17 Mar 2014
+* rebuild for iOS 7.1 with arm64
+
+Version 1.80 11 Mar 2014
+* count-in from any bar
+* nested part brackets
+* aligned dynamics and wedges
+* arrowed arpeggiate
+* tempo markings and metronome markings aligned when above stave
+* added support for two note tremolos
+* grace chord support
+* improved tuplet brace alignment
+* better handling of 2-voice staff
+* various other layout improvements
+
+Version 1.75 14 Jan 2014
+* set default magnification of 1.0 (ie default 7mm staff size)
+* fix problem with metronome mark overlapping text
+* better handling of overlapping up-stem and down-stem notes and chords
+* various minor improvements to score layout
+* handle 1024th notes without crashing
+* fix crash in [SSSampleViewController dealloc]
+
+Version 1.69 9 Dec 2013
+* Fix problem with single part licence
+* Add bass clef with octave change
+* Add new square bracket for part group
+* Improved layout of part groups, part names and brackets
+* add new warnings for XML inconsistencies enabled with sscore_loadopt_checkxml
+
+Version 1.65 18 Oct 2013
+* addition of instrument transpose
+* improvement to slur rendering
+
+Version 1.64 30 Sep 2013
+* set 20ms timing resolution to work with iOS 7
+* fix fault in repeat bar handling
+
+Version 1.63 12 Sep 2013
+* Addition of uncolouring api
+
+Version 1.62 7 Sep 2013
+* Addition of clef change api
+* handling of missing beams in Encore files
+* Add support for percussion parts
+* bug fixing
+
+Version 1.60 29 Aug 2013
+* conversion to C++11
+* Addition of synth support
+
+Version 1.51 15 July 2013
+* Addition of playdata API
+* Regenerate stems after transpose
+
+Version 1.5 BETA 24 May 2013
+* Addition of colour change API
+* Better alignment of accidentals in text (harmony)
+* Fix misalignment of stem and notehead
+* Slight adjustment of accidentals alignment
+* Add special barlines to sscore_contents
+
+Version 1.42 29 May 2013
+* fix problem with transpose with file without accidentals
+
+Version 1.41 26 May 2013
+* support of +1 octave transposing treble clef
+
+Version 1.4 22 Apr 2013
+* addition of transpose API
+* added degrees to harmonies
+* simplified enharmonic 'spelling' of harmonies to remove double-flats and double-sharps
+* improvements to separation of harmonies and directions
+* some improvements to placements of directions and notations
+
+Version 1.3 6 Apr 2013
+* use licence key file
+* handle missing accidentals in file
+
+Version 1.2 27 Mar 2013
+* optional additional API features available under separate licence through header sscore_contents.h allowing rich access to contents of file, either per item or per measure
+* Improvements to harmony display.
+* Fewer overlaps between harmonies.
+* Direction text is spaced away from any harmonies
+* Support for hiding part names and bar numbers
+* IOS sample app has button to load next file from library, and button to show options.
+* fix offset-to-left tuplet number
+* ensure errors in tie specification in file are not propagated to all ties
+* detect missing accidentals in file and regenerate.
+* many minor layout improvements

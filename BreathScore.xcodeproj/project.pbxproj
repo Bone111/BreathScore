@@ -1,0 +1,1937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A008A53165D03C60071B846 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A51165D03C60071B846 /* InfoPlist.strings */; };
+		1A008A55165D03C60071B846 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A008A54165D03C60071B846 /* main.m */; };
+		1A008A59165D03C60071B846 /* SSSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A008A58165D03C60071B846 /* SSSampleAppDelegate.m */; };
+		1A008A5B165D03C60071B846 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A5A165D03C60071B846 /* Default.png */; };
+		1A008A5D165D03C60071B846 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A5C165D03C60071B846 /* Default@2x.png */; };
+		1A008A5F165D03C60071B846 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A5E165D03C60071B846 /* Default-568h@2x.png */; };
+		1A008A62165D03C60071B846 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A60165D03C60071B846 /* MainStoryboard_iPhone.storyboard */; };
+		1A008A65165D03C60071B846 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A63165D03C60071B846 /* MainStoryboard_iPad.storyboard */; };
+		1A20481D1C2C0802000FC6C4 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A20481C1C2C0802000FC6C4 /* Sample.swift */; };
+		1A2597C11C7B39F200173744 /* SSEditCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2597C01C7B39F200173744 /* SSEditCursor.m */; };
+		1A400FA016FE58E40031D721 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A400F9F16FE58E40031D721 /* SettingsViewController.m */; };
+		1A43D0F21C8C935A006B8307 /* SSDeleteButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A43D0F11C8C935A006B8307 /* SSDeleteButtonView.m */; };
+		1A43D0F31C8C935A006B8307 /* SSDeleteButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A43D0F11C8C935A006B8307 /* SSDeleteButtonView.m */; };
+		1A51257F1B4C2033009D3EF4 /* SSBarControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A51257E1B4C2033009D3EF4 /* SSBarControl.m */; };
+		1A6AB5791C50099B00D7CF80 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57D8781B558E9700F767E0 /* AVFoundation.framework */; };
+		1A6AB57A1C5009B100D7CF80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57D87C1B558EA600F767E0 /* UIKit.framework */; };
+		1A6AB57B1C5009C900D7CF80 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57D87E1B558F1300F767E0 /* QuartzCore.framework */; };
+		1A6AF8731C6A0A97002D1751 /* SSPlayLoopGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6AF8721C6A0A97002D1751 /* SSPlayLoopGraphics.m */; };
+		1A6AF8741C6A0A97002D1751 /* SSPlayLoopGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6AF8721C6A0A97002D1751 /* SSPlayLoopGraphics.m */; };
+		1A6AF8781C6A289B002D1751 /* SSEditLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6AF8761C6A289B002D1751 /* SSEditLayer.m */; };
+		1A6AF8791C6A289B002D1751 /* SSEditLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6AF8761C6A289B002D1751 /* SSEditLayer.m */; };
+		1A9C37A31B4A777D00DF673D /* SSSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C37A21B4A777D00DF673D /* SSSampleViewController.m */; };
+		1A9C37A81B4A77B700DF673D /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C37A71B4A77B700DF673D /* InfoViewController.m */; };
+		1A9C37DD1B4A88ED00DF673D /* SSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C37DA1B4A88ED00DF673D /* SSScrollView.m */; };
+		1A9C37DE1B4A88ED00DF673D /* SSSystemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C37DC1B4A88ED00DF673D /* SSSystemView.m */; };
+		1ABEDAE91C45333700D64D57 /* Piano.mf.100.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA931C45333600D64D57 /* Piano.mf.100.m4a */; };
+		1ABEDAEA1C45333700D64D57 /* Piano.mf.100.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA931C45333600D64D57 /* Piano.mf.100.m4a */; };
+		1ABEDAEB1C45333700D64D57 /* Piano.mf.101.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA941C45333600D64D57 /* Piano.mf.101.m4a */; };
+		1ABEDAEC1C45333700D64D57 /* Piano.mf.101.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA941C45333600D64D57 /* Piano.mf.101.m4a */; };
+		1ABEDAED1C45333700D64D57 /* Piano.mf.102.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA951C45333600D64D57 /* Piano.mf.102.m4a */; };
+		1ABEDAEE1C45333700D64D57 /* Piano.mf.102.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA951C45333600D64D57 /* Piano.mf.102.m4a */; };
+		1ABEDAEF1C45333700D64D57 /* Piano.mf.103.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA961C45333600D64D57 /* Piano.mf.103.m4a */; };
+		1ABEDAF01C45333700D64D57 /* Piano.mf.103.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA961C45333600D64D57 /* Piano.mf.103.m4a */; };
+		1ABEDAF11C45333700D64D57 /* Piano.mf.104.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA971C45333600D64D57 /* Piano.mf.104.m4a */; };
+		1ABEDAF21C45333700D64D57 /* Piano.mf.104.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA971C45333600D64D57 /* Piano.mf.104.m4a */; };
+		1ABEDAF31C45333700D64D57 /* Piano.mf.105.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA981C45333600D64D57 /* Piano.mf.105.m4a */; };
+		1ABEDAF41C45333700D64D57 /* Piano.mf.105.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA981C45333600D64D57 /* Piano.mf.105.m4a */; };
+		1ABEDAF51C45333700D64D57 /* Piano.mf.106.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA991C45333600D64D57 /* Piano.mf.106.m4a */; };
+		1ABEDAF61C45333700D64D57 /* Piano.mf.106.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA991C45333600D64D57 /* Piano.mf.106.m4a */; };
+		1ABEDAF71C45333700D64D57 /* Piano.mf.107.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9A1C45333600D64D57 /* Piano.mf.107.m4a */; };
+		1ABEDAF81C45333700D64D57 /* Piano.mf.107.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9A1C45333600D64D57 /* Piano.mf.107.m4a */; };
+		1ABEDAF91C45333700D64D57 /* Piano.mf.108.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9B1C45333600D64D57 /* Piano.mf.108.m4a */; };
+		1ABEDAFA1C45333700D64D57 /* Piano.mf.108.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9B1C45333600D64D57 /* Piano.mf.108.m4a */; };
+		1ABEDAFB1C45333700D64D57 /* Piano.mf.23.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9C1C45333600D64D57 /* Piano.mf.23.m4a */; };
+		1ABEDAFC1C45333700D64D57 /* Piano.mf.23.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9C1C45333600D64D57 /* Piano.mf.23.m4a */; };
+		1ABEDAFD1C45333700D64D57 /* Piano.mf.24.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9D1C45333600D64D57 /* Piano.mf.24.m4a */; };
+		1ABEDAFE1C45333700D64D57 /* Piano.mf.24.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9D1C45333600D64D57 /* Piano.mf.24.m4a */; };
+		1ABEDAFF1C45333700D64D57 /* Piano.mf.25.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9E1C45333600D64D57 /* Piano.mf.25.m4a */; };
+		1ABEDB001C45333700D64D57 /* Piano.mf.25.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9E1C45333600D64D57 /* Piano.mf.25.m4a */; };
+		1ABEDB011C45333700D64D57 /* Piano.mf.26.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9F1C45333600D64D57 /* Piano.mf.26.m4a */; };
+		1ABEDB021C45333700D64D57 /* Piano.mf.26.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDA9F1C45333600D64D57 /* Piano.mf.26.m4a */; };
+		1ABEDB031C45333700D64D57 /* Piano.mf.27.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA01C45333600D64D57 /* Piano.mf.27.m4a */; };
+		1ABEDB041C45333700D64D57 /* Piano.mf.27.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA01C45333600D64D57 /* Piano.mf.27.m4a */; };
+		1ABEDB051C45333700D64D57 /* Piano.mf.28.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA11C45333600D64D57 /* Piano.mf.28.m4a */; };
+		1ABEDB061C45333700D64D57 /* Piano.mf.28.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA11C45333600D64D57 /* Piano.mf.28.m4a */; };
+		1ABEDB071C45333700D64D57 /* Piano.mf.29.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA21C45333600D64D57 /* Piano.mf.29.m4a */; };
+		1ABEDB081C45333700D64D57 /* Piano.mf.29.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA21C45333600D64D57 /* Piano.mf.29.m4a */; };
+		1ABEDB091C45333700D64D57 /* Piano.mf.30.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA31C45333600D64D57 /* Piano.mf.30.m4a */; };
+		1ABEDB0A1C45333700D64D57 /* Piano.mf.30.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA31C45333600D64D57 /* Piano.mf.30.m4a */; };
+		1ABEDB0B1C45333700D64D57 /* Piano.mf.31.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA41C45333600D64D57 /* Piano.mf.31.m4a */; };
+		1ABEDB0C1C45333700D64D57 /* Piano.mf.31.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA41C45333600D64D57 /* Piano.mf.31.m4a */; };
+		1ABEDB0D1C45333700D64D57 /* Piano.mf.32.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA51C45333600D64D57 /* Piano.mf.32.m4a */; };
+		1ABEDB0E1C45333700D64D57 /* Piano.mf.32.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA51C45333600D64D57 /* Piano.mf.32.m4a */; };
+		1ABEDB0F1C45333700D64D57 /* Piano.mf.33.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA61C45333600D64D57 /* Piano.mf.33.m4a */; };
+		1ABEDB101C45333700D64D57 /* Piano.mf.33.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA61C45333600D64D57 /* Piano.mf.33.m4a */; };
+		1ABEDB111C45333700D64D57 /* Piano.mf.34.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA71C45333600D64D57 /* Piano.mf.34.m4a */; };
+		1ABEDB121C45333700D64D57 /* Piano.mf.34.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA71C45333600D64D57 /* Piano.mf.34.m4a */; };
+		1ABEDB131C45333700D64D57 /* Piano.mf.35.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA81C45333600D64D57 /* Piano.mf.35.m4a */; };
+		1ABEDB141C45333700D64D57 /* Piano.mf.35.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA81C45333600D64D57 /* Piano.mf.35.m4a */; };
+		1ABEDB151C45333700D64D57 /* Piano.mf.36.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA91C45333600D64D57 /* Piano.mf.36.m4a */; };
+		1ABEDB161C45333700D64D57 /* Piano.mf.36.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAA91C45333600D64D57 /* Piano.mf.36.m4a */; };
+		1ABEDB171C45333700D64D57 /* Piano.mf.37.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAA1C45333600D64D57 /* Piano.mf.37.m4a */; };
+		1ABEDB181C45333700D64D57 /* Piano.mf.37.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAA1C45333600D64D57 /* Piano.mf.37.m4a */; };
+		1ABEDB191C45333700D64D57 /* Piano.mf.38.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAB1C45333600D64D57 /* Piano.mf.38.m4a */; };
+		1ABEDB1A1C45333700D64D57 /* Piano.mf.38.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAB1C45333600D64D57 /* Piano.mf.38.m4a */; };
+		1ABEDB1B1C45333700D64D57 /* Piano.mf.39.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAC1C45333600D64D57 /* Piano.mf.39.m4a */; };
+		1ABEDB1C1C45333700D64D57 /* Piano.mf.39.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAC1C45333600D64D57 /* Piano.mf.39.m4a */; };
+		1ABEDB1D1C45333700D64D57 /* Piano.mf.40.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAD1C45333600D64D57 /* Piano.mf.40.m4a */; };
+		1ABEDB1E1C45333700D64D57 /* Piano.mf.40.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAD1C45333600D64D57 /* Piano.mf.40.m4a */; };
+		1ABEDB1F1C45333700D64D57 /* Piano.mf.41.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAE1C45333600D64D57 /* Piano.mf.41.m4a */; };
+		1ABEDB201C45333700D64D57 /* Piano.mf.41.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAE1C45333600D64D57 /* Piano.mf.41.m4a */; };
+		1ABEDB211C45333700D64D57 /* Piano.mf.42.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAF1C45333600D64D57 /* Piano.mf.42.m4a */; };
+		1ABEDB221C45333700D64D57 /* Piano.mf.42.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAAF1C45333600D64D57 /* Piano.mf.42.m4a */; };
+		1ABEDB231C45333700D64D57 /* Piano.mf.43.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB01C45333600D64D57 /* Piano.mf.43.m4a */; };
+		1ABEDB241C45333700D64D57 /* Piano.mf.43.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB01C45333600D64D57 /* Piano.mf.43.m4a */; };
+		1ABEDB251C45333700D64D57 /* Piano.mf.44.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB11C45333600D64D57 /* Piano.mf.44.m4a */; };
+		1ABEDB261C45333700D64D57 /* Piano.mf.44.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB11C45333600D64D57 /* Piano.mf.44.m4a */; };
+		1ABEDB271C45333700D64D57 /* Piano.mf.45.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB21C45333600D64D57 /* Piano.mf.45.m4a */; };
+		1ABEDB281C45333700D64D57 /* Piano.mf.45.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB21C45333600D64D57 /* Piano.mf.45.m4a */; };
+		1ABEDB291C45333700D64D57 /* Piano.mf.46.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB31C45333600D64D57 /* Piano.mf.46.m4a */; };
+		1ABEDB2A1C45333700D64D57 /* Piano.mf.46.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB31C45333600D64D57 /* Piano.mf.46.m4a */; };
+		1ABEDB2B1C45333700D64D57 /* Piano.mf.47.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB41C45333600D64D57 /* Piano.mf.47.m4a */; };
+		1ABEDB2C1C45333700D64D57 /* Piano.mf.47.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB41C45333600D64D57 /* Piano.mf.47.m4a */; };
+		1ABEDB2D1C45333700D64D57 /* Piano.mf.48.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB51C45333600D64D57 /* Piano.mf.48.m4a */; };
+		1ABEDB2E1C45333700D64D57 /* Piano.mf.48.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB51C45333600D64D57 /* Piano.mf.48.m4a */; };
+		1ABEDB2F1C45333700D64D57 /* Piano.mf.49.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB61C45333600D64D57 /* Piano.mf.49.m4a */; };
+		1ABEDB301C45333700D64D57 /* Piano.mf.49.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB61C45333600D64D57 /* Piano.mf.49.m4a */; };
+		1ABEDB311C45333700D64D57 /* Piano.mf.50.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB71C45333600D64D57 /* Piano.mf.50.m4a */; };
+		1ABEDB321C45333700D64D57 /* Piano.mf.50.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB71C45333600D64D57 /* Piano.mf.50.m4a */; };
+		1ABEDB331C45333700D64D57 /* Piano.mf.51.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB81C45333600D64D57 /* Piano.mf.51.m4a */; };
+		1ABEDB341C45333700D64D57 /* Piano.mf.51.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB81C45333600D64D57 /* Piano.mf.51.m4a */; };
+		1ABEDB351C45333700D64D57 /* Piano.mf.52.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB91C45333600D64D57 /* Piano.mf.52.m4a */; };
+		1ABEDB361C45333700D64D57 /* Piano.mf.52.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAB91C45333600D64D57 /* Piano.mf.52.m4a */; };
+		1ABEDB371C45333700D64D57 /* Piano.mf.53.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABA1C45333600D64D57 /* Piano.mf.53.m4a */; };
+		1ABEDB381C45333700D64D57 /* Piano.mf.53.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABA1C45333600D64D57 /* Piano.mf.53.m4a */; };
+		1ABEDB391C45333700D64D57 /* Piano.mf.54.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABB1C45333600D64D57 /* Piano.mf.54.m4a */; };
+		1ABEDB3A1C45333700D64D57 /* Piano.mf.54.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABB1C45333600D64D57 /* Piano.mf.54.m4a */; };
+		1ABEDB3B1C45333700D64D57 /* Piano.mf.55.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABC1C45333600D64D57 /* Piano.mf.55.m4a */; };
+		1ABEDB3C1C45333700D64D57 /* Piano.mf.55.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABC1C45333600D64D57 /* Piano.mf.55.m4a */; };
+		1ABEDB3D1C45333700D64D57 /* Piano.mf.56.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABD1C45333600D64D57 /* Piano.mf.56.m4a */; };
+		1ABEDB3E1C45333700D64D57 /* Piano.mf.56.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABD1C45333600D64D57 /* Piano.mf.56.m4a */; };
+		1ABEDB3F1C45333700D64D57 /* Piano.mf.57.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABE1C45333600D64D57 /* Piano.mf.57.m4a */; };
+		1ABEDB401C45333700D64D57 /* Piano.mf.57.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABE1C45333600D64D57 /* Piano.mf.57.m4a */; };
+		1ABEDB411C45333700D64D57 /* Piano.mf.58.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABF1C45333600D64D57 /* Piano.mf.58.m4a */; };
+		1ABEDB421C45333700D64D57 /* Piano.mf.58.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDABF1C45333600D64D57 /* Piano.mf.58.m4a */; };
+		1ABEDB431C45333700D64D57 /* Piano.mf.59.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC01C45333600D64D57 /* Piano.mf.59.m4a */; };
+		1ABEDB441C45333700D64D57 /* Piano.mf.59.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC01C45333600D64D57 /* Piano.mf.59.m4a */; };
+		1ABEDB451C45333700D64D57 /* Piano.mf.60.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC11C45333600D64D57 /* Piano.mf.60.m4a */; };
+		1ABEDB461C45333700D64D57 /* Piano.mf.60.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC11C45333600D64D57 /* Piano.mf.60.m4a */; };
+		1ABEDB471C45333700D64D57 /* Piano.mf.61.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC21C45333600D64D57 /* Piano.mf.61.m4a */; };
+		1ABEDB481C45333700D64D57 /* Piano.mf.61.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC21C45333600D64D57 /* Piano.mf.61.m4a */; };
+		1ABEDB491C45333700D64D57 /* Piano.mf.62.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC31C45333600D64D57 /* Piano.mf.62.m4a */; };
+		1ABEDB4A1C45333700D64D57 /* Piano.mf.62.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC31C45333600D64D57 /* Piano.mf.62.m4a */; };
+		1ABEDB4B1C45333700D64D57 /* Piano.mf.63.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC41C45333600D64D57 /* Piano.mf.63.m4a */; };
+		1ABEDB4C1C45333700D64D57 /* Piano.mf.63.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC41C45333600D64D57 /* Piano.mf.63.m4a */; };
+		1ABEDB4D1C45333700D64D57 /* Piano.mf.64.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC51C45333600D64D57 /* Piano.mf.64.m4a */; };
+		1ABEDB4E1C45333700D64D57 /* Piano.mf.64.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC51C45333600D64D57 /* Piano.mf.64.m4a */; };
+		1ABEDB4F1C45333700D64D57 /* Piano.mf.65.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC61C45333600D64D57 /* Piano.mf.65.m4a */; };
+		1ABEDB501C45333700D64D57 /* Piano.mf.65.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC61C45333600D64D57 /* Piano.mf.65.m4a */; };
+		1ABEDB511C45333700D64D57 /* Piano.mf.66.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC71C45333600D64D57 /* Piano.mf.66.m4a */; };
+		1ABEDB521C45333700D64D57 /* Piano.mf.66.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC71C45333600D64D57 /* Piano.mf.66.m4a */; };
+		1ABEDB531C45333700D64D57 /* Piano.mf.67.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC81C45333600D64D57 /* Piano.mf.67.m4a */; };
+		1ABEDB541C45333700D64D57 /* Piano.mf.67.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC81C45333600D64D57 /* Piano.mf.67.m4a */; };
+		1ABEDB551C45333700D64D57 /* Piano.mf.68.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC91C45333600D64D57 /* Piano.mf.68.m4a */; };
+		1ABEDB561C45333700D64D57 /* Piano.mf.68.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAC91C45333600D64D57 /* Piano.mf.68.m4a */; };
+		1ABEDB571C45333700D64D57 /* Piano.mf.69.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACA1C45333600D64D57 /* Piano.mf.69.m4a */; };
+		1ABEDB581C45333700D64D57 /* Piano.mf.69.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACA1C45333600D64D57 /* Piano.mf.69.m4a */; };
+		1ABEDB591C45333700D64D57 /* Piano.mf.70.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACB1C45333600D64D57 /* Piano.mf.70.m4a */; };
+		1ABEDB5A1C45333700D64D57 /* Piano.mf.70.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACB1C45333600D64D57 /* Piano.mf.70.m4a */; };
+		1ABEDB5B1C45333700D64D57 /* Piano.mf.71.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACC1C45333600D64D57 /* Piano.mf.71.m4a */; };
+		1ABEDB5C1C45333700D64D57 /* Piano.mf.71.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACC1C45333600D64D57 /* Piano.mf.71.m4a */; };
+		1ABEDB5D1C45333700D64D57 /* Piano.mf.72.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACD1C45333600D64D57 /* Piano.mf.72.m4a */; };
+		1ABEDB5E1C45333700D64D57 /* Piano.mf.72.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACD1C45333600D64D57 /* Piano.mf.72.m4a */; };
+		1ABEDB5F1C45333700D64D57 /* Piano.mf.73.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACE1C45333600D64D57 /* Piano.mf.73.m4a */; };
+		1ABEDB601C45333700D64D57 /* Piano.mf.73.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACE1C45333600D64D57 /* Piano.mf.73.m4a */; };
+		1ABEDB611C45333700D64D57 /* Piano.mf.74.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACF1C45333600D64D57 /* Piano.mf.74.m4a */; };
+		1ABEDB621C45333700D64D57 /* Piano.mf.74.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDACF1C45333600D64D57 /* Piano.mf.74.m4a */; };
+		1ABEDB631C45333700D64D57 /* Piano.mf.75.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD01C45333600D64D57 /* Piano.mf.75.m4a */; };
+		1ABEDB641C45333700D64D57 /* Piano.mf.75.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD01C45333600D64D57 /* Piano.mf.75.m4a */; };
+		1ABEDB651C45333700D64D57 /* Piano.mf.76.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD11C45333600D64D57 /* Piano.mf.76.m4a */; };
+		1ABEDB661C45333700D64D57 /* Piano.mf.76.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD11C45333600D64D57 /* Piano.mf.76.m4a */; };
+		1ABEDB671C45333700D64D57 /* Piano.mf.77.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD21C45333600D64D57 /* Piano.mf.77.m4a */; };
+		1ABEDB681C45333700D64D57 /* Piano.mf.77.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD21C45333600D64D57 /* Piano.mf.77.m4a */; };
+		1ABEDB691C45333700D64D57 /* Piano.mf.78.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD31C45333600D64D57 /* Piano.mf.78.m4a */; };
+		1ABEDB6A1C45333700D64D57 /* Piano.mf.78.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD31C45333600D64D57 /* Piano.mf.78.m4a */; };
+		1ABEDB6B1C45333700D64D57 /* Piano.mf.79.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD41C45333600D64D57 /* Piano.mf.79.m4a */; };
+		1ABEDB6C1C45333700D64D57 /* Piano.mf.79.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD41C45333600D64D57 /* Piano.mf.79.m4a */; };
+		1ABEDB6D1C45333700D64D57 /* Piano.mf.80.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD51C45333600D64D57 /* Piano.mf.80.m4a */; };
+		1ABEDB6E1C45333700D64D57 /* Piano.mf.80.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD51C45333600D64D57 /* Piano.mf.80.m4a */; };
+		1ABEDB6F1C45333700D64D57 /* Piano.mf.81.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD61C45333600D64D57 /* Piano.mf.81.m4a */; };
+		1ABEDB701C45333700D64D57 /* Piano.mf.81.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD61C45333600D64D57 /* Piano.mf.81.m4a */; };
+		1ABEDB711C45333700D64D57 /* Piano.mf.82.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD71C45333600D64D57 /* Piano.mf.82.m4a */; };
+		1ABEDB721C45333700D64D57 /* Piano.mf.82.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD71C45333600D64D57 /* Piano.mf.82.m4a */; };
+		1ABEDB731C45333700D64D57 /* Piano.mf.83.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD81C45333600D64D57 /* Piano.mf.83.m4a */; };
+		1ABEDB741C45333700D64D57 /* Piano.mf.83.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD81C45333600D64D57 /* Piano.mf.83.m4a */; };
+		1ABEDB751C45333700D64D57 /* Piano.mf.84.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD91C45333700D64D57 /* Piano.mf.84.m4a */; };
+		1ABEDB761C45333700D64D57 /* Piano.mf.84.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAD91C45333700D64D57 /* Piano.mf.84.m4a */; };
+		1ABEDB771C45333700D64D57 /* Piano.mf.85.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADA1C45333700D64D57 /* Piano.mf.85.m4a */; };
+		1ABEDB781C45333700D64D57 /* Piano.mf.85.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADA1C45333700D64D57 /* Piano.mf.85.m4a */; };
+		1ABEDB791C45333700D64D57 /* Piano.mf.86.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADB1C45333700D64D57 /* Piano.mf.86.m4a */; };
+		1ABEDB7A1C45333700D64D57 /* Piano.mf.86.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADB1C45333700D64D57 /* Piano.mf.86.m4a */; };
+		1ABEDB7B1C45333700D64D57 /* Piano.mf.87.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADC1C45333700D64D57 /* Piano.mf.87.m4a */; };
+		1ABEDB7C1C45333700D64D57 /* Piano.mf.87.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADC1C45333700D64D57 /* Piano.mf.87.m4a */; };
+		1ABEDB7D1C45333700D64D57 /* Piano.mf.88.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADD1C45333700D64D57 /* Piano.mf.88.m4a */; };
+		1ABEDB7E1C45333700D64D57 /* Piano.mf.88.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADD1C45333700D64D57 /* Piano.mf.88.m4a */; };
+		1ABEDB7F1C45333700D64D57 /* Piano.mf.89.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADE1C45333700D64D57 /* Piano.mf.89.m4a */; };
+		1ABEDB801C45333700D64D57 /* Piano.mf.89.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADE1C45333700D64D57 /* Piano.mf.89.m4a */; };
+		1ABEDB811C45333700D64D57 /* Piano.mf.90.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADF1C45333700D64D57 /* Piano.mf.90.m4a */; };
+		1ABEDB821C45333700D64D57 /* Piano.mf.90.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDADF1C45333700D64D57 /* Piano.mf.90.m4a */; };
+		1ABEDB831C45333700D64D57 /* Piano.mf.91.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE01C45333700D64D57 /* Piano.mf.91.m4a */; };
+		1ABEDB841C45333700D64D57 /* Piano.mf.91.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE01C45333700D64D57 /* Piano.mf.91.m4a */; };
+		1ABEDB851C45333700D64D57 /* Piano.mf.92.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE11C45333700D64D57 /* Piano.mf.92.m4a */; };
+		1ABEDB861C45333700D64D57 /* Piano.mf.92.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE11C45333700D64D57 /* Piano.mf.92.m4a */; };
+		1ABEDB871C45333700D64D57 /* Piano.mf.93.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE21C45333700D64D57 /* Piano.mf.93.m4a */; };
+		1ABEDB881C45333700D64D57 /* Piano.mf.93.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE21C45333700D64D57 /* Piano.mf.93.m4a */; };
+		1ABEDB891C45333700D64D57 /* Piano.mf.94.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE31C45333700D64D57 /* Piano.mf.94.m4a */; };
+		1ABEDB8A1C45333700D64D57 /* Piano.mf.94.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE31C45333700D64D57 /* Piano.mf.94.m4a */; };
+		1ABEDB8B1C45333700D64D57 /* Piano.mf.95.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE41C45333700D64D57 /* Piano.mf.95.m4a */; };
+		1ABEDB8C1C45333700D64D57 /* Piano.mf.95.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE41C45333700D64D57 /* Piano.mf.95.m4a */; };
+		1ABEDB8D1C45333700D64D57 /* Piano.mf.96.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE51C45333700D64D57 /* Piano.mf.96.m4a */; };
+		1ABEDB8E1C45333700D64D57 /* Piano.mf.96.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE51C45333700D64D57 /* Piano.mf.96.m4a */; };
+		1ABEDB8F1C45333700D64D57 /* Piano.mf.97.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE61C45333700D64D57 /* Piano.mf.97.m4a */; };
+		1ABEDB901C45333700D64D57 /* Piano.mf.97.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE61C45333700D64D57 /* Piano.mf.97.m4a */; };
+		1ABEDB911C45333700D64D57 /* Piano.mf.98.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE71C45333700D64D57 /* Piano.mf.98.m4a */; };
+		1ABEDB921C45333700D64D57 /* Piano.mf.98.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE71C45333700D64D57 /* Piano.mf.98.m4a */; };
+		1ABEDB931C45333700D64D57 /* Piano.mf.99.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE81C45333700D64D57 /* Piano.mf.99.m4a */; };
+		1ABEDB941C45333700D64D57 /* Piano.mf.99.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1ABEDAE81C45333700D64D57 /* Piano.mf.99.m4a */; };
+		1AD47C211CA2F3C700FE5024 /* SSEditCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2597C01C7B39F200173744 /* SSEditCursor.m */; };
+		1AD47C231CA2F3D600FE5024 /* SSTurnControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAEF381C71ECE300E45285 /* SSTurnControl.m */; };
+		1AD9BEDF1CB42E600033B2EC /* SSDragItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAEF3B1C71ED9600E45285 /* SSDragItem.m */; };
+		1AEEB7591BBE7AD600A66A2E /* SeeScoreLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEEB7571BBE7AD600A66A2E /* SeeScoreLib.framework */; };
+		1AEEB75D1BBE7B1000A66A2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A008A54165D03C60071B846 /* main.m */; };
+		1AEEB75E1BBE7B1000A66A2E /* SSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C37DA1B4A88ED00DF673D /* SSScrollView.m */; };
+		1AEEB75F1BBE7B1000A66A2E /* SSSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A008A58165D03C60071B846 /* SSSampleAppDelegate.m */; };
+		1AEEB7601BBE7B1000A66A2E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A400F9F16FE58E40031D721 /* SettingsViewController.m */; };
+		1AEEB7611BBE7B1000A66A2E /* SSBarControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A51257E1B4C2033009D3EF4 /* SSBarControl.m */; };
+		1AEEB7621BBE7B1000A66A2E /* SSSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C37A21B4A777D00DF673D /* SSSampleViewController.m */; };
+		1AEEB7631BBE7B1000A66A2E /* SSSystemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C37DC1B4A88ED00DF673D /* SSSystemView.m */; };
+		1AEEB7641BBE7B1000A66A2E /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C37A71B4A77B700DF673D /* InfoViewController.m */; };
+		1AEEB7661BBE7B1000A66A2E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57D87E1B558F1300F767E0 /* QuartzCore.framework */; };
+		1AEEB7671BBE7B1000A66A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57D87C1B558EA600F767E0 /* UIKit.framework */; };
+		1AEEB7681BBE7B1000A66A2E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57D8781B558E9700F767E0 /* AVFoundation.framework */; };
+		1AEEB7691BBE7B1000A66A2E /* SeeScoreLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEEB7551BBE7AD600A66A2E /* SeeScoreLib.framework */; };
+		1AEEB76A1BBE7B1000A66A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57D8791B558E9700F767E0 /* CoreGraphics.framework */; };
+		1AEEB76D1BBE7B1000A66A2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A51165D03C60071B846 /* InfoPlist.strings */; };
+		1AEEB76E1BBE7B1000A66A2E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A5A165D03C60071B846 /* Default.png */; };
+		1AEEB76F1BBE7B1000A66A2E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A5C165D03C60071B846 /* Default@2x.png */; };
+		1AEEB7701BBE7B1000A66A2E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A5E165D03C60071B846 /* Default-568h@2x.png */; };
+		1AEEB7711BBE7B1000A66A2E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A60165D03C60071B846 /* MainStoryboard_iPhone.storyboard */; };
+		1AEEB7721BBE7B1000A66A2E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A008A63165D03C60071B846 /* MainStoryboard_iPad.storyboard */; };
+		1AEEB7E11BBE7D2500A66A2E /* SeeScoreLib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AEEB7571BBE7AD600A66A2E /* SeeScoreLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AEEB7E21BBE7D2F00A66A2E /* SeeScoreLib.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1AEEB7551BBE7AD600A66A2E /* SeeScoreLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AFAEF391C71ECE300E45285 /* SSTurnControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAEF381C71ECE300E45285 /* SSTurnControl.m */; };
+		1AFAEF3C1C71ED9600E45285 /* SSDragItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAEF3B1C71ED9600E45285 /* SSDragItem.m */; };
+		1AFF5CBE1C5A4EF100C0552B /* evaluation_key.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF5CBD1C5A4EF100C0552B /* evaluation_key.c */; };
+		1AFF5CBF1C5A4EF100C0552B /* evaluation_key.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF5CBD1C5A4EF100C0552B /* evaluation_key.c */; };
+		7138AB661CF30D5300E393FA /* EXHALEButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB621CF30D5300E393FA /* EXHALEButton.png */; };
+		7138AB671CF30D5300E393FA /* EXHALEButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB621CF30D5300E393FA /* EXHALEButton.png */; };
+		7138AB681CF30D5300E393FA /* Playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB631CF30D5300E393FA /* Playbutton.png */; };
+		7138AB691CF30D5300E393FA /* Playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB631CF30D5300E393FA /* Playbutton.png */; };
+		7138AB6A1CF30D5300E393FA /* INHALEButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB641CF30D5300E393FA /* INHALEButton.png */; };
+		7138AB6B1CF30D5300E393FA /* INHALEButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB641CF30D5300E393FA /* INHALEButton.png */; };
+		7138AB6C1CF30D5300E393FA /* PauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB651CF30D5300E393FA /* PauseButton.png */; };
+		7138AB6D1CF30D5300E393FA /* PauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB651CF30D5300E393FA /* PauseButton.png */; };
+		7138AB701CF30FE500E393FA /* playbuttonSMALL.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB6E1CF30FE500E393FA /* playbuttonSMALL.png */; };
+		7138AB711CF30FE500E393FA /* playbuttonSMALL.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB6E1CF30FE500E393FA /* playbuttonSMALL.png */; };
+		7138AB721CF30FE500E393FA /* pausebuttonSMALL.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB6F1CF30FE500E393FA /* pausebuttonSMALL.png */; };
+		7138AB731CF30FE500E393FA /* pausebuttonSMALL.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB6F1CF30FE500E393FA /* pausebuttonSMALL.png */; };
+		7138AB761CF3246900E393FA /* playbuttonTINY.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB741CF3246900E393FA /* playbuttonTINY.png */; };
+		7138AB771CF3246900E393FA /* playbuttonTINY.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB741CF3246900E393FA /* playbuttonTINY.png */; };
+		7138AB781CF3246900E393FA /* pausebuttonTINY.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB751CF3246900E393FA /* pausebuttonTINY.png */; };
+		7138AB791CF3246900E393FA /* pausebuttonTINY.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB751CF3246900E393FA /* pausebuttonTINY.png */; };
+		7138ABC61CF45DC700E393FA /* flute.nonvib.mf.100.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB7B1CF45DC700E393FA /* flute.nonvib.mf.100.wav */; };
+		7138ABC71CF45DC700E393FA /* flute.nonvib.mf.100.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB7B1CF45DC700E393FA /* flute.nonvib.mf.100.wav */; };
+		7138ABC81CF45DC700E393FA /* flute.nonvib.mf.101.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB7C1CF45DC700E393FA /* flute.nonvib.mf.101.wav */; };
+		7138ABC91CF45DC700E393FA /* flute.nonvib.mf.101.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB7C1CF45DC700E393FA /* flute.nonvib.mf.101.wav */; };
+		7138ABCA1CF45DC700E393FA /* flute.nonvib.mf.102.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB7D1CF45DC700E393FA /* flute.nonvib.mf.102.wav */; };
+		7138ABCB1CF45DC700E393FA /* flute.nonvib.mf.102.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB7D1CF45DC700E393FA /* flute.nonvib.mf.102.wav */; };
+		7138ABCC1CF45DC700E393FA /* flute.nonvib.mf.103.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB7E1CF45DC700E393FA /* flute.nonvib.mf.103.wav */; };
+		7138ABCD1CF45DC700E393FA /* flute.nonvib.mf.103.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB7E1CF45DC700E393FA /* flute.nonvib.mf.103.wav */; };
+		7138ABCE1CF45DC700E393FA /* flute.nonvib.mf.104.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB7F1CF45DC700E393FA /* flute.nonvib.mf.104.wav */; };
+		7138ABCF1CF45DC700E393FA /* flute.nonvib.mf.104.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB7F1CF45DC700E393FA /* flute.nonvib.mf.104.wav */; };
+		7138ABD01CF45DC700E393FA /* flute.nonvib.mf.105.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB801CF45DC700E393FA /* flute.nonvib.mf.105.wav */; };
+		7138ABD11CF45DC700E393FA /* flute.nonvib.mf.105.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB801CF45DC700E393FA /* flute.nonvib.mf.105.wav */; };
+		7138ABD21CF45DC700E393FA /* flute.nonvib.mf.106.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB811CF45DC700E393FA /* flute.nonvib.mf.106.wav */; };
+		7138ABD31CF45DC700E393FA /* flute.nonvib.mf.106.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB811CF45DC700E393FA /* flute.nonvib.mf.106.wav */; };
+		7138ABD41CF45DC700E393FA /* flute.nonvib.mf.107.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB821CF45DC700E393FA /* flute.nonvib.mf.107.wav */; };
+		7138ABD51CF45DC700E393FA /* flute.nonvib.mf.107.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB821CF45DC700E393FA /* flute.nonvib.mf.107.wav */; };
+		7138ABD61CF45DC700E393FA /* flute.nonvib.mf.108.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB831CF45DC700E393FA /* flute.nonvib.mf.108.wav */; };
+		7138ABD71CF45DC700E393FA /* flute.nonvib.mf.108.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB831CF45DC700E393FA /* flute.nonvib.mf.108.wav */; };
+		7138ABD81CF45DC700E393FA /* flute.nonvib.mf.33.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB841CF45DC700E393FA /* flute.nonvib.mf.33.wav */; };
+		7138ABD91CF45DC700E393FA /* flute.nonvib.mf.33.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB841CF45DC700E393FA /* flute.nonvib.mf.33.wav */; };
+		7138ABDA1CF45DC700E393FA /* flute.nonvib.mf.34.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB851CF45DC700E393FA /* flute.nonvib.mf.34.wav */; };
+		7138ABDB1CF45DC700E393FA /* flute.nonvib.mf.34.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB851CF45DC700E393FA /* flute.nonvib.mf.34.wav */; };
+		7138ABDC1CF45DC700E393FA /* flute.nonvib.mf.35.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB861CF45DC700E393FA /* flute.nonvib.mf.35.wav */; };
+		7138ABDD1CF45DC700E393FA /* flute.nonvib.mf.35.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB861CF45DC700E393FA /* flute.nonvib.mf.35.wav */; };
+		7138ABDE1CF45DC700E393FA /* flute.nonvib.mf.36.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB871CF45DC700E393FA /* flute.nonvib.mf.36.wav */; };
+		7138ABDF1CF45DC700E393FA /* flute.nonvib.mf.36.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB871CF45DC700E393FA /* flute.nonvib.mf.36.wav */; };
+		7138ABE01CF45DC700E393FA /* flute.nonvib.mf.37.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB881CF45DC700E393FA /* flute.nonvib.mf.37.wav */; };
+		7138ABE11CF45DC700E393FA /* flute.nonvib.mf.37.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB881CF45DC700E393FA /* flute.nonvib.mf.37.wav */; };
+		7138ABE21CF45DC700E393FA /* flute.nonvib.mf.38.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB891CF45DC700E393FA /* flute.nonvib.mf.38.wav */; };
+		7138ABE31CF45DC700E393FA /* flute.nonvib.mf.38.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB891CF45DC700E393FA /* flute.nonvib.mf.38.wav */; };
+		7138ABE41CF45DC700E393FA /* flute.nonvib.mf.39.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8A1CF45DC700E393FA /* flute.nonvib.mf.39.wav */; };
+		7138ABE51CF45DC700E393FA /* flute.nonvib.mf.39.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8A1CF45DC700E393FA /* flute.nonvib.mf.39.wav */; };
+		7138ABE61CF45DC700E393FA /* flute.nonvib.mf.40.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8B1CF45DC700E393FA /* flute.nonvib.mf.40.wav */; };
+		7138ABE71CF45DC700E393FA /* flute.nonvib.mf.40.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8B1CF45DC700E393FA /* flute.nonvib.mf.40.wav */; };
+		7138ABE81CF45DC700E393FA /* flute.nonvib.mf.41.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8C1CF45DC700E393FA /* flute.nonvib.mf.41.wav */; };
+		7138ABE91CF45DC700E393FA /* flute.nonvib.mf.41.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8C1CF45DC700E393FA /* flute.nonvib.mf.41.wav */; };
+		7138ABEA1CF45DC700E393FA /* flute.nonvib.mf.42.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8D1CF45DC700E393FA /* flute.nonvib.mf.42.wav */; };
+		7138ABEB1CF45DC700E393FA /* flute.nonvib.mf.42.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8D1CF45DC700E393FA /* flute.nonvib.mf.42.wav */; };
+		7138ABEC1CF45DC700E393FA /* flute.nonvib.mf.43.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8E1CF45DC700E393FA /* flute.nonvib.mf.43.wav */; };
+		7138ABED1CF45DC700E393FA /* flute.nonvib.mf.43.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8E1CF45DC700E393FA /* flute.nonvib.mf.43.wav */; };
+		7138ABEE1CF45DC700E393FA /* flute.nonvib.mf.45.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8F1CF45DC700E393FA /* flute.nonvib.mf.45.wav */; };
+		7138ABEF1CF45DC700E393FA /* flute.nonvib.mf.45.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB8F1CF45DC700E393FA /* flute.nonvib.mf.45.wav */; };
+		7138ABF01CF45DC700E393FA /* flute.nonvib.mf.46.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB901CF45DC700E393FA /* flute.nonvib.mf.46.wav */; };
+		7138ABF11CF45DC700E393FA /* flute.nonvib.mf.46.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB901CF45DC700E393FA /* flute.nonvib.mf.46.wav */; };
+		7138ABF21CF45DC700E393FA /* flute.nonvib.mf.47.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB911CF45DC700E393FA /* flute.nonvib.mf.47.wav */; };
+		7138ABF31CF45DC700E393FA /* flute.nonvib.mf.47.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB911CF45DC700E393FA /* flute.nonvib.mf.47.wav */; };
+		7138ABF41CF45DC700E393FA /* flute.nonvib.mf.48.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB921CF45DC700E393FA /* flute.nonvib.mf.48.wav */; };
+		7138ABF51CF45DC700E393FA /* flute.nonvib.mf.48.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB921CF45DC700E393FA /* flute.nonvib.mf.48.wav */; };
+		7138ABF61CF45DC700E393FA /* flute.nonvib.mf.49.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB931CF45DC700E393FA /* flute.nonvib.mf.49.wav */; };
+		7138ABF71CF45DC700E393FA /* flute.nonvib.mf.49.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB931CF45DC700E393FA /* flute.nonvib.mf.49.wav */; };
+		7138ABF81CF45DC700E393FA /* flute.nonvib.mf.50.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB941CF45DC700E393FA /* flute.nonvib.mf.50.wav */; };
+		7138ABF91CF45DC700E393FA /* flute.nonvib.mf.50.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB941CF45DC700E393FA /* flute.nonvib.mf.50.wav */; };
+		7138ABFA1CF45DC700E393FA /* flute.nonvib.mf.51.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB951CF45DC700E393FA /* flute.nonvib.mf.51.wav */; };
+		7138ABFB1CF45DC700E393FA /* flute.nonvib.mf.51.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB951CF45DC700E393FA /* flute.nonvib.mf.51.wav */; };
+		7138ABFC1CF45DC700E393FA /* flute.nonvib.mf.52.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB961CF45DC700E393FA /* flute.nonvib.mf.52.wav */; };
+		7138ABFD1CF45DC700E393FA /* flute.nonvib.mf.52.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB961CF45DC700E393FA /* flute.nonvib.mf.52.wav */; };
+		7138ABFE1CF45DC700E393FA /* flute.nonvib.mf.53.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB971CF45DC700E393FA /* flute.nonvib.mf.53.wav */; };
+		7138ABFF1CF45DC700E393FA /* flute.nonvib.mf.53.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB971CF45DC700E393FA /* flute.nonvib.mf.53.wav */; };
+		7138AC001CF45DC700E393FA /* flute.nonvib.mf.54.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB981CF45DC700E393FA /* flute.nonvib.mf.54.wav */; };
+		7138AC011CF45DC700E393FA /* flute.nonvib.mf.54.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB981CF45DC700E393FA /* flute.nonvib.mf.54.wav */; };
+		7138AC021CF45DC700E393FA /* flute.nonvib.mf.55.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB991CF45DC700E393FA /* flute.nonvib.mf.55.wav */; };
+		7138AC031CF45DC700E393FA /* flute.nonvib.mf.55.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB991CF45DC700E393FA /* flute.nonvib.mf.55.wav */; };
+		7138AC041CF45DC700E393FA /* flute.nonvib.mf.56.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9A1CF45DC700E393FA /* flute.nonvib.mf.56.wav */; };
+		7138AC051CF45DC700E393FA /* flute.nonvib.mf.56.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9A1CF45DC700E393FA /* flute.nonvib.mf.56.wav */; };
+		7138AC061CF45DC700E393FA /* flute.nonvib.mf.57.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9B1CF45DC700E393FA /* flute.nonvib.mf.57.wav */; };
+		7138AC071CF45DC700E393FA /* flute.nonvib.mf.57.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9B1CF45DC700E393FA /* flute.nonvib.mf.57.wav */; };
+		7138AC081CF45DC700E393FA /* flute.nonvib.mf.58.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9C1CF45DC700E393FA /* flute.nonvib.mf.58.wav */; };
+		7138AC091CF45DC700E393FA /* flute.nonvib.mf.58.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9C1CF45DC700E393FA /* flute.nonvib.mf.58.wav */; };
+		7138AC0A1CF45DC700E393FA /* flute.nonvib.mf.59.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9D1CF45DC700E393FA /* flute.nonvib.mf.59.wav */; };
+		7138AC0B1CF45DC700E393FA /* flute.nonvib.mf.59.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9D1CF45DC700E393FA /* flute.nonvib.mf.59.wav */; };
+		7138AC0C1CF45DC700E393FA /* flute.nonvib.mf.60.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9E1CF45DC700E393FA /* flute.nonvib.mf.60.wav */; };
+		7138AC0D1CF45DC700E393FA /* flute.nonvib.mf.60.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9E1CF45DC700E393FA /* flute.nonvib.mf.60.wav */; };
+		7138AC0E1CF45DC700E393FA /* flute.nonvib.mf.61.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9F1CF45DC700E393FA /* flute.nonvib.mf.61.wav */; };
+		7138AC0F1CF45DC700E393FA /* flute.nonvib.mf.61.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138AB9F1CF45DC700E393FA /* flute.nonvib.mf.61.wav */; };
+		7138AC101CF45DC700E393FA /* flute.nonvib.mf.62.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA01CF45DC700E393FA /* flute.nonvib.mf.62.wav */; };
+		7138AC111CF45DC700E393FA /* flute.nonvib.mf.62.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA01CF45DC700E393FA /* flute.nonvib.mf.62.wav */; };
+		7138AC121CF45DC700E393FA /* flute.nonvib.mf.63.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA11CF45DC700E393FA /* flute.nonvib.mf.63.wav */; };
+		7138AC131CF45DC700E393FA /* flute.nonvib.mf.63.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA11CF45DC700E393FA /* flute.nonvib.mf.63.wav */; };
+		7138AC141CF45DC700E393FA /* flute.nonvib.mf.64.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA21CF45DC700E393FA /* flute.nonvib.mf.64.wav */; };
+		7138AC151CF45DC700E393FA /* flute.nonvib.mf.64.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA21CF45DC700E393FA /* flute.nonvib.mf.64.wav */; };
+		7138AC161CF45DC700E393FA /* flute.nonvib.mf.65.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA31CF45DC700E393FA /* flute.nonvib.mf.65.wav */; };
+		7138AC171CF45DC700E393FA /* flute.nonvib.mf.65.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA31CF45DC700E393FA /* flute.nonvib.mf.65.wav */; };
+		7138AC181CF45DC700E393FA /* flute.nonvib.mf.66.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA41CF45DC700E393FA /* flute.nonvib.mf.66.wav */; };
+		7138AC191CF45DC700E393FA /* flute.nonvib.mf.66.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA41CF45DC700E393FA /* flute.nonvib.mf.66.wav */; };
+		7138AC1A1CF45DC700E393FA /* flute.nonvib.mf.67.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA51CF45DC700E393FA /* flute.nonvib.mf.67.wav */; };
+		7138AC1B1CF45DC700E393FA /* flute.nonvib.mf.67.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA51CF45DC700E393FA /* flute.nonvib.mf.67.wav */; };
+		7138AC1C1CF45DC700E393FA /* flute.nonvib.mf.68.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA61CF45DC700E393FA /* flute.nonvib.mf.68.wav */; };
+		7138AC1D1CF45DC700E393FA /* flute.nonvib.mf.68.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA61CF45DC700E393FA /* flute.nonvib.mf.68.wav */; };
+		7138AC1E1CF45DC700E393FA /* flute.nonvib.mf.69.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA71CF45DC700E393FA /* flute.nonvib.mf.69.wav */; };
+		7138AC1F1CF45DC700E393FA /* flute.nonvib.mf.69.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA71CF45DC700E393FA /* flute.nonvib.mf.69.wav */; };
+		7138AC201CF45DC700E393FA /* flute.nonvib.mf.70.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA81CF45DC700E393FA /* flute.nonvib.mf.70.wav */; };
+		7138AC211CF45DC700E393FA /* flute.nonvib.mf.70.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA81CF45DC700E393FA /* flute.nonvib.mf.70.wav */; };
+		7138AC221CF45DC700E393FA /* flute.nonvib.mf.71.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA91CF45DC700E393FA /* flute.nonvib.mf.71.wav */; };
+		7138AC231CF45DC700E393FA /* flute.nonvib.mf.71.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABA91CF45DC700E393FA /* flute.nonvib.mf.71.wav */; };
+		7138AC241CF45DC700E393FA /* flute.nonvib.mf.72.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAA1CF45DC700E393FA /* flute.nonvib.mf.72.wav */; };
+		7138AC251CF45DC700E393FA /* flute.nonvib.mf.72.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAA1CF45DC700E393FA /* flute.nonvib.mf.72.wav */; };
+		7138AC261CF45DC700E393FA /* flute.nonvib.mf.73.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAB1CF45DC700E393FA /* flute.nonvib.mf.73.wav */; };
+		7138AC271CF45DC700E393FA /* flute.nonvib.mf.73.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAB1CF45DC700E393FA /* flute.nonvib.mf.73.wav */; };
+		7138AC281CF45DC700E393FA /* flute.nonvib.mf.74.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAC1CF45DC700E393FA /* flute.nonvib.mf.74.wav */; };
+		7138AC291CF45DC700E393FA /* flute.nonvib.mf.74.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAC1CF45DC700E393FA /* flute.nonvib.mf.74.wav */; };
+		7138AC2A1CF45DC700E393FA /* flute.nonvib.mf.75.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAD1CF45DC700E393FA /* flute.nonvib.mf.75.wav */; };
+		7138AC2B1CF45DC700E393FA /* flute.nonvib.mf.75.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAD1CF45DC700E393FA /* flute.nonvib.mf.75.wav */; };
+		7138AC2C1CF45DC700E393FA /* flute.nonvib.mf.76.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAE1CF45DC700E393FA /* flute.nonvib.mf.76.wav */; };
+		7138AC2D1CF45DC700E393FA /* flute.nonvib.mf.76.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAE1CF45DC700E393FA /* flute.nonvib.mf.76.wav */; };
+		7138AC2E1CF45DC700E393FA /* flute.nonvib.mf.77.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAF1CF45DC700E393FA /* flute.nonvib.mf.77.wav */; };
+		7138AC2F1CF45DC700E393FA /* flute.nonvib.mf.77.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABAF1CF45DC700E393FA /* flute.nonvib.mf.77.wav */; };
+		7138AC301CF45DC700E393FA /* flute.nonvib.mf.78.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB01CF45DC700E393FA /* flute.nonvib.mf.78.wav */; };
+		7138AC311CF45DC700E393FA /* flute.nonvib.mf.78.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB01CF45DC700E393FA /* flute.nonvib.mf.78.wav */; };
+		7138AC321CF45DC700E393FA /* flute.nonvib.mf.79.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB11CF45DC700E393FA /* flute.nonvib.mf.79.wav */; };
+		7138AC331CF45DC700E393FA /* flute.nonvib.mf.79.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB11CF45DC700E393FA /* flute.nonvib.mf.79.wav */; };
+		7138AC341CF45DC700E393FA /* flute.nonvib.mf.80.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB21CF45DC700E393FA /* flute.nonvib.mf.80.wav */; };
+		7138AC351CF45DC700E393FA /* flute.nonvib.mf.80.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB21CF45DC700E393FA /* flute.nonvib.mf.80.wav */; };
+		7138AC361CF45DC700E393FA /* flute.nonvib.mf.81.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB31CF45DC700E393FA /* flute.nonvib.mf.81.wav */; };
+		7138AC371CF45DC700E393FA /* flute.nonvib.mf.81.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB31CF45DC700E393FA /* flute.nonvib.mf.81.wav */; };
+		7138AC381CF45DC700E393FA /* flute.nonvib.mf.82.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB41CF45DC700E393FA /* flute.nonvib.mf.82.wav */; };
+		7138AC391CF45DC700E393FA /* flute.nonvib.mf.82.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB41CF45DC700E393FA /* flute.nonvib.mf.82.wav */; };
+		7138AC3A1CF45DC700E393FA /* flute.nonvib.mf.83.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB51CF45DC700E393FA /* flute.nonvib.mf.83.wav */; };
+		7138AC3B1CF45DC700E393FA /* flute.nonvib.mf.83.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB51CF45DC700E393FA /* flute.nonvib.mf.83.wav */; };
+		7138AC3C1CF45DC700E393FA /* flute.nonvib.mf.84.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB61CF45DC700E393FA /* flute.nonvib.mf.84.wav */; };
+		7138AC3D1CF45DC700E393FA /* flute.nonvib.mf.84.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB61CF45DC700E393FA /* flute.nonvib.mf.84.wav */; };
+		7138AC3E1CF45DC700E393FA /* flute.nonvib.mf.85.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB71CF45DC700E393FA /* flute.nonvib.mf.85.wav */; };
+		7138AC3F1CF45DC700E393FA /* flute.nonvib.mf.85.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB71CF45DC700E393FA /* flute.nonvib.mf.85.wav */; };
+		7138AC401CF45DC700E393FA /* flute.nonvib.mf.86.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB81CF45DC700E393FA /* flute.nonvib.mf.86.wav */; };
+		7138AC411CF45DC700E393FA /* flute.nonvib.mf.86.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB81CF45DC700E393FA /* flute.nonvib.mf.86.wav */; };
+		7138AC421CF45DC700E393FA /* flute.nonvib.mf.87.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB91CF45DC700E393FA /* flute.nonvib.mf.87.wav */; };
+		7138AC431CF45DC700E393FA /* flute.nonvib.mf.87.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABB91CF45DC700E393FA /* flute.nonvib.mf.87.wav */; };
+		7138AC441CF45DC700E393FA /* flute.nonvib.mf.88.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBA1CF45DC700E393FA /* flute.nonvib.mf.88.wav */; };
+		7138AC451CF45DC700E393FA /* flute.nonvib.mf.88.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBA1CF45DC700E393FA /* flute.nonvib.mf.88.wav */; };
+		7138AC461CF45DC700E393FA /* flute.nonvib.mf.89.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBB1CF45DC700E393FA /* flute.nonvib.mf.89.wav */; };
+		7138AC471CF45DC700E393FA /* flute.nonvib.mf.89.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBB1CF45DC700E393FA /* flute.nonvib.mf.89.wav */; };
+		7138AC481CF45DC700E393FA /* flute.nonvib.mf.90.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBC1CF45DC700E393FA /* flute.nonvib.mf.90.wav */; };
+		7138AC491CF45DC700E393FA /* flute.nonvib.mf.90.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBC1CF45DC700E393FA /* flute.nonvib.mf.90.wav */; };
+		7138AC4A1CF45DC700E393FA /* flute.nonvib.mf.91.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBD1CF45DC700E393FA /* flute.nonvib.mf.91.wav */; };
+		7138AC4B1CF45DC700E393FA /* flute.nonvib.mf.91.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBD1CF45DC700E393FA /* flute.nonvib.mf.91.wav */; };
+		7138AC4C1CF45DC700E393FA /* flute.nonvib.mf.92.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBE1CF45DC700E393FA /* flute.nonvib.mf.92.wav */; };
+		7138AC4D1CF45DC700E393FA /* flute.nonvib.mf.92.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBE1CF45DC700E393FA /* flute.nonvib.mf.92.wav */; };
+		7138AC4E1CF45DC700E393FA /* flute.nonvib.mf.93.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBF1CF45DC700E393FA /* flute.nonvib.mf.93.wav */; };
+		7138AC4F1CF45DC700E393FA /* flute.nonvib.mf.93.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABBF1CF45DC700E393FA /* flute.nonvib.mf.93.wav */; };
+		7138AC501CF45DC700E393FA /* flute.nonvib.mf.94.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC01CF45DC700E393FA /* flute.nonvib.mf.94.wav */; };
+		7138AC511CF45DC700E393FA /* flute.nonvib.mf.94.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC01CF45DC700E393FA /* flute.nonvib.mf.94.wav */; };
+		7138AC521CF45DC700E393FA /* flute.nonvib.mf.95.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC11CF45DC700E393FA /* flute.nonvib.mf.95.wav */; };
+		7138AC531CF45DC700E393FA /* flute.nonvib.mf.95.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC11CF45DC700E393FA /* flute.nonvib.mf.95.wav */; };
+		7138AC541CF45DC700E393FA /* flute.nonvib.mf.96.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC21CF45DC700E393FA /* flute.nonvib.mf.96.wav */; };
+		7138AC551CF45DC700E393FA /* flute.nonvib.mf.96.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC21CF45DC700E393FA /* flute.nonvib.mf.96.wav */; };
+		7138AC561CF45DC700E393FA /* flute.nonvib.mf.97.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC31CF45DC700E393FA /* flute.nonvib.mf.97.wav */; };
+		7138AC571CF45DC700E393FA /* flute.nonvib.mf.97.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC31CF45DC700E393FA /* flute.nonvib.mf.97.wav */; };
+		7138AC581CF45DC700E393FA /* flute.nonvib.mf.98.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC41CF45DC700E393FA /* flute.nonvib.mf.98.wav */; };
+		7138AC591CF45DC700E393FA /* flute.nonvib.mf.98.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC41CF45DC700E393FA /* flute.nonvib.mf.98.wav */; };
+		7138AC5A1CF45DC700E393FA /* flute.nonvib.mf.99.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC51CF45DC700E393FA /* flute.nonvib.mf.99.wav */; };
+		7138AC5B1CF45DC700E393FA /* flute.nonvib.mf.99.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7138ABC51CF45DC700E393FA /* flute.nonvib.mf.99.wav */; };
+		7138AC5D1CF475B500E393FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7138AC5C1CF475B500E393FA /* SystemConfiguration.framework */; };
+		7138AC601CF5DB8400E393FA /* BlueToothConnected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AC5E1CF5DB8300E393FA /* BlueToothConnected.png */; };
+		7138AC611CF5DB8400E393FA /* BlueToothConnected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AC5E1CF5DB8300E393FA /* BlueToothConnected.png */; };
+		7138AC621CF5DB8400E393FA /* BlueToothDisconnected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AC5F1CF5DB8400E393FA /* BlueToothDisconnected.png */; };
+		7138AC631CF5DB8400E393FA /* BlueToothDisconnected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7138AC5F1CF5DB8400E393FA /* BlueToothDisconnected.png */; };
+		715CEA601D212B32009B8D34 /* SplashLandscape1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = 715CEA5C1D212B32009B8D34 /* SplashLandscape1024x768.png */; };
+		715CEA611D212B32009B8D34 /* SplashLandscape1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = 715CEA5C1D212B32009B8D34 /* SplashLandscape1024x768.png */; };
+		715CEA621D212B32009B8D34 /* SplashLandscapeHIRes.png in Resources */ = {isa = PBXBuildFile; fileRef = 715CEA5D1D212B32009B8D34 /* SplashLandscapeHIRes.png */; };
+		715CEA631D212B32009B8D34 /* SplashLandscapeHIRes.png in Resources */ = {isa = PBXBuildFile; fileRef = 715CEA5D1D212B32009B8D34 /* SplashLandscapeHIRes.png */; };
+		715CEA641D212B32009B8D34 /* SplashPortrait768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 715CEA5E1D212B32009B8D34 /* SplashPortrait768x1024.png */; };
+		715CEA651D212B32009B8D34 /* SplashPortrait768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 715CEA5E1D212B32009B8D34 /* SplashPortrait768x1024.png */; };
+		715CEA661D212B32009B8D34 /* SplashPortraitHiRes.png in Resources */ = {isa = PBXBuildFile; fileRef = 715CEA5F1D212B32009B8D34 /* SplashPortraitHiRes.png */; };
+		715CEA671D212B32009B8D34 /* SplashPortraitHiRes.png in Resources */ = {isa = PBXBuildFile; fileRef = 715CEA5F1D212B32009B8D34 /* SplashPortraitHiRes.png */; };
+		717BE7DD1D119ECD00D8FBFF /* BreathScoreAppIcon29x29-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7D21D119ECD00D8FBFF /* BreathScoreAppIcon29x29-2.png */; };
+		717BE7DE1D119ECD00D8FBFF /* BreathScoreAppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7D31D119ECD00D8FBFF /* BreathScoreAppIcon40x40.png */; };
+		717BE7DF1D119ECD00D8FBFF /* BreathScoreAppIcon58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7D41D119ECD00D8FBFF /* BreathScoreAppIcon58x58.png */; };
+		717BE7E01D119ECD00D8FBFF /* BreathScoreAppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7D51D119ECD00D8FBFF /* BreathScoreAppIcon76x76.png */; };
+		717BE7E11D119ECD00D8FBFF /* BreathScoreAppIcon80x80-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7D61D119ECD00D8FBFF /* BreathScoreAppIcon80x80-1.png */; };
+		717BE7E21D119ECD00D8FBFF /* BreathScoreAppIcon80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7D71D119ECD00D8FBFF /* BreathScoreAppIcon80x80.png */; };
+		717BE7E31D119ECD00D8FBFF /* BreathScoreAppIcon152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7D81D119ECD00D8FBFF /* BreathScoreAppIcon152x152.png */; };
+		717BE7E91D11A51500D8FBFF /* leftrepeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7E81D11A51500D8FBFF /* leftrepeat.png */; };
+		717BE7EB1D11A52100D8FBFF /* rightrepeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7EA1D11A52100D8FBFF /* rightrepeat.png */; };
+		717BE7F11D11A56800D8FBFF /* 00 Herfst.xml in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7EC1D11A56800D8FBFF /* 00 Herfst.xml */; };
+		717BE7F21D11A56800D8FBFF /* 00 Hoedje van papier.xml in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7ED1D11A56800D8FBFF /* 00 Hoedje van papier.xml */; };
+		717BE7F31D11A56800D8FBFF /* 00 Helikopter.xml in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7EE1D11A56800D8FBFF /* 00 Helikopter.xml */; };
+		717BE7F41D11A56800D8FBFF /* 00 Er zat een klein.xml in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7EF1D11A56800D8FBFF /* 00 Er zat een klein.xml */; };
+		717BE7F51D11A56800D8FBFF /* 00 Deze vuist.xml in Resources */ = {isa = PBXBuildFile; fileRef = 717BE7F01D11A56800D8FBFF /* 00 Deze vuist.xml */; };
+		717D2EFA1D0EC4C500D40B5E /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = 717D2EEF1D0EC4C500D40B5E /* bluetooth.png */; };
+		717D2EFB1D0EC4C500D40B5E /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = 717D2EEF1D0EC4C500D40B5E /* bluetooth.png */; };
+		717D2EFC1D0EC4C500D40B5E /* bluetoothoff.png in Resources */ = {isa = PBXBuildFile; fileRef = 717D2EF01D0EC4C500D40B5E /* bluetoothoff.png */; };
+		717D2EFD1D0EC4C500D40B5E /* bluetoothoff.png in Resources */ = {isa = PBXBuildFile; fileRef = 717D2EF01D0EC4C500D40B5E /* bluetoothoff.png */; };
+		717D2EFE1D0EC4C500D40B5E /* BTLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 717D2EF21D0EC4C500D40B5E /* BTLEManager.m */; };
+		717D2EFF1D0EC4C500D40B5E /* BTLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 717D2EF21D0EC4C500D40B5E /* BTLEManager.m */; };
+		717D2F001D0EC4C500D40B5E /* libMelodySmart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 717D2EF31D0EC4C500D40B5E /* libMelodySmart.a */; };
+		717D2F011D0EC4C500D40B5E /* libMelodySmart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 717D2EF31D0EC4C500D40B5E /* libMelodySmart.a */; };
+		717D2F021D0EC4C500D40B5E /* NSData+NSData_Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 717D2EF71D0EC4C500D40B5E /* NSData+NSData_Conversion.m */; };
+		717D2F031D0EC4C500D40B5E /* NSData+NSData_Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 717D2EF71D0EC4C500D40B5E /* NSData+NSData_Conversion.m */; };
+		71A8AA2F1CEE15CA0089FB82 /* Bluetooth-CONNECTED.png in Resources */ = {isa = PBXBuildFile; fileRef = 71A8AA2D1CEE15CA0089FB82 /* Bluetooth-CONNECTED.png */; };
+		71A8AA301CEE15CA0089FB82 /* Bluetooth-CONNECTED.png in Resources */ = {isa = PBXBuildFile; fileRef = 71A8AA2D1CEE15CA0089FB82 /* Bluetooth-CONNECTED.png */; };
+		71A8AA311CEE15CA0089FB82 /* Bluetooth-DISCONNECTED.png in Resources */ = {isa = PBXBuildFile; fileRef = 71A8AA2E1CEE15CA0089FB82 /* Bluetooth-DISCONNECTED.png */; };
+		71A8AA321CEE15CA0089FB82 /* Bluetooth-DISCONNECTED.png in Resources */ = {isa = PBXBuildFile; fileRef = 71A8AA2E1CEE15CA0089FB82 /* Bluetooth-DISCONNECTED.png */; };
+		71C3883C1CF898D70044A7C3 /* Images-3.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71C3883B1CF898D70044A7C3 /* Images-3.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A301DB51A48208A003E59C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1AEEB7E11BBE7D2500A66A2E /* SeeScoreLib.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEEB7DB1BBE7B1000A66A2E /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1AEEB7E21BBE7D2F00A66A2E /* SeeScoreLib.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A008A44165D03C60071B846 /* BreathScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A008A52165D03C60071B846 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A008A54165D03C60071B846 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A008A56165D03C60071B846 /* SeeScoreIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeeScoreIOS-Prefix.pch"; sourceTree = "<group>"; };
+		1A008A57165D03C60071B846 /* SSSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSSampleAppDelegate.h; sourceTree = "<group>"; };
+		1A008A58165D03C60071B846 /* SSSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSSampleAppDelegate.m; sourceTree = "<group>"; };
+		1A008A5A165D03C60071B846 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1A008A5C165D03C60071B846 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1A008A5E165D03C60071B846 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1A008A61165D03C60071B846 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		1A008A64165D03C60071B846 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		1A20481B1C2C0802000FC6C4 /* SeeScoreIOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeeScoreIOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A20481C1C2C0802000FC6C4 /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		1A2597BF1C7B39F200173744 /* SSEditCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEditCursor.h; sourceTree = "<group>"; };
+		1A2597C01C7B39F200173744 /* SSEditCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSEditCursor.m; sourceTree = "<group>"; };
+		1A400F9E16FE58E40031D721 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		1A400F9F16FE58E40031D721 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		1A43D0F01C8C935A006B8307 /* SSDeleteButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDeleteButtonView.h; sourceTree = "<group>"; };
+		1A43D0F11C8C935A006B8307 /* SSDeleteButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDeleteButtonView.m; sourceTree = "<group>"; };
+		1A51257D1B4C2033009D3EF4 /* SSBarControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBarControl.h; sourceTree = "<group>"; };
+		1A51257E1B4C2033009D3EF4 /* SSBarControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBarControl.m; sourceTree = "<group>"; };
+		1A57D8781B558E9700F767E0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1A57D8791B558E9700F767E0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A57D87C1B558EA600F767E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A57D87E1B558F1300F767E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1A6AF8721C6A0A97002D1751 /* SSPlayLoopGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPlayLoopGraphics.m; sourceTree = "<group>"; };
+		1A6AF8751C6A0AAC002D1751 /* SSPlayLoopGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSPlayLoopGraphics.h; sourceTree = "<group>"; };
+		1A6AF8761C6A289B002D1751 /* SSEditLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSEditLayer.m; sourceTree = "<group>"; };
+		1A6AF8771C6A289B002D1751 /* SSEditLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEditLayer.h; sourceTree = "<group>"; };
+		1A6AF87A1C6A4C82002D1751 /* SSViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSViewInterface.h; sourceTree = "<group>"; };
+		1A9497F61712EA3A007632E3 /* sscore_key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sscore_key.h; sourceTree = "<group>"; };
+		1A9C37A21B4A777D00DF673D /* SSSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSampleViewController.m; sourceTree = "<group>"; };
+		1A9C37A41B4A778700DF673D /* SSSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSSampleViewController.h; sourceTree = "<group>"; };
+		1A9C37A71B4A77B700DF673D /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		1A9C37D51B4A7C4800DF673D /* SSUpdateScrollProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSUpdateScrollProtocol.h; sourceTree = "<group>"; };
+		1A9C37D91B4A88ED00DF673D /* SSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSScrollView.h; sourceTree = "<group>"; };
+		1A9C37DA1B4A88ED00DF673D /* SSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSScrollView.m; sourceTree = "<group>"; };
+		1A9C37DB1B4A88ED00DF673D /* SSSystemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSystemView.h; sourceTree = "<group>"; };
+		1A9C37DC1B4A88ED00DF673D /* SSSystemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSystemView.m; sourceTree = "<group>"; };
+		1A9E8E2D16A808290023EC1B /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		1ABEDA931C45333600D64D57 /* Piano.mf.100.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.100.m4a; sourceTree = "<group>"; };
+		1ABEDA941C45333600D64D57 /* Piano.mf.101.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.101.m4a; sourceTree = "<group>"; };
+		1ABEDA951C45333600D64D57 /* Piano.mf.102.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.102.m4a; sourceTree = "<group>"; };
+		1ABEDA961C45333600D64D57 /* Piano.mf.103.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.103.m4a; sourceTree = "<group>"; };
+		1ABEDA971C45333600D64D57 /* Piano.mf.104.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.104.m4a; sourceTree = "<group>"; };
+		1ABEDA981C45333600D64D57 /* Piano.mf.105.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.105.m4a; sourceTree = "<group>"; };
+		1ABEDA991C45333600D64D57 /* Piano.mf.106.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.106.m4a; sourceTree = "<group>"; };
+		1ABEDA9A1C45333600D64D57 /* Piano.mf.107.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.107.m4a; sourceTree = "<group>"; };
+		1ABEDA9B1C45333600D64D57 /* Piano.mf.108.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.108.m4a; sourceTree = "<group>"; };
+		1ABEDA9C1C45333600D64D57 /* Piano.mf.23.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.23.m4a; sourceTree = "<group>"; };
+		1ABEDA9D1C45333600D64D57 /* Piano.mf.24.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.24.m4a; sourceTree = "<group>"; };
+		1ABEDA9E1C45333600D64D57 /* Piano.mf.25.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.25.m4a; sourceTree = "<group>"; };
+		1ABEDA9F1C45333600D64D57 /* Piano.mf.26.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.26.m4a; sourceTree = "<group>"; };
+		1ABEDAA01C45333600D64D57 /* Piano.mf.27.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.27.m4a; sourceTree = "<group>"; };
+		1ABEDAA11C45333600D64D57 /* Piano.mf.28.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.28.m4a; sourceTree = "<group>"; };
+		1ABEDAA21C45333600D64D57 /* Piano.mf.29.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.29.m4a; sourceTree = "<group>"; };
+		1ABEDAA31C45333600D64D57 /* Piano.mf.30.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.30.m4a; sourceTree = "<group>"; };
+		1ABEDAA41C45333600D64D57 /* Piano.mf.31.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.31.m4a; sourceTree = "<group>"; };
+		1ABEDAA51C45333600D64D57 /* Piano.mf.32.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.32.m4a; sourceTree = "<group>"; };
+		1ABEDAA61C45333600D64D57 /* Piano.mf.33.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.33.m4a; sourceTree = "<group>"; };
+		1ABEDAA71C45333600D64D57 /* Piano.mf.34.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.34.m4a; sourceTree = "<group>"; };
+		1ABEDAA81C45333600D64D57 /* Piano.mf.35.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.35.m4a; sourceTree = "<group>"; };
+		1ABEDAA91C45333600D64D57 /* Piano.mf.36.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.36.m4a; sourceTree = "<group>"; };
+		1ABEDAAA1C45333600D64D57 /* Piano.mf.37.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.37.m4a; sourceTree = "<group>"; };
+		1ABEDAAB1C45333600D64D57 /* Piano.mf.38.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.38.m4a; sourceTree = "<group>"; };
+		1ABEDAAC1C45333600D64D57 /* Piano.mf.39.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.39.m4a; sourceTree = "<group>"; };
+		1ABEDAAD1C45333600D64D57 /* Piano.mf.40.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.40.m4a; sourceTree = "<group>"; };
+		1ABEDAAE1C45333600D64D57 /* Piano.mf.41.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.41.m4a; sourceTree = "<group>"; };
+		1ABEDAAF1C45333600D64D57 /* Piano.mf.42.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.42.m4a; sourceTree = "<group>"; };
+		1ABEDAB01C45333600D64D57 /* Piano.mf.43.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.43.m4a; sourceTree = "<group>"; };
+		1ABEDAB11C45333600D64D57 /* Piano.mf.44.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.44.m4a; sourceTree = "<group>"; };
+		1ABEDAB21C45333600D64D57 /* Piano.mf.45.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.45.m4a; sourceTree = "<group>"; };
+		1ABEDAB31C45333600D64D57 /* Piano.mf.46.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.46.m4a; sourceTree = "<group>"; };
+		1ABEDAB41C45333600D64D57 /* Piano.mf.47.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.47.m4a; sourceTree = "<group>"; };
+		1ABEDAB51C45333600D64D57 /* Piano.mf.48.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.48.m4a; sourceTree = "<group>"; };
+		1ABEDAB61C45333600D64D57 /* Piano.mf.49.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.49.m4a; sourceTree = "<group>"; };
+		1ABEDAB71C45333600D64D57 /* Piano.mf.50.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.50.m4a; sourceTree = "<group>"; };
+		1ABEDAB81C45333600D64D57 /* Piano.mf.51.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.51.m4a; sourceTree = "<group>"; };
+		1ABEDAB91C45333600D64D57 /* Piano.mf.52.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.52.m4a; sourceTree = "<group>"; };
+		1ABEDABA1C45333600D64D57 /* Piano.mf.53.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.53.m4a; sourceTree = "<group>"; };
+		1ABEDABB1C45333600D64D57 /* Piano.mf.54.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.54.m4a; sourceTree = "<group>"; };
+		1ABEDABC1C45333600D64D57 /* Piano.mf.55.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.55.m4a; sourceTree = "<group>"; };
+		1ABEDABD1C45333600D64D57 /* Piano.mf.56.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.56.m4a; sourceTree = "<group>"; };
+		1ABEDABE1C45333600D64D57 /* Piano.mf.57.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.57.m4a; sourceTree = "<group>"; };
+		1ABEDABF1C45333600D64D57 /* Piano.mf.58.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.58.m4a; sourceTree = "<group>"; };
+		1ABEDAC01C45333600D64D57 /* Piano.mf.59.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.59.m4a; sourceTree = "<group>"; };
+		1ABEDAC11C45333600D64D57 /* Piano.mf.60.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.60.m4a; sourceTree = "<group>"; };
+		1ABEDAC21C45333600D64D57 /* Piano.mf.61.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.61.m4a; sourceTree = "<group>"; };
+		1ABEDAC31C45333600D64D57 /* Piano.mf.62.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.62.m4a; sourceTree = "<group>"; };
+		1ABEDAC41C45333600D64D57 /* Piano.mf.63.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.63.m4a; sourceTree = "<group>"; };
+		1ABEDAC51C45333600D64D57 /* Piano.mf.64.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.64.m4a; sourceTree = "<group>"; };
+		1ABEDAC61C45333600D64D57 /* Piano.mf.65.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.65.m4a; sourceTree = "<group>"; };
+		1ABEDAC71C45333600D64D57 /* Piano.mf.66.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.66.m4a; sourceTree = "<group>"; };
+		1ABEDAC81C45333600D64D57 /* Piano.mf.67.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.67.m4a; sourceTree = "<group>"; };
+		1ABEDAC91C45333600D64D57 /* Piano.mf.68.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.68.m4a; sourceTree = "<group>"; };
+		1ABEDACA1C45333600D64D57 /* Piano.mf.69.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.69.m4a; sourceTree = "<group>"; };
+		1ABEDACB1C45333600D64D57 /* Piano.mf.70.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.70.m4a; sourceTree = "<group>"; };
+		1ABEDACC1C45333600D64D57 /* Piano.mf.71.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.71.m4a; sourceTree = "<group>"; };
+		1ABEDACD1C45333600D64D57 /* Piano.mf.72.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.72.m4a; sourceTree = "<group>"; };
+		1ABEDACE1C45333600D64D57 /* Piano.mf.73.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.73.m4a; sourceTree = "<group>"; };
+		1ABEDACF1C45333600D64D57 /* Piano.mf.74.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.74.m4a; sourceTree = "<group>"; };
+		1ABEDAD01C45333600D64D57 /* Piano.mf.75.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.75.m4a; sourceTree = "<group>"; };
+		1ABEDAD11C45333600D64D57 /* Piano.mf.76.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.76.m4a; sourceTree = "<group>"; };
+		1ABEDAD21C45333600D64D57 /* Piano.mf.77.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.77.m4a; sourceTree = "<group>"; };
+		1ABEDAD31C45333600D64D57 /* Piano.mf.78.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.78.m4a; sourceTree = "<group>"; };
+		1ABEDAD41C45333600D64D57 /* Piano.mf.79.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.79.m4a; sourceTree = "<group>"; };
+		1ABEDAD51C45333600D64D57 /* Piano.mf.80.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.80.m4a; sourceTree = "<group>"; };
+		1ABEDAD61C45333600D64D57 /* Piano.mf.81.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.81.m4a; sourceTree = "<group>"; };
+		1ABEDAD71C45333600D64D57 /* Piano.mf.82.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.82.m4a; sourceTree = "<group>"; };
+		1ABEDAD81C45333600D64D57 /* Piano.mf.83.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.83.m4a; sourceTree = "<group>"; };
+		1ABEDAD91C45333700D64D57 /* Piano.mf.84.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.84.m4a; sourceTree = "<group>"; };
+		1ABEDADA1C45333700D64D57 /* Piano.mf.85.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.85.m4a; sourceTree = "<group>"; };
+		1ABEDADB1C45333700D64D57 /* Piano.mf.86.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.86.m4a; sourceTree = "<group>"; };
+		1ABEDADC1C45333700D64D57 /* Piano.mf.87.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.87.m4a; sourceTree = "<group>"; };
+		1ABEDADD1C45333700D64D57 /* Piano.mf.88.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.88.m4a; sourceTree = "<group>"; };
+		1ABEDADE1C45333700D64D57 /* Piano.mf.89.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.89.m4a; sourceTree = "<group>"; };
+		1ABEDADF1C45333700D64D57 /* Piano.mf.90.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.90.m4a; sourceTree = "<group>"; };
+		1ABEDAE01C45333700D64D57 /* Piano.mf.91.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.91.m4a; sourceTree = "<group>"; };
+		1ABEDAE11C45333700D64D57 /* Piano.mf.92.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.92.m4a; sourceTree = "<group>"; };
+		1ABEDAE21C45333700D64D57 /* Piano.mf.93.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.93.m4a; sourceTree = "<group>"; };
+		1ABEDAE31C45333700D64D57 /* Piano.mf.94.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.94.m4a; sourceTree = "<group>"; };
+		1ABEDAE41C45333700D64D57 /* Piano.mf.95.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.95.m4a; sourceTree = "<group>"; };
+		1ABEDAE51C45333700D64D57 /* Piano.mf.96.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.96.m4a; sourceTree = "<group>"; };
+		1ABEDAE61C45333700D64D57 /* Piano.mf.97.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.97.m4a; sourceTree = "<group>"; };
+		1ABEDAE71C45333700D64D57 /* Piano.mf.98.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.98.m4a; sourceTree = "<group>"; };
+		1ABEDAE81C45333700D64D57 /* Piano.mf.99.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.mf.99.m4a; sourceTree = "<group>"; };
+		1AEEB7551BBE7AD600A66A2E /* SeeScoreLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SeeScoreLib.framework; sourceTree = "<group>"; };
+		1AEEB7571BBE7AD600A66A2E /* SeeScoreLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SeeScoreLib.framework; sourceTree = "<group>"; };
+		1AEEB7DF1BBE7B1000A66A2E /* BreathScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF1574F16A46A3000555F75 /* SSBarControlProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBarControlProtocol.h; sourceTree = "<group>"; };
+		1AFAEF371C71ECE300E45285 /* SSTurnControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTurnControl.h; sourceTree = "<group>"; };
+		1AFAEF381C71ECE300E45285 /* SSTurnControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTurnControl.m; sourceTree = "<group>"; };
+		1AFAEF3A1C71ED9600E45285 /* SSDragItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDragItem.h; sourceTree = "<group>"; };
+		1AFAEF3B1C71ED9600E45285 /* SSDragItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDragItem.m; sourceTree = "<group>"; };
+		1AFAF0681C7370F000E45285 /* SSEditLayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEditLayerProtocol.h; sourceTree = "<group>"; };
+		1AFF5CBD1C5A4EF100C0552B /* evaluation_key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = evaluation_key.c; sourceTree = "<group>"; };
+		710E58871D8991EA0061E756 /* SeeScoreIOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeeScoreIOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		7138AB621CF30D5300E393FA /* EXHALEButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EXHALEButton.png; sourceTree = "<group>"; };
+		7138AB631CF30D5300E393FA /* Playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Playbutton.png; sourceTree = "<group>"; };
+		7138AB641CF30D5300E393FA /* INHALEButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = INHALEButton.png; sourceTree = "<group>"; };
+		7138AB651CF30D5300E393FA /* PauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PauseButton.png; sourceTree = "<group>"; };
+		7138AB6E1CF30FE500E393FA /* playbuttonSMALL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbuttonSMALL.png; sourceTree = "<group>"; };
+		7138AB6F1CF30FE500E393FA /* pausebuttonSMALL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebuttonSMALL.png; sourceTree = "<group>"; };
+		7138AB741CF3246900E393FA /* playbuttonTINY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbuttonTINY.png; sourceTree = "<group>"; };
+		7138AB751CF3246900E393FA /* pausebuttonTINY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebuttonTINY.png; sourceTree = "<group>"; };
+		7138AB7B1CF45DC700E393FA /* flute.nonvib.mf.100.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.100.wav; sourceTree = "<group>"; };
+		7138AB7C1CF45DC700E393FA /* flute.nonvib.mf.101.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.101.wav; sourceTree = "<group>"; };
+		7138AB7D1CF45DC700E393FA /* flute.nonvib.mf.102.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.102.wav; sourceTree = "<group>"; };
+		7138AB7E1CF45DC700E393FA /* flute.nonvib.mf.103.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.103.wav; sourceTree = "<group>"; };
+		7138AB7F1CF45DC700E393FA /* flute.nonvib.mf.104.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.104.wav; sourceTree = "<group>"; };
+		7138AB801CF45DC700E393FA /* flute.nonvib.mf.105.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.105.wav; sourceTree = "<group>"; };
+		7138AB811CF45DC700E393FA /* flute.nonvib.mf.106.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.106.wav; sourceTree = "<group>"; };
+		7138AB821CF45DC700E393FA /* flute.nonvib.mf.107.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.107.wav; sourceTree = "<group>"; };
+		7138AB831CF45DC700E393FA /* flute.nonvib.mf.108.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.108.wav; sourceTree = "<group>"; };
+		7138AB841CF45DC700E393FA /* flute.nonvib.mf.33.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.33.wav; sourceTree = "<group>"; };
+		7138AB851CF45DC700E393FA /* flute.nonvib.mf.34.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.34.wav; sourceTree = "<group>"; };
+		7138AB861CF45DC700E393FA /* flute.nonvib.mf.35.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.35.wav; sourceTree = "<group>"; };
+		7138AB871CF45DC700E393FA /* flute.nonvib.mf.36.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.36.wav; sourceTree = "<group>"; };
+		7138AB881CF45DC700E393FA /* flute.nonvib.mf.37.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.37.wav; sourceTree = "<group>"; };
+		7138AB891CF45DC700E393FA /* flute.nonvib.mf.38.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.38.wav; sourceTree = "<group>"; };
+		7138AB8A1CF45DC700E393FA /* flute.nonvib.mf.39.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.39.wav; sourceTree = "<group>"; };
+		7138AB8B1CF45DC700E393FA /* flute.nonvib.mf.40.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.40.wav; sourceTree = "<group>"; };
+		7138AB8C1CF45DC700E393FA /* flute.nonvib.mf.41.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.41.wav; sourceTree = "<group>"; };
+		7138AB8D1CF45DC700E393FA /* flute.nonvib.mf.42.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.42.wav; sourceTree = "<group>"; };
+		7138AB8E1CF45DC700E393FA /* flute.nonvib.mf.43.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.43.wav; sourceTree = "<group>"; };
+		7138AB8F1CF45DC700E393FA /* flute.nonvib.mf.45.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.45.wav; sourceTree = "<group>"; };
+		7138AB901CF45DC700E393FA /* flute.nonvib.mf.46.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.46.wav; sourceTree = "<group>"; };
+		7138AB911CF45DC700E393FA /* flute.nonvib.mf.47.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.47.wav; sourceTree = "<group>"; };
+		7138AB921CF45DC700E393FA /* flute.nonvib.mf.48.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.48.wav; sourceTree = "<group>"; };
+		7138AB931CF45DC700E393FA /* flute.nonvib.mf.49.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.49.wav; sourceTree = "<group>"; };
+		7138AB941CF45DC700E393FA /* flute.nonvib.mf.50.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.50.wav; sourceTree = "<group>"; };
+		7138AB951CF45DC700E393FA /* flute.nonvib.mf.51.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.51.wav; sourceTree = "<group>"; };
+		7138AB961CF45DC700E393FA /* flute.nonvib.mf.52.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.52.wav; sourceTree = "<group>"; };
+		7138AB971CF45DC700E393FA /* flute.nonvib.mf.53.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.53.wav; sourceTree = "<group>"; };
+		7138AB981CF45DC700E393FA /* flute.nonvib.mf.54.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.54.wav; sourceTree = "<group>"; };
+		7138AB991CF45DC700E393FA /* flute.nonvib.mf.55.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.55.wav; sourceTree = "<group>"; };
+		7138AB9A1CF45DC700E393FA /* flute.nonvib.mf.56.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.56.wav; sourceTree = "<group>"; };
+		7138AB9B1CF45DC700E393FA /* flute.nonvib.mf.57.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.57.wav; sourceTree = "<group>"; };
+		7138AB9C1CF45DC700E393FA /* flute.nonvib.mf.58.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.58.wav; sourceTree = "<group>"; };
+		7138AB9D1CF45DC700E393FA /* flute.nonvib.mf.59.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.59.wav; sourceTree = "<group>"; };
+		7138AB9E1CF45DC700E393FA /* flute.nonvib.mf.60.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.60.wav; sourceTree = "<group>"; };
+		7138AB9F1CF45DC700E393FA /* flute.nonvib.mf.61.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.61.wav; sourceTree = "<group>"; };
+		7138ABA01CF45DC700E393FA /* flute.nonvib.mf.62.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.62.wav; sourceTree = "<group>"; };
+		7138ABA11CF45DC700E393FA /* flute.nonvib.mf.63.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.63.wav; sourceTree = "<group>"; };
+		7138ABA21CF45DC700E393FA /* flute.nonvib.mf.64.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.64.wav; sourceTree = "<group>"; };
+		7138ABA31CF45DC700E393FA /* flute.nonvib.mf.65.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.65.wav; sourceTree = "<group>"; };
+		7138ABA41CF45DC700E393FA /* flute.nonvib.mf.66.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.66.wav; sourceTree = "<group>"; };
+		7138ABA51CF45DC700E393FA /* flute.nonvib.mf.67.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.67.wav; sourceTree = "<group>"; };
+		7138ABA61CF45DC700E393FA /* flute.nonvib.mf.68.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.68.wav; sourceTree = "<group>"; };
+		7138ABA71CF45DC700E393FA /* flute.nonvib.mf.69.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.69.wav; sourceTree = "<group>"; };
+		7138ABA81CF45DC700E393FA /* flute.nonvib.mf.70.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.70.wav; sourceTree = "<group>"; };
+		7138ABA91CF45DC700E393FA /* flute.nonvib.mf.71.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.71.wav; sourceTree = "<group>"; };
+		7138ABAA1CF45DC700E393FA /* flute.nonvib.mf.72.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.72.wav; sourceTree = "<group>"; };
+		7138ABAB1CF45DC700E393FA /* flute.nonvib.mf.73.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.73.wav; sourceTree = "<group>"; };
+		7138ABAC1CF45DC700E393FA /* flute.nonvib.mf.74.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.74.wav; sourceTree = "<group>"; };
+		7138ABAD1CF45DC700E393FA /* flute.nonvib.mf.75.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.75.wav; sourceTree = "<group>"; };
+		7138ABAE1CF45DC700E393FA /* flute.nonvib.mf.76.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.76.wav; sourceTree = "<group>"; };
+		7138ABAF1CF45DC700E393FA /* flute.nonvib.mf.77.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.77.wav; sourceTree = "<group>"; };
+		7138ABB01CF45DC700E393FA /* flute.nonvib.mf.78.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.78.wav; sourceTree = "<group>"; };
+		7138ABB11CF45DC700E393FA /* flute.nonvib.mf.79.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.79.wav; sourceTree = "<group>"; };
+		7138ABB21CF45DC700E393FA /* flute.nonvib.mf.80.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.80.wav; sourceTree = "<group>"; };
+		7138ABB31CF45DC700E393FA /* flute.nonvib.mf.81.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.81.wav; sourceTree = "<group>"; };
+		7138ABB41CF45DC700E393FA /* flute.nonvib.mf.82.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.82.wav; sourceTree = "<group>"; };
+		7138ABB51CF45DC700E393FA /* flute.nonvib.mf.83.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.83.wav; sourceTree = "<group>"; };
+		7138ABB61CF45DC700E393FA /* flute.nonvib.mf.84.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.84.wav; sourceTree = "<group>"; };
+		7138ABB71CF45DC700E393FA /* flute.nonvib.mf.85.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.85.wav; sourceTree = "<group>"; };
+		7138ABB81CF45DC700E393FA /* flute.nonvib.mf.86.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.86.wav; sourceTree = "<group>"; };
+		7138ABB91CF45DC700E393FA /* flute.nonvib.mf.87.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.87.wav; sourceTree = "<group>"; };
+		7138ABBA1CF45DC700E393FA /* flute.nonvib.mf.88.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.88.wav; sourceTree = "<group>"; };
+		7138ABBB1CF45DC700E393FA /* flute.nonvib.mf.89.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.89.wav; sourceTree = "<group>"; };
+		7138ABBC1CF45DC700E393FA /* flute.nonvib.mf.90.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.90.wav; sourceTree = "<group>"; };
+		7138ABBD1CF45DC700E393FA /* flute.nonvib.mf.91.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.91.wav; sourceTree = "<group>"; };
+		7138ABBE1CF45DC700E393FA /* flute.nonvib.mf.92.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.92.wav; sourceTree = "<group>"; };
+		7138ABBF1CF45DC700E393FA /* flute.nonvib.mf.93.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.93.wav; sourceTree = "<group>"; };
+		7138ABC01CF45DC700E393FA /* flute.nonvib.mf.94.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.94.wav; sourceTree = "<group>"; };
+		7138ABC11CF45DC700E393FA /* flute.nonvib.mf.95.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.95.wav; sourceTree = "<group>"; };
+		7138ABC21CF45DC700E393FA /* flute.nonvib.mf.96.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.96.wav; sourceTree = "<group>"; };
+		7138ABC31CF45DC700E393FA /* flute.nonvib.mf.97.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.97.wav; sourceTree = "<group>"; };
+		7138ABC41CF45DC700E393FA /* flute.nonvib.mf.98.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.98.wav; sourceTree = "<group>"; };
+		7138ABC51CF45DC700E393FA /* flute.nonvib.mf.99.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flute.nonvib.mf.99.wav; sourceTree = "<group>"; };
+		7138AC5C1CF475B500E393FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7138AC5E1CF5DB8300E393FA /* BlueToothConnected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueToothConnected.png; sourceTree = "<group>"; };
+		7138AC5F1CF5DB8400E393FA /* BlueToothDisconnected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueToothDisconnected.png; sourceTree = "<group>"; };
+		715CEA5C1D212B32009B8D34 /* SplashLandscape1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashLandscape1024x768.png; sourceTree = "<group>"; };
+		715CEA5D1D212B32009B8D34 /* SplashLandscapeHIRes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashLandscapeHIRes.png; sourceTree = "<group>"; };
+		715CEA5E1D212B32009B8D34 /* SplashPortrait768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashPortrait768x1024.png; sourceTree = "<group>"; };
+		715CEA5F1D212B32009B8D34 /* SplashPortraitHiRes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashPortraitHiRes.png; sourceTree = "<group>"; };
+		717BE7D21D119ECD00D8FBFF /* BreathScoreAppIcon29x29-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BreathScoreAppIcon29x29-2.png"; sourceTree = "<group>"; };
+		717BE7D31D119ECD00D8FBFF /* BreathScoreAppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BreathScoreAppIcon40x40.png; sourceTree = "<group>"; };
+		717BE7D41D119ECD00D8FBFF /* BreathScoreAppIcon58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BreathScoreAppIcon58x58.png; sourceTree = "<group>"; };
+		717BE7D51D119ECD00D8FBFF /* BreathScoreAppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BreathScoreAppIcon76x76.png; sourceTree = "<group>"; };
+		717BE7D61D119ECD00D8FBFF /* BreathScoreAppIcon80x80-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BreathScoreAppIcon80x80-1.png"; sourceTree = "<group>"; };
+		717BE7D71D119ECD00D8FBFF /* BreathScoreAppIcon80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BreathScoreAppIcon80x80.png; sourceTree = "<group>"; };
+		717BE7D81D119ECD00D8FBFF /* BreathScoreAppIcon152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BreathScoreAppIcon152x152.png; sourceTree = "<group>"; };
+		717BE7E81D11A51500D8FBFF /* leftrepeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftrepeat.png; sourceTree = "<group>"; };
+		717BE7EA1D11A52100D8FBFF /* rightrepeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightrepeat.png; sourceTree = "<group>"; };
+		717BE7EC1D11A56800D8FBFF /* 00 Herfst.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "00 Herfst.xml"; sourceTree = "<group>"; };
+		717BE7ED1D11A56800D8FBFF /* 00 Hoedje van papier.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "00 Hoedje van papier.xml"; sourceTree = "<group>"; };
+		717BE7EE1D11A56800D8FBFF /* 00 Helikopter.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "00 Helikopter.xml"; sourceTree = "<group>"; };
+		717BE7EF1D11A56800D8FBFF /* 00 Er zat een klein.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "00 Er zat een klein.xml"; sourceTree = "<group>"; };
+		717BE7F01D11A56800D8FBFF /* 00 Deze vuist.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "00 Deze vuist.xml"; sourceTree = "<group>"; };
+		717D2EEF1D0EC4C500D40B5E /* bluetooth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluetooth.png; sourceTree = "<group>"; };
+		717D2EF01D0EC4C500D40B5E /* bluetoothoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluetoothoff.png; sourceTree = "<group>"; };
+		717D2EF11D0EC4C500D40B5E /* BTLEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEManager.h; sourceTree = "<group>"; };
+		717D2EF21D0EC4C500D40B5E /* BTLEManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLEManager.m; sourceTree = "<group>"; };
+		717D2EF31D0EC4C500D40B5E /* libMelodySmart.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMelodySmart.a; sourceTree = "<group>"; };
+		717D2EF41D0EC4C500D40B5E /* MelodyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MelodyManager.h; sourceTree = "<group>"; };
+		717D2EF51D0EC4C500D40B5E /* MelodySmart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MelodySmart.h; sourceTree = "<group>"; };
+		717D2EF61D0EC4C500D40B5E /* NSData+NSData_Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NSData_Conversion.h"; sourceTree = "<group>"; };
+		717D2EF71D0EC4C500D40B5E /* NSData+NSData_Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NSData_Conversion.m"; sourceTree = "<group>"; };
+		717D2EF81D0EC4C500D40B5E /* OtaStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtaStructs.h; sourceTree = "<group>"; };
+		717D2EF91D0EC4C500D40B5E /* SSSampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSampleAppDelegate.h; sourceTree = "<group>"; };
+		71A8AA2D1CEE15CA0089FB82 /* Bluetooth-CONNECTED.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bluetooth-CONNECTED.png"; sourceTree = "<group>"; };
+		71A8AA2E1CEE15CA0089FB82 /* Bluetooth-DISCONNECTED.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bluetooth-DISCONNECTED.png"; sourceTree = "<group>"; };
+		71C388341CF889D50044A7C3 /* RocudoBreathScore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = RocudoBreathScore.entitlements; path = RocudoBreathScore/RocudoBreathScore.entitlements; sourceTree = "<group>"; };
+		71C3883B1CF898D70044A7C3 /* Images-3.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-3.xcassets"; path = "RocudoBreathScore/Images-3.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A008A41165D03C60071B846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7138AC5D1CF475B500E393FA /* SystemConfiguration.framework in Frameworks */,
+				1A6AB57B1C5009C900D7CF80 /* QuartzCore.framework in Frameworks */,
+				1A6AB57A1C5009B100D7CF80 /* UIKit.framework in Frameworks */,
+				1A6AB5791C50099B00D7CF80 /* AVFoundation.framework in Frameworks */,
+				1AEEB7591BBE7AD600A66A2E /* SeeScoreLib.framework in Frameworks */,
+				717D2F001D0EC4C500D40B5E /* libMelodySmart.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEEB7651BBE7B1000A66A2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEEB7661BBE7B1000A66A2E /* QuartzCore.framework in Frameworks */,
+				1AEEB7671BBE7B1000A66A2E /* UIKit.framework in Frameworks */,
+				1AEEB7681BBE7B1000A66A2E /* AVFoundation.framework in Frameworks */,
+				1AEEB7691BBE7B1000A66A2E /* SeeScoreLib.framework in Frameworks */,
+				1AEEB76A1BBE7B1000A66A2E /* CoreGraphics.framework in Frameworks */,
+				717D2F011D0EC4C500D40B5E /* libMelodySmart.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A008A39165D03C50071B846 = {
+			isa = PBXGroup;
+			children = (
+				71C3883B1CF898D70044A7C3 /* Images-3.xcassets */,
+				71C388341CF889D50044A7C3 /* RocudoBreathScore.entitlements */,
+				7138AC5C1CF475B500E393FA /* SystemConfiguration.framework */,
+				1AFF5CBD1C5A4EF100C0552B /* evaluation_key.c */,
+				1A57D87E1B558F1300F767E0 /* QuartzCore.framework */,
+				1A57D87C1B558EA600F767E0 /* UIKit.framework */,
+				1A57D8781B558E9700F767E0 /* AVFoundation.framework */,
+				1A57D8791B558E9700F767E0 /* CoreGraphics.framework */,
+				1AEEB7531BBE7AD600A66A2E /* SeeScoreLib */,
+				1A008A4E165D03C60071B846 /* SeeScoreIOS */,
+				1A008A45165D03C60071B846 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A008A45165D03C60071B846 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A008A44165D03C60071B846 /* BreathScore.app */,
+				1AEEB7DF1BBE7B1000A66A2E /* BreathScore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A008A4E165D03C60071B846 /* SeeScoreIOS */ = {
+			isa = PBXGroup;
+			children = (
+				1A9497F61712EA3A007632E3 /* sscore_key.h */,
+				710E58871D8991EA0061E756 /* SeeScoreIOS-Bridging-Header.h */,
+				1A51257D1B4C2033009D3EF4 /* SSBarControl.h */,
+				717D2EEE1D0EC4C500D40B5E /* btlemanager */,
+				1A51257E1B4C2033009D3EF4 /* SSBarControl.m */,
+				1AF1574F16A46A3000555F75 /* SSBarControlProtocol.h */,
+				1A008A57165D03C60071B846 /* SSSampleAppDelegate.h */,
+				7138AC5E1CF5DB8300E393FA /* BlueToothConnected.png */,
+				7138AC5F1CF5DB8400E393FA /* BlueToothDisconnected.png */,
+				1A008A58165D03C60071B846 /* SSSampleAppDelegate.m */,
+				1A008A60165D03C60071B846 /* MainStoryboard_iPhone.storyboard */,
+				1A008A63165D03C60071B846 /* MainStoryboard_iPad.storyboard */,
+				1A008A4F165D03C60071B846 /* Supporting Files */,
+				1A9E8E2D16A808290023EC1B /* InfoViewController.h */,
+				1A9C37A71B4A77B700DF673D /* InfoViewController.m */,
+				1A400F9E16FE58E40031D721 /* SettingsViewController.h */,
+				1A400F9F16FE58E40031D721 /* SettingsViewController.m */,
+				7138AB6E1CF30FE500E393FA /* playbuttonSMALL.png */,
+				7138AB6F1CF30FE500E393FA /* pausebuttonSMALL.png */,
+				1A9C37A41B4A778700DF673D /* SSSampleViewController.h */,
+				1A9C37A21B4A777D00DF673D /* SSSampleViewController.m */,
+				71A8AA2D1CEE15CA0089FB82 /* Bluetooth-CONNECTED.png */,
+				71A8AA2E1CEE15CA0089FB82 /* Bluetooth-DISCONNECTED.png */,
+				7138AB621CF30D5300E393FA /* EXHALEButton.png */,
+				7138AB631CF30D5300E393FA /* Playbutton.png */,
+				7138AB641CF30D5300E393FA /* INHALEButton.png */,
+				7138AB651CF30D5300E393FA /* PauseButton.png */,
+				7138AB741CF3246900E393FA /* playbuttonTINY.png */,
+				7138AB751CF3246900E393FA /* pausebuttonTINY.png */,
+				1A9C37D51B4A7C4800DF673D /* SSUpdateScrollProtocol.h */,
+				1A6AF8751C6A0AAC002D1751 /* SSPlayLoopGraphics.h */,
+				1A6AF8721C6A0A97002D1751 /* SSPlayLoopGraphics.m */,
+				1A6AF87A1C6A4C82002D1751 /* SSViewInterface.h */,
+				1AFAF0681C7370F000E45285 /* SSEditLayerProtocol.h */,
+				1A2597BF1C7B39F200173744 /* SSEditCursor.h */,
+				1A2597C01C7B39F200173744 /* SSEditCursor.m */,
+				1A6AF8771C6A289B002D1751 /* SSEditLayer.h */,
+				1A6AF8761C6A289B002D1751 /* SSEditLayer.m */,
+				1A9C37D91B4A88ED00DF673D /* SSScrollView.h */,
+				1A9C37DA1B4A88ED00DF673D /* SSScrollView.m */,
+				1A9C37DB1B4A88ED00DF673D /* SSSystemView.h */,
+				1A9C37DC1B4A88ED00DF673D /* SSSystemView.m */,
+				1AFAEF3A1C71ED9600E45285 /* SSDragItem.h */,
+				1AFAEF3B1C71ED9600E45285 /* SSDragItem.m */,
+				1AFAEF371C71ECE300E45285 /* SSTurnControl.h */,
+				1AFAEF381C71ECE300E45285 /* SSTurnControl.m */,
+				1A20481C1C2C0802000FC6C4 /* Sample.swift */,
+				1A20481B1C2C0802000FC6C4 /* SeeScoreIOS-Bridging-Header.h */,
+				1A43D0F01C8C935A006B8307 /* SSDeleteButtonView.h */,
+				1A43D0F11C8C935A006B8307 /* SSDeleteButtonView.m */,
+			);
+			path = SeeScoreIOS;
+			sourceTree = "<group>";
+		};
+		1A008A4F165D03C60071B846 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A4711121C5FC0B30008EC5B /* images */,
+				1ABEDA911C45333600D64D57 /* synth-samples */,
+				1A9497C71712B533007632E3 /* xml samples */,
+				1A008A51165D03C60071B846 /* InfoPlist.strings */,
+				1A008A54165D03C60071B846 /* main.m */,
+				1A008A56165D03C60071B846 /* SeeScoreIOS-Prefix.pch */,
+				1A008A5A165D03C60071B846 /* Default.png */,
+				1A008A5C165D03C60071B846 /* Default@2x.png */,
+				1A008A5E165D03C60071B846 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A4711121C5FC0B30008EC5B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				717BE7D21D119ECD00D8FBFF /* BreathScoreAppIcon29x29-2.png */,
+				717BE7D31D119ECD00D8FBFF /* BreathScoreAppIcon40x40.png */,
+				717BE7D41D119ECD00D8FBFF /* BreathScoreAppIcon58x58.png */,
+				717BE7E81D11A51500D8FBFF /* leftrepeat.png */,
+				717BE7EA1D11A52100D8FBFF /* rightrepeat.png */,
+				717BE7D51D119ECD00D8FBFF /* BreathScoreAppIcon76x76.png */,
+				717BE7D61D119ECD00D8FBFF /* BreathScoreAppIcon80x80-1.png */,
+				715CEA5C1D212B32009B8D34 /* SplashLandscape1024x768.png */,
+				715CEA5D1D212B32009B8D34 /* SplashLandscapeHIRes.png */,
+				715CEA5E1D212B32009B8D34 /* SplashPortrait768x1024.png */,
+				715CEA5F1D212B32009B8D34 /* SplashPortraitHiRes.png */,
+				717BE7D71D119ECD00D8FBFF /* BreathScoreAppIcon80x80.png */,
+				717BE7D81D119ECD00D8FBFF /* BreathScoreAppIcon152x152.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		1A9497C71712B533007632E3 /* xml samples */ = {
+			isa = PBXGroup;
+			children = (
+				717BE7EC1D11A56800D8FBFF /* 00 Herfst.xml */,
+				717BE7ED1D11A56800D8FBFF /* 00 Hoedje van papier.xml */,
+				717BE7EE1D11A56800D8FBFF /* 00 Helikopter.xml */,
+				717BE7EF1D11A56800D8FBFF /* 00 Er zat een klein.xml */,
+				717BE7F01D11A56800D8FBFF /* 00 Deze vuist.xml */,
+			);
+			path = "xml samples";
+			sourceTree = "<group>";
+		};
+		1ABEDA911C45333600D64D57 /* synth-samples */ = {
+			isa = PBXGroup;
+			children = (
+				7138AB7A1CF45DC700E393FA /* flute-samples */,
+				1ABEDA921C45333600D64D57 /* piano-samples */,
+			);
+			path = "synth-samples";
+			sourceTree = "<group>";
+		};
+		1ABEDA921C45333600D64D57 /* piano-samples */ = {
+			isa = PBXGroup;
+			children = (
+				1ABEDA931C45333600D64D57 /* Piano.mf.100.m4a */,
+				1ABEDA941C45333600D64D57 /* Piano.mf.101.m4a */,
+				1ABEDA951C45333600D64D57 /* Piano.mf.102.m4a */,
+				1ABEDA961C45333600D64D57 /* Piano.mf.103.m4a */,
+				1ABEDA971C45333600D64D57 /* Piano.mf.104.m4a */,
+				1ABEDA981C45333600D64D57 /* Piano.mf.105.m4a */,
+				1ABEDA991C45333600D64D57 /* Piano.mf.106.m4a */,
+				1ABEDA9A1C45333600D64D57 /* Piano.mf.107.m4a */,
+				1ABEDA9B1C45333600D64D57 /* Piano.mf.108.m4a */,
+				1ABEDA9C1C45333600D64D57 /* Piano.mf.23.m4a */,
+				1ABEDA9D1C45333600D64D57 /* Piano.mf.24.m4a */,
+				1ABEDA9E1C45333600D64D57 /* Piano.mf.25.m4a */,
+				1ABEDA9F1C45333600D64D57 /* Piano.mf.26.m4a */,
+				1ABEDAA01C45333600D64D57 /* Piano.mf.27.m4a */,
+				1ABEDAA11C45333600D64D57 /* Piano.mf.28.m4a */,
+				1ABEDAA21C45333600D64D57 /* Piano.mf.29.m4a */,
+				1ABEDAA31C45333600D64D57 /* Piano.mf.30.m4a */,
+				1ABEDAA41C45333600D64D57 /* Piano.mf.31.m4a */,
+				1ABEDAA51C45333600D64D57 /* Piano.mf.32.m4a */,
+				1ABEDAA61C45333600D64D57 /* Piano.mf.33.m4a */,
+				1ABEDAA71C45333600D64D57 /* Piano.mf.34.m4a */,
+				1ABEDAA81C45333600D64D57 /* Piano.mf.35.m4a */,
+				1ABEDAA91C45333600D64D57 /* Piano.mf.36.m4a */,
+				1ABEDAAA1C45333600D64D57 /* Piano.mf.37.m4a */,
+				1ABEDAAB1C45333600D64D57 /* Piano.mf.38.m4a */,
+				1ABEDAAC1C45333600D64D57 /* Piano.mf.39.m4a */,
+				1ABEDAAD1C45333600D64D57 /* Piano.mf.40.m4a */,
+				1ABEDAAE1C45333600D64D57 /* Piano.mf.41.m4a */,
+				1ABEDAAF1C45333600D64D57 /* Piano.mf.42.m4a */,
+				1ABEDAB01C45333600D64D57 /* Piano.mf.43.m4a */,
+				1ABEDAB11C45333600D64D57 /* Piano.mf.44.m4a */,
+				1ABEDAB21C45333600D64D57 /* Piano.mf.45.m4a */,
+				1ABEDAB31C45333600D64D57 /* Piano.mf.46.m4a */,
+				1ABEDAB41C45333600D64D57 /* Piano.mf.47.m4a */,
+				1ABEDAB51C45333600D64D57 /* Piano.mf.48.m4a */,
+				1ABEDAB61C45333600D64D57 /* Piano.mf.49.m4a */,
+				1ABEDAB71C45333600D64D57 /* Piano.mf.50.m4a */,
+				1ABEDAB81C45333600D64D57 /* Piano.mf.51.m4a */,
+				1ABEDAB91C45333600D64D57 /* Piano.mf.52.m4a */,
+				1ABEDABA1C45333600D64D57 /* Piano.mf.53.m4a */,
+				1ABEDABB1C45333600D64D57 /* Piano.mf.54.m4a */,
+				1ABEDABC1C45333600D64D57 /* Piano.mf.55.m4a */,
+				1ABEDABD1C45333600D64D57 /* Piano.mf.56.m4a */,
+				1ABEDABE1C45333600D64D57 /* Piano.mf.57.m4a */,
+				1ABEDABF1C45333600D64D57 /* Piano.mf.58.m4a */,
+				1ABEDAC01C45333600D64D57 /* Piano.mf.59.m4a */,
+				1ABEDAC11C45333600D64D57 /* Piano.mf.60.m4a */,
+				1ABEDAC21C45333600D64D57 /* Piano.mf.61.m4a */,
+				1ABEDAC31C45333600D64D57 /* Piano.mf.62.m4a */,
+				1ABEDAC41C45333600D64D57 /* Piano.mf.63.m4a */,
+				1ABEDAC51C45333600D64D57 /* Piano.mf.64.m4a */,
+				1ABEDAC61C45333600D64D57 /* Piano.mf.65.m4a */,
+				1ABEDAC71C45333600D64D57 /* Piano.mf.66.m4a */,
+				1ABEDAC81C45333600D64D57 /* Piano.mf.67.m4a */,
+				1ABEDAC91C45333600D64D57 /* Piano.mf.68.m4a */,
+				1ABEDACA1C45333600D64D57 /* Piano.mf.69.m4a */,
+				1ABEDACB1C45333600D64D57 /* Piano.mf.70.m4a */,
+				1ABEDACC1C45333600D64D57 /* Piano.mf.71.m4a */,
+				1ABEDACD1C45333600D64D57 /* Piano.mf.72.m4a */,
+				1ABEDACE1C45333600D64D57 /* Piano.mf.73.m4a */,
+				1ABEDACF1C45333600D64D57 /* Piano.mf.74.m4a */,
+				1ABEDAD01C45333600D64D57 /* Piano.mf.75.m4a */,
+				1ABEDAD11C45333600D64D57 /* Piano.mf.76.m4a */,
+				1ABEDAD21C45333600D64D57 /* Piano.mf.77.m4a */,
+				1ABEDAD31C45333600D64D57 /* Piano.mf.78.m4a */,
+				1ABEDAD41C45333600D64D57 /* Piano.mf.79.m4a */,
+				1ABEDAD51C45333600D64D57 /* Piano.mf.80.m4a */,
+				1ABEDAD61C45333600D64D57 /* Piano.mf.81.m4a */,
+				1ABEDAD71C45333600D64D57 /* Piano.mf.82.m4a */,
+				1ABEDAD81C45333600D64D57 /* Piano.mf.83.m4a */,
+				1ABEDAD91C45333700D64D57 /* Piano.mf.84.m4a */,
+				1ABEDADA1C45333700D64D57 /* Piano.mf.85.m4a */,
+				1ABEDADB1C45333700D64D57 /* Piano.mf.86.m4a */,
+				1ABEDADC1C45333700D64D57 /* Piano.mf.87.m4a */,
+				1ABEDADD1C45333700D64D57 /* Piano.mf.88.m4a */,
+				1ABEDADE1C45333700D64D57 /* Piano.mf.89.m4a */,
+				1ABEDADF1C45333700D64D57 /* Piano.mf.90.m4a */,
+				1ABEDAE01C45333700D64D57 /* Piano.mf.91.m4a */,
+				1ABEDAE11C45333700D64D57 /* Piano.mf.92.m4a */,
+				1ABEDAE21C45333700D64D57 /* Piano.mf.93.m4a */,
+				1ABEDAE31C45333700D64D57 /* Piano.mf.94.m4a */,
+				1ABEDAE41C45333700D64D57 /* Piano.mf.95.m4a */,
+				1ABEDAE51C45333700D64D57 /* Piano.mf.96.m4a */,
+				1ABEDAE61C45333700D64D57 /* Piano.mf.97.m4a */,
+				1ABEDAE71C45333700D64D57 /* Piano.mf.98.m4a */,
+				1ABEDAE81C45333700D64D57 /* Piano.mf.99.m4a */,
+			);
+			path = "piano-samples";
+			sourceTree = "<group>";
+		};
+		1AEEB7531BBE7AD600A66A2E /* SeeScoreLib */ = {
+			isa = PBXGroup;
+			children = (
+				1AEEB7541BBE7AD600A66A2E /* AppStore-Release */,
+				1AEEB7561BBE7AD600A66A2E /* Universal */,
+			);
+			path = SeeScoreLib;
+			sourceTree = "<group>";
+		};
+		1AEEB7541BBE7AD600A66A2E /* AppStore-Release */ = {
+			isa = PBXGroup;
+			children = (
+				1AEEB7551BBE7AD600A66A2E /* SeeScoreLib.framework */,
+			);
+			path = "AppStore-Release";
+			sourceTree = "<group>";
+		};
+		1AEEB7561BBE7AD600A66A2E /* Universal */ = {
+			isa = PBXGroup;
+			children = (
+				1AEEB7571BBE7AD600A66A2E /* SeeScoreLib.framework */,
+			);
+			path = Universal;
+			sourceTree = "<group>";
+		};
+		7138AB7A1CF45DC700E393FA /* flute-samples */ = {
+			isa = PBXGroup;
+			children = (
+				7138AB7B1CF45DC700E393FA /* flute.nonvib.mf.100.wav */,
+				7138AB7C1CF45DC700E393FA /* flute.nonvib.mf.101.wav */,
+				7138AB7D1CF45DC700E393FA /* flute.nonvib.mf.102.wav */,
+				7138AB7E1CF45DC700E393FA /* flute.nonvib.mf.103.wav */,
+				7138AB7F1CF45DC700E393FA /* flute.nonvib.mf.104.wav */,
+				7138AB801CF45DC700E393FA /* flute.nonvib.mf.105.wav */,
+				7138AB811CF45DC700E393FA /* flute.nonvib.mf.106.wav */,
+				7138AB821CF45DC700E393FA /* flute.nonvib.mf.107.wav */,
+				7138AB831CF45DC700E393FA /* flute.nonvib.mf.108.wav */,
+				7138AB841CF45DC700E393FA /* flute.nonvib.mf.33.wav */,
+				7138AB851CF45DC700E393FA /* flute.nonvib.mf.34.wav */,
+				7138AB861CF45DC700E393FA /* flute.nonvib.mf.35.wav */,
+				7138AB871CF45DC700E393FA /* flute.nonvib.mf.36.wav */,
+				7138AB881CF45DC700E393FA /* flute.nonvib.mf.37.wav */,
+				7138AB891CF45DC700E393FA /* flute.nonvib.mf.38.wav */,
+				7138AB8A1CF45DC700E393FA /* flute.nonvib.mf.39.wav */,
+				7138AB8B1CF45DC700E393FA /* flute.nonvib.mf.40.wav */,
+				7138AB8C1CF45DC700E393FA /* flute.nonvib.mf.41.wav */,
+				7138AB8D1CF45DC700E393FA /* flute.nonvib.mf.42.wav */,
+				7138AB8E1CF45DC700E393FA /* flute.nonvib.mf.43.wav */,
+				7138AB8F1CF45DC700E393FA /* flute.nonvib.mf.45.wav */,
+				7138AB901CF45DC700E393FA /* flute.nonvib.mf.46.wav */,
+				7138AB911CF45DC700E393FA /* flute.nonvib.mf.47.wav */,
+				7138AB921CF45DC700E393FA /* flute.nonvib.mf.48.wav */,
+				7138AB931CF45DC700E393FA /* flute.nonvib.mf.49.wav */,
+				7138AB941CF45DC700E393FA /* flute.nonvib.mf.50.wav */,
+				7138AB951CF45DC700E393FA /* flute.nonvib.mf.51.wav */,
+				7138AB961CF45DC700E393FA /* flute.nonvib.mf.52.wav */,
+				7138AB971CF45DC700E393FA /* flute.nonvib.mf.53.wav */,
+				7138AB981CF45DC700E393FA /* flute.nonvib.mf.54.wav */,
+				7138AB991CF45DC700E393FA /* flute.nonvib.mf.55.wav */,
+				7138AB9A1CF45DC700E393FA /* flute.nonvib.mf.56.wav */,
+				7138AB9B1CF45DC700E393FA /* flute.nonvib.mf.57.wav */,
+				7138AB9C1CF45DC700E393FA /* flute.nonvib.mf.58.wav */,
+				7138AB9D1CF45DC700E393FA /* flute.nonvib.mf.59.wav */,
+				7138AB9E1CF45DC700E393FA /* flute.nonvib.mf.60.wav */,
+				7138AB9F1CF45DC700E393FA /* flute.nonvib.mf.61.wav */,
+				7138ABA01CF45DC700E393FA /* flute.nonvib.mf.62.wav */,
+				7138ABA11CF45DC700E393FA /* flute.nonvib.mf.63.wav */,
+				7138ABA21CF45DC700E393FA /* flute.nonvib.mf.64.wav */,
+				7138ABA31CF45DC700E393FA /* flute.nonvib.mf.65.wav */,
+				7138ABA41CF45DC700E393FA /* flute.nonvib.mf.66.wav */,
+				7138ABA51CF45DC700E393FA /* flute.nonvib.mf.67.wav */,
+				7138ABA61CF45DC700E393FA /* flute.nonvib.mf.68.wav */,
+				7138ABA71CF45DC700E393FA /* flute.nonvib.mf.69.wav */,
+				7138ABA81CF45DC700E393FA /* flute.nonvib.mf.70.wav */,
+				7138ABA91CF45DC700E393FA /* flute.nonvib.mf.71.wav */,
+				7138ABAA1CF45DC700E393FA /* flute.nonvib.mf.72.wav */,
+				7138ABAB1CF45DC700E393FA /* flute.nonvib.mf.73.wav */,
+				7138ABAC1CF45DC700E393FA /* flute.nonvib.mf.74.wav */,
+				7138ABAD1CF45DC700E393FA /* flute.nonvib.mf.75.wav */,
+				7138ABAE1CF45DC700E393FA /* flute.nonvib.mf.76.wav */,
+				7138ABAF1CF45DC700E393FA /* flute.nonvib.mf.77.wav */,
+				7138ABB01CF45DC700E393FA /* flute.nonvib.mf.78.wav */,
+				7138ABB11CF45DC700E393FA /* flute.nonvib.mf.79.wav */,
+				7138ABB21CF45DC700E393FA /* flute.nonvib.mf.80.wav */,
+				7138ABB31CF45DC700E393FA /* flute.nonvib.mf.81.wav */,
+				7138ABB41CF45DC700E393FA /* flute.nonvib.mf.82.wav */,
+				7138ABB51CF45DC700E393FA /* flute.nonvib.mf.83.wav */,
+				7138ABB61CF45DC700E393FA /* flute.nonvib.mf.84.wav */,
+				7138ABB71CF45DC700E393FA /* flute.nonvib.mf.85.wav */,
+				7138ABB81CF45DC700E393FA /* flute.nonvib.mf.86.wav */,
+				7138ABB91CF45DC700E393FA /* flute.nonvib.mf.87.wav */,
+				7138ABBA1CF45DC700E393FA /* flute.nonvib.mf.88.wav */,
+				7138ABBB1CF45DC700E393FA /* flute.nonvib.mf.89.wav */,
+				7138ABBC1CF45DC700E393FA /* flute.nonvib.mf.90.wav */,
+				7138ABBD1CF45DC700E393FA /* flute.nonvib.mf.91.wav */,
+				7138ABBE1CF45DC700E393FA /* flute.nonvib.mf.92.wav */,
+				7138ABBF1CF45DC700E393FA /* flute.nonvib.mf.93.wav */,
+				7138ABC01CF45DC700E393FA /* flute.nonvib.mf.94.wav */,
+				7138ABC11CF45DC700E393FA /* flute.nonvib.mf.95.wav */,
+				7138ABC21CF45DC700E393FA /* flute.nonvib.mf.96.wav */,
+				7138ABC31CF45DC700E393FA /* flute.nonvib.mf.97.wav */,
+				7138ABC41CF45DC700E393FA /* flute.nonvib.mf.98.wav */,
+				7138ABC51CF45DC700E393FA /* flute.nonvib.mf.99.wav */,
+			);
+			path = "flute-samples";
+			sourceTree = "<group>";
+		};
+		717D2EEE1D0EC4C500D40B5E /* btlemanager */ = {
+			isa = PBXGroup;
+			children = (
+				717D2EEF1D0EC4C500D40B5E /* bluetooth.png */,
+				717D2EF01D0EC4C500D40B5E /* bluetoothoff.png */,
+				717D2EF11D0EC4C500D40B5E /* BTLEManager.h */,
+				717D2EF21D0EC4C500D40B5E /* BTLEManager.m */,
+				717D2EF31D0EC4C500D40B5E /* libMelodySmart.a */,
+				717D2EF41D0EC4C500D40B5E /* MelodyManager.h */,
+				717D2EF51D0EC4C500D40B5E /* MelodySmart.h */,
+				717D2EF61D0EC4C500D40B5E /* NSData+NSData_Conversion.h */,
+				717D2EF71D0EC4C500D40B5E /* NSData+NSData_Conversion.m */,
+				717D2EF81D0EC4C500D40B5E /* OtaStructs.h */,
+				717D2EF91D0EC4C500D40B5E /* SSSampleAppDelegate.h */,
+			);
+			path = btlemanager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A008A43165D03C60071B846 /* BreathScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A008A6B165D03C60071B846 /* Build configuration list for PBXNativeTarget "BreathScore" */;
+			buildPhases = (
+				1A008A41165D03C60071B846 /* Frameworks */,
+				1A008A40165D03C60071B846 /* Sources */,
+				1A008A42165D03C60071B846 /* Resources */,
+				1A301DB51A48208A003E59C2 /* CopyFiles */,
+				717BE7F61D1C184900D8FBFF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreathScore;
+			productName = SeeScoreIOS;
+			productReference = 1A008A44165D03C60071B846 /* BreathScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AEEB75A1BBE7B1000A66A2E /* BreathScore AppStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEEB7DC1BBE7B1000A66A2E /* Build configuration list for PBXNativeTarget "BreathScore AppStore" */;
+			buildPhases = (
+				1AEEB75B1BBE7B1000A66A2E /* Sources */,
+				1AEEB7651BBE7B1000A66A2E /* Frameworks */,
+				1AEEB76C1BBE7B1000A66A2E /* Resources */,
+				1AEEB7DB1BBE7B1000A66A2E /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BreathScore AppStore";
+			productName = SeeScoreIOS;
+			productReference = 1AEEB7DF1BBE7B1000A66A2E /* BreathScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A008A3B165D03C50071B846 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SS;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Dolphin Computing Ltd";
+				TargetAttributes = {
+					1A008A43165D03C60071B846 = {
+						DevelopmentTeam = 7HMHYHNLFC;
+						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
+					};
+					1AEEB75A1BBE7B1000A66A2E = {
+						DevelopmentTeam = 7HMHYHNLFC;
+					};
+				};
+			};
+			buildConfigurationList = 1A008A3E165D03C50071B846 /* Build configuration list for PBXProject "BreathScore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A008A39165D03C50071B846;
+			productRefGroup = 1A008A45165D03C60071B846 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A008A43165D03C60071B846 /* BreathScore */,
+				1AEEB75A1BBE7B1000A66A2E /* BreathScore AppStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A008A42165D03C60071B846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7138AC1A1CF45DC700E393FA /* flute.nonvib.mf.67.wav in Resources */,
+				1ABEDB071C45333700D64D57 /* Piano.mf.29.m4a in Resources */,
+				7138AC0C1CF45DC700E393FA /* flute.nonvib.mf.60.wav in Resources */,
+				1ABEDAFD1C45333700D64D57 /* Piano.mf.24.m4a in Resources */,
+				7138AC0E1CF45DC700E393FA /* flute.nonvib.mf.61.wav in Resources */,
+				1A008A53165D03C60071B846 /* InfoPlist.strings in Resources */,
+				7138AB761CF3246900E393FA /* playbuttonTINY.png in Resources */,
+				7138ABD01CF45DC700E393FA /* flute.nonvib.mf.105.wav in Resources */,
+				7138AC121CF45DC700E393FA /* flute.nonvib.mf.63.wav in Resources */,
+				7138AC221CF45DC700E393FA /* flute.nonvib.mf.71.wav in Resources */,
+				7138AC521CF45DC700E393FA /* flute.nonvib.mf.95.wav in Resources */,
+				1A008A5B165D03C60071B846 /* Default.png in Resources */,
+				717BE7E01D119ECD00D8FBFF /* BreathScoreAppIcon76x76.png in Resources */,
+				1ABEDB511C45333700D64D57 /* Piano.mf.66.m4a in Resources */,
+				1ABEDB011C45333700D64D57 /* Piano.mf.26.m4a in Resources */,
+				7138AC5A1CF45DC700E393FA /* flute.nonvib.mf.99.wav in Resources */,
+				7138ABDE1CF45DC700E393FA /* flute.nonvib.mf.36.wav in Resources */,
+				1ABEDB851C45333700D64D57 /* Piano.mf.92.m4a in Resources */,
+				7138AC141CF45DC700E393FA /* flute.nonvib.mf.64.wav in Resources */,
+				1ABEDB591C45333700D64D57 /* Piano.mf.70.m4a in Resources */,
+				7138AB6A1CF30D5300E393FA /* INHALEButton.png in Resources */,
+				7138AC4E1CF45DC700E393FA /* flute.nonvib.mf.93.wav in Resources */,
+				7138AC1C1CF45DC700E393FA /* flute.nonvib.mf.68.wav in Resources */,
+				7138ABFA1CF45DC700E393FA /* flute.nonvib.mf.51.wav in Resources */,
+				1ABEDB0D1C45333700D64D57 /* Piano.mf.32.m4a in Resources */,
+				717D2EFA1D0EC4C500D40B5E /* bluetooth.png in Resources */,
+				1ABEDB2F1C45333700D64D57 /* Piano.mf.49.m4a in Resources */,
+				1ABEDB231C45333700D64D57 /* Piano.mf.43.m4a in Resources */,
+				1A008A5D165D03C60071B846 /* Default@2x.png in Resources */,
+				715CEA661D212B32009B8D34 /* SplashPortraitHiRes.png in Resources */,
+				1ABEDB311C45333700D64D57 /* Piano.mf.50.m4a in Resources */,
+				1A008A5F165D03C60071B846 /* Default-568h@2x.png in Resources */,
+				1ABEDB291C45333700D64D57 /* Piano.mf.46.m4a in Resources */,
+				7138ABEA1CF45DC700E393FA /* flute.nonvib.mf.42.wav in Resources */,
+				715CEA601D212B32009B8D34 /* SplashLandscape1024x768.png in Resources */,
+				7138AC101CF45DC700E393FA /* flute.nonvib.mf.62.wav in Resources */,
+				1ABEDB551C45333700D64D57 /* Piano.mf.68.m4a in Resources */,
+				71A8AA2F1CEE15CA0089FB82 /* Bluetooth-CONNECTED.png in Resources */,
+				1ABEDB7D1C45333700D64D57 /* Piano.mf.88.m4a in Resources */,
+				717BE7E31D119ECD00D8FBFF /* BreathScoreAppIcon152x152.png in Resources */,
+				7138ABDA1CF45DC700E393FA /* flute.nonvib.mf.34.wav in Resources */,
+				7138ABCA1CF45DC700E393FA /* flute.nonvib.mf.102.wav in Resources */,
+				7138ABFC1CF45DC700E393FA /* flute.nonvib.mf.52.wav in Resources */,
+				1ABEDB6B1C45333700D64D57 /* Piano.mf.79.m4a in Resources */,
+				1ABEDB4D1C45333700D64D57 /* Piano.mf.64.m4a in Resources */,
+				717BE7DF1D119ECD00D8FBFF /* BreathScoreAppIcon58x58.png in Resources */,
+				1A008A62165D03C60071B846 /* MainStoryboard_iPhone.storyboard in Resources */,
+				7138ABF61CF45DC700E393FA /* flute.nonvib.mf.49.wav in Resources */,
+				7138AB721CF30FE500E393FA /* pausebuttonSMALL.png in Resources */,
+				7138AC1E1CF45DC700E393FA /* flute.nonvib.mf.69.wav in Resources */,
+				1ABEDB771C45333700D64D57 /* Piano.mf.85.m4a in Resources */,
+				7138AC621CF5DB8400E393FA /* BlueToothDisconnected.png in Resources */,
+				1ABEDB891C45333700D64D57 /* Piano.mf.94.m4a in Resources */,
+				1ABEDB371C45333700D64D57 /* Piano.mf.53.m4a in Resources */,
+				7138ABE41CF45DC700E393FA /* flute.nonvib.mf.39.wav in Resources */,
+				7138AC161CF45DC700E393FA /* flute.nonvib.mf.65.wav in Resources */,
+				7138ABD81CF45DC700E393FA /* flute.nonvib.mf.33.wav in Resources */,
+				7138AC401CF45DC700E393FA /* flute.nonvib.mf.86.wav in Resources */,
+				1A008A65165D03C60071B846 /* MainStoryboard_iPad.storyboard in Resources */,
+				1ABEDB3B1C45333700D64D57 /* Piano.mf.55.m4a in Resources */,
+				1ABEDAE91C45333700D64D57 /* Piano.mf.100.m4a in Resources */,
+				7138AC501CF45DC700E393FA /* flute.nonvib.mf.94.wav in Resources */,
+				1ABEDB5B1C45333700D64D57 /* Piano.mf.71.m4a in Resources */,
+				7138ABE61CF45DC700E393FA /* flute.nonvib.mf.40.wav in Resources */,
+				7138AC2C1CF45DC700E393FA /* flute.nonvib.mf.76.wav in Resources */,
+				1ABEDB8B1C45333700D64D57 /* Piano.mf.95.m4a in Resources */,
+				1ABEDB171C45333700D64D57 /* Piano.mf.37.m4a in Resources */,
+				1ABEDB751C45333700D64D57 /* Piano.mf.84.m4a in Resources */,
+				7138AC561CF45DC700E393FA /* flute.nonvib.mf.97.wav in Resources */,
+				1ABEDB531C45333700D64D57 /* Piano.mf.67.m4a in Resources */,
+				7138AC281CF45DC700E393FA /* flute.nonvib.mf.74.wav in Resources */,
+				7138ABC61CF45DC700E393FA /* flute.nonvib.mf.100.wav in Resources */,
+				7138AC3C1CF45DC700E393FA /* flute.nonvib.mf.84.wav in Resources */,
+				1ABEDB0F1C45333700D64D57 /* Piano.mf.33.m4a in Resources */,
+				717BE7F31D11A56800D8FBFF /* 00 Helikopter.xml in Resources */,
+				7138ABF21CF45DC700E393FA /* flute.nonvib.mf.47.wav in Resources */,
+				1ABEDAF11C45333700D64D57 /* Piano.mf.104.m4a in Resources */,
+				7138AC001CF45DC700E393FA /* flute.nonvib.mf.54.wav in Resources */,
+				7138AC601CF5DB8400E393FA /* BlueToothConnected.png in Resources */,
+				7138ABEC1CF45DC700E393FA /* flute.nonvib.mf.43.wav in Resources */,
+				717D2EFC1D0EC4C500D40B5E /* bluetoothoff.png in Resources */,
+				7138AC4C1CF45DC700E393FA /* flute.nonvib.mf.92.wav in Resources */,
+				1ABEDB0B1C45333700D64D57 /* Piano.mf.31.m4a in Resources */,
+				1ABEDB391C45333700D64D57 /* Piano.mf.54.m4a in Resources */,
+				717BE7E11D119ECD00D8FBFF /* BreathScoreAppIcon80x80-1.png in Resources */,
+				1ABEDAFB1C45333700D64D57 /* Piano.mf.23.m4a in Resources */,
+				1ABEDB4F1C45333700D64D57 /* Piano.mf.65.m4a in Resources */,
+				7138AC461CF45DC700E393FA /* flute.nonvib.mf.89.wav in Resources */,
+				1ABEDB351C45333700D64D57 /* Piano.mf.52.m4a in Resources */,
+				7138ABCC1CF45DC700E393FA /* flute.nonvib.mf.103.wav in Resources */,
+				1ABEDB451C45333700D64D57 /* Piano.mf.60.m4a in Resources */,
+				1ABEDAED1C45333700D64D57 /* Piano.mf.102.m4a in Resources */,
+				71C3883C1CF898D70044A7C3 /* Images-3.xcassets in Resources */,
+				71A8AA311CEE15CA0089FB82 /* Bluetooth-DISCONNECTED.png in Resources */,
+				1ABEDAF31C45333700D64D57 /* Piano.mf.105.m4a in Resources */,
+				715CEA641D212B32009B8D34 /* SplashPortrait768x1024.png in Resources */,
+				1ABEDB831C45333700D64D57 /* Piano.mf.91.m4a in Resources */,
+				7138AB6C1CF30D5300E393FA /* PauseButton.png in Resources */,
+				7138AC201CF45DC700E393FA /* flute.nonvib.mf.70.wav in Resources */,
+				1ABEDB4B1C45333700D64D57 /* Piano.mf.63.m4a in Resources */,
+				7138AC441CF45DC700E393FA /* flute.nonvib.mf.88.wav in Resources */,
+				1ABEDB251C45333700D64D57 /* Piano.mf.44.m4a in Resources */,
+				1ABEDB691C45333700D64D57 /* Piano.mf.78.m4a in Resources */,
+				7138AC2E1CF45DC700E393FA /* flute.nonvib.mf.77.wav in Resources */,
+				1ABEDAF51C45333700D64D57 /* Piano.mf.106.m4a in Resources */,
+				1ABEDB331C45333700D64D57 /* Piano.mf.51.m4a in Resources */,
+				7138ABEE1CF45DC700E393FA /* flute.nonvib.mf.45.wav in Resources */,
+				1ABEDB651C45333700D64D57 /* Piano.mf.76.m4a in Resources */,
+				7138AC041CF45DC700E393FA /* flute.nonvib.mf.56.wav in Resources */,
+				717BE7F51D11A56800D8FBFF /* 00 Deze vuist.xml in Resources */,
+				1ABEDB631C45333700D64D57 /* Piano.mf.75.m4a in Resources */,
+				7138AC241CF45DC700E393FA /* flute.nonvib.mf.72.wav in Resources */,
+				1ABEDB6F1C45333700D64D57 /* Piano.mf.81.m4a in Resources */,
+				7138ABC81CF45DC700E393FA /* flute.nonvib.mf.101.wav in Resources */,
+				1ABEDB491C45333700D64D57 /* Piano.mf.62.m4a in Resources */,
+				1ABEDB2D1C45333700D64D57 /* Piano.mf.48.m4a in Resources */,
+				717BE7F11D11A56800D8FBFF /* 00 Herfst.xml in Resources */,
+				1ABEDB271C45333700D64D57 /* Piano.mf.45.m4a in Resources */,
+				1ABEDAEB1C45333700D64D57 /* Piano.mf.101.m4a in Resources */,
+				7138AC261CF45DC700E393FA /* flute.nonvib.mf.73.wav in Resources */,
+				1ABEDB5D1C45333700D64D57 /* Piano.mf.72.m4a in Resources */,
+				1ABEDB051C45333700D64D57 /* Piano.mf.28.m4a in Resources */,
+				1ABEDB151C45333700D64D57 /* Piano.mf.36.m4a in Resources */,
+				7138ABF01CF45DC700E393FA /* flute.nonvib.mf.46.wav in Resources */,
+				1ABEDB611C45333700D64D57 /* Piano.mf.74.m4a in Resources */,
+				1ABEDB571C45333700D64D57 /* Piano.mf.69.m4a in Resources */,
+				7138AB701CF30FE500E393FA /* playbuttonSMALL.png in Resources */,
+				1ABEDB8F1C45333700D64D57 /* Piano.mf.97.m4a in Resources */,
+				7138AC0A1CF45DC700E393FA /* flute.nonvib.mf.59.wav in Resources */,
+				717BE7F41D11A56800D8FBFF /* 00 Er zat een klein.xml in Resources */,
+				7138ABD41CF45DC700E393FA /* flute.nonvib.mf.107.wav in Resources */,
+				7138ABF81CF45DC700E393FA /* flute.nonvib.mf.50.wav in Resources */,
+				7138ABF41CF45DC700E393FA /* flute.nonvib.mf.48.wav in Resources */,
+				7138ABE81CF45DC700E393FA /* flute.nonvib.mf.41.wav in Resources */,
+				715CEA621D212B32009B8D34 /* SplashLandscapeHIRes.png in Resources */,
+				1ABEDB671C45333700D64D57 /* Piano.mf.77.m4a in Resources */,
+				1ABEDB091C45333700D64D57 /* Piano.mf.30.m4a in Resources */,
+				1ABEDB1B1C45333700D64D57 /* Piano.mf.39.m4a in Resources */,
+				1ABEDAFF1C45333700D64D57 /* Piano.mf.25.m4a in Resources */,
+				1ABEDB711C45333700D64D57 /* Piano.mf.82.m4a in Resources */,
+				7138AB781CF3246900E393FA /* pausebuttonTINY.png in Resources */,
+				7138AC361CF45DC700E393FA /* flute.nonvib.mf.81.wav in Resources */,
+				1ABEDB911C45333700D64D57 /* Piano.mf.98.m4a in Resources */,
+				7138AC2A1CF45DC700E393FA /* flute.nonvib.mf.75.wav in Resources */,
+				1ABEDB211C45333700D64D57 /* Piano.mf.42.m4a in Resources */,
+				1ABEDB8D1C45333700D64D57 /* Piano.mf.96.m4a in Resources */,
+				1ABEDB411C45333700D64D57 /* Piano.mf.58.m4a in Resources */,
+				7138ABD21CF45DC700E393FA /* flute.nonvib.mf.106.wav in Resources */,
+				7138AC301CF45DC700E393FA /* flute.nonvib.mf.78.wav in Resources */,
+				1ABEDB1D1C45333700D64D57 /* Piano.mf.40.m4a in Resources */,
+				1ABEDB931C45333700D64D57 /* Piano.mf.99.m4a in Resources */,
+				717BE7DE1D119ECD00D8FBFF /* BreathScoreAppIcon40x40.png in Resources */,
+				1ABEDB111C45333700D64D57 /* Piano.mf.34.m4a in Resources */,
+				7138AC321CF45DC700E393FA /* flute.nonvib.mf.79.wav in Resources */,
+				1ABEDB3D1C45333700D64D57 /* Piano.mf.56.m4a in Resources */,
+				717BE7DD1D119ECD00D8FBFF /* BreathScoreAppIcon29x29-2.png in Resources */,
+				7138AC181CF45DC700E393FA /* flute.nonvib.mf.66.wav in Resources */,
+				7138ABE01CF45DC700E393FA /* flute.nonvib.mf.37.wav in Resources */,
+				7138ABCE1CF45DC700E393FA /* flute.nonvib.mf.104.wav in Resources */,
+				1ABEDB031C45333700D64D57 /* Piano.mf.27.m4a in Resources */,
+				1ABEDAEF1C45333700D64D57 /* Piano.mf.103.m4a in Resources */,
+				7138ABD61CF45DC700E393FA /* flute.nonvib.mf.108.wav in Resources */,
+				1ABEDB6D1C45333700D64D57 /* Piano.mf.80.m4a in Resources */,
+				7138ABE21CF45DC700E393FA /* flute.nonvib.mf.38.wav in Resources */,
+				717BE7E91D11A51500D8FBFF /* leftrepeat.png in Resources */,
+				1ABEDB131C45333700D64D57 /* Piano.mf.35.m4a in Resources */,
+				7138ABFE1CF45DC700E393FA /* flute.nonvib.mf.53.wav in Resources */,
+				7138AB661CF30D5300E393FA /* EXHALEButton.png in Resources */,
+				1ABEDB471C45333700D64D57 /* Piano.mf.61.m4a in Resources */,
+				7138AC341CF45DC700E393FA /* flute.nonvib.mf.80.wav in Resources */,
+				1ABEDB431C45333700D64D57 /* Piano.mf.59.m4a in Resources */,
+				717BE7EB1D11A52100D8FBFF /* rightrepeat.png in Resources */,
+				7138AC3A1CF45DC700E393FA /* flute.nonvib.mf.83.wav in Resources */,
+				1ABEDB731C45333700D64D57 /* Piano.mf.83.m4a in Resources */,
+				7138AC081CF45DC700E393FA /* flute.nonvib.mf.58.wav in Resources */,
+				7138AC541CF45DC700E393FA /* flute.nonvib.mf.96.wav in Resources */,
+				7138AC4A1CF45DC700E393FA /* flute.nonvib.mf.91.wav in Resources */,
+				1ABEDB871C45333700D64D57 /* Piano.mf.93.m4a in Resources */,
+				1ABEDB191C45333700D64D57 /* Piano.mf.38.m4a in Resources */,
+				1ABEDB811C45333700D64D57 /* Piano.mf.90.m4a in Resources */,
+				1ABEDB791C45333700D64D57 /* Piano.mf.86.m4a in Resources */,
+				7138ABDC1CF45DC700E393FA /* flute.nonvib.mf.35.wav in Resources */,
+				1ABEDB5F1C45333700D64D57 /* Piano.mf.73.m4a in Resources */,
+				7138AC3E1CF45DC700E393FA /* flute.nonvib.mf.85.wav in Resources */,
+				1ABEDB7B1C45333700D64D57 /* Piano.mf.87.m4a in Resources */,
+				7138AB681CF30D5300E393FA /* Playbutton.png in Resources */,
+				7138AC581CF45DC700E393FA /* flute.nonvib.mf.98.wav in Resources */,
+				717BE7E21D119ECD00D8FBFF /* BreathScoreAppIcon80x80.png in Resources */,
+				7138AC421CF45DC700E393FA /* flute.nonvib.mf.87.wav in Resources */,
+				7138AC021CF45DC700E393FA /* flute.nonvib.mf.55.wav in Resources */,
+				717BE7F21D11A56800D8FBFF /* 00 Hoedje van papier.xml in Resources */,
+				1ABEDB2B1C45333700D64D57 /* Piano.mf.47.m4a in Resources */,
+				7138AC481CF45DC700E393FA /* flute.nonvib.mf.90.wav in Resources */,
+				1ABEDAF71C45333700D64D57 /* Piano.mf.107.m4a in Resources */,
+				7138AC061CF45DC700E393FA /* flute.nonvib.mf.57.wav in Resources */,
+				1ABEDAF91C45333700D64D57 /* Piano.mf.108.m4a in Resources */,
+				1ABEDB3F1C45333700D64D57 /* Piano.mf.57.m4a in Resources */,
+				1ABEDB1F1C45333700D64D57 /* Piano.mf.41.m4a in Resources */,
+				7138AC381CF45DC700E393FA /* flute.nonvib.mf.82.wav in Resources */,
+				1ABEDB7F1C45333700D64D57 /* Piano.mf.89.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEEB76C1BBE7B1000A66A2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABEDB081C45333700D64D57 /* Piano.mf.29.m4a in Resources */,
+				1ABEDAFE1C45333700D64D57 /* Piano.mf.24.m4a in Resources */,
+				1AEEB76D1BBE7B1000A66A2E /* InfoPlist.strings in Resources */,
+				7138AC171CF45DC700E393FA /* flute.nonvib.mf.65.wav in Resources */,
+				7138ABFB1CF45DC700E393FA /* flute.nonvib.mf.51.wav in Resources */,
+				1AEEB76E1BBE7B1000A66A2E /* Default.png in Resources */,
+				1ABEDB521C45333700D64D57 /* Piano.mf.66.m4a in Resources */,
+				7138AC5B1CF45DC700E393FA /* flute.nonvib.mf.99.wav in Resources */,
+				7138ABF71CF45DC700E393FA /* flute.nonvib.mf.49.wav in Resources */,
+				7138AC511CF45DC700E393FA /* flute.nonvib.mf.94.wav in Resources */,
+				7138AC631CF5DB8400E393FA /* BlueToothDisconnected.png in Resources */,
+				7138AC611CF5DB8400E393FA /* BlueToothConnected.png in Resources */,
+				1ABEDB021C45333700D64D57 /* Piano.mf.26.m4a in Resources */,
+				7138AC3F1CF45DC700E393FA /* flute.nonvib.mf.85.wav in Resources */,
+				1ABEDB861C45333700D64D57 /* Piano.mf.92.m4a in Resources */,
+				1ABEDB5A1C45333700D64D57 /* Piano.mf.70.m4a in Resources */,
+				1ABEDB0E1C45333700D64D57 /* Piano.mf.32.m4a in Resources */,
+				7138AC3B1CF45DC700E393FA /* flute.nonvib.mf.83.wav in Resources */,
+				7138ABDD1CF45DC700E393FA /* flute.nonvib.mf.35.wav in Resources */,
+				1ABEDB301C45333700D64D57 /* Piano.mf.49.m4a in Resources */,
+				7138ABF31CF45DC700E393FA /* flute.nonvib.mf.47.wav in Resources */,
+				7138AB731CF30FE500E393FA /* pausebuttonSMALL.png in Resources */,
+				715CEA611D212B32009B8D34 /* SplashLandscape1024x768.png in Resources */,
+				7138AC151CF45DC700E393FA /* flute.nonvib.mf.64.wav in Resources */,
+				7138AC131CF45DC700E393FA /* flute.nonvib.mf.63.wav in Resources */,
+				715CEA651D212B32009B8D34 /* SplashPortrait768x1024.png in Resources */,
+				7138AC491CF45DC700E393FA /* flute.nonvib.mf.90.wav in Resources */,
+				1ABEDB241C45333700D64D57 /* Piano.mf.43.m4a in Resources */,
+				7138AB6B1CF30D5300E393FA /* INHALEButton.png in Resources */,
+				7138ABF91CF45DC700E393FA /* flute.nonvib.mf.50.wav in Resources */,
+				1AEEB76F1BBE7B1000A66A2E /* Default@2x.png in Resources */,
+				1ABEDB321C45333700D64D57 /* Piano.mf.50.m4a in Resources */,
+				1AEEB7701BBE7B1000A66A2E /* Default-568h@2x.png in Resources */,
+				7138AC591CF45DC700E393FA /* flute.nonvib.mf.98.wav in Resources */,
+				1ABEDB2A1C45333700D64D57 /* Piano.mf.46.m4a in Resources */,
+				7138ABEB1CF45DC700E393FA /* flute.nonvib.mf.42.wav in Resources */,
+				1ABEDB561C45333700D64D57 /* Piano.mf.68.m4a in Resources */,
+				1ABEDB7E1C45333700D64D57 /* Piano.mf.88.m4a in Resources */,
+				1ABEDB6C1C45333700D64D57 /* Piano.mf.79.m4a in Resources */,
+				1ABEDB4E1C45333700D64D57 /* Piano.mf.64.m4a in Resources */,
+				1AEEB7711BBE7B1000A66A2E /* MainStoryboard_iPhone.storyboard in Resources */,
+				1ABEDB781C45333700D64D57 /* Piano.mf.85.m4a in Resources */,
+				7138ABE51CF45DC700E393FA /* flute.nonvib.mf.39.wav in Resources */,
+				1ABEDB8A1C45333700D64D57 /* Piano.mf.94.m4a in Resources */,
+				1ABEDB381C45333700D64D57 /* Piano.mf.53.m4a in Resources */,
+				7138AC3D1CF45DC700E393FA /* flute.nonvib.mf.84.wav in Resources */,
+				7138AC0F1CF45DC700E393FA /* flute.nonvib.mf.61.wav in Resources */,
+				1AEEB7721BBE7B1000A66A2E /* MainStoryboard_iPad.storyboard in Resources */,
+				7138ABF51CF45DC700E393FA /* flute.nonvib.mf.48.wav in Resources */,
+				1ABEDB3C1C45333700D64D57 /* Piano.mf.55.m4a in Resources */,
+				7138AC071CF45DC700E393FA /* flute.nonvib.mf.57.wav in Resources */,
+				1ABEDAEA1C45333700D64D57 /* Piano.mf.100.m4a in Resources */,
+				7138AC311CF45DC700E393FA /* flute.nonvib.mf.78.wav in Resources */,
+				7138ABC91CF45DC700E393FA /* flute.nonvib.mf.101.wav in Resources */,
+				7138AC571CF45DC700E393FA /* flute.nonvib.mf.97.wav in Resources */,
+				7138AC091CF45DC700E393FA /* flute.nonvib.mf.58.wav in Resources */,
+				1ABEDB5C1C45333700D64D57 /* Piano.mf.71.m4a in Resources */,
+				1ABEDB8C1C45333700D64D57 /* Piano.mf.95.m4a in Resources */,
+				7138AC1F1CF45DC700E393FA /* flute.nonvib.mf.69.wav in Resources */,
+				7138ABE71CF45DC700E393FA /* flute.nonvib.mf.40.wav in Resources */,
+				1ABEDB181C45333700D64D57 /* Piano.mf.37.m4a in Resources */,
+				1ABEDB761C45333700D64D57 /* Piano.mf.84.m4a in Resources */,
+				1ABEDB541C45333700D64D57 /* Piano.mf.67.m4a in Resources */,
+				7138ABE31CF45DC700E393FA /* flute.nonvib.mf.38.wav in Resources */,
+				7138AC431CF45DC700E393FA /* flute.nonvib.mf.87.wav in Resources */,
+				1ABEDB101C45333700D64D57 /* Piano.mf.33.m4a in Resources */,
+				7138AC471CF45DC700E393FA /* flute.nonvib.mf.89.wav in Resources */,
+				1ABEDAF21C45333700D64D57 /* Piano.mf.104.m4a in Resources */,
+				7138AC2D1CF45DC700E393FA /* flute.nonvib.mf.76.wav in Resources */,
+				1ABEDB0C1C45333700D64D57 /* Piano.mf.31.m4a in Resources */,
+				715CEA631D212B32009B8D34 /* SplashLandscapeHIRes.png in Resources */,
+				7138AC2F1CF45DC700E393FA /* flute.nonvib.mf.77.wav in Resources */,
+				1ABEDB3A1C45333700D64D57 /* Piano.mf.54.m4a in Resources */,
+				1ABEDAFC1C45333700D64D57 /* Piano.mf.23.m4a in Resources */,
+				71A8AA321CEE15CA0089FB82 /* Bluetooth-DISCONNECTED.png in Resources */,
+				1ABEDB501C45333700D64D57 /* Piano.mf.65.m4a in Resources */,
+				1ABEDB361C45333700D64D57 /* Piano.mf.52.m4a in Resources */,
+				7138ABEF1CF45DC700E393FA /* flute.nonvib.mf.45.wav in Resources */,
+				1ABEDB461C45333700D64D57 /* Piano.mf.60.m4a in Resources */,
+				7138AC4B1CF45DC700E393FA /* flute.nonvib.mf.91.wav in Resources */,
+				7138ABD11CF45DC700E393FA /* flute.nonvib.mf.105.wav in Resources */,
+				1ABEDAEE1C45333700D64D57 /* Piano.mf.102.m4a in Resources */,
+				7138AC4D1CF45DC700E393FA /* flute.nonvib.mf.92.wav in Resources */,
+				7138ABD51CF45DC700E393FA /* flute.nonvib.mf.107.wav in Resources */,
+				7138AB711CF30FE500E393FA /* playbuttonSMALL.png in Resources */,
+				7138AC4F1CF45DC700E393FA /* flute.nonvib.mf.93.wav in Resources */,
+				1ABEDAF41C45333700D64D57 /* Piano.mf.105.m4a in Resources */,
+				7138AC031CF45DC700E393FA /* flute.nonvib.mf.55.wav in Resources */,
+				1ABEDB841C45333700D64D57 /* Piano.mf.91.m4a in Resources */,
+				1ABEDB4C1C45333700D64D57 /* Piano.mf.63.m4a in Resources */,
+				1ABEDB261C45333700D64D57 /* Piano.mf.44.m4a in Resources */,
+				1ABEDB6A1C45333700D64D57 /* Piano.mf.78.m4a in Resources */,
+				7138AC2B1CF45DC700E393FA /* flute.nonvib.mf.75.wav in Resources */,
+				7138ABE11CF45DC700E393FA /* flute.nonvib.mf.37.wav in Resources */,
+				7138AC0B1CF45DC700E393FA /* flute.nonvib.mf.59.wav in Resources */,
+				1ABEDAF61C45333700D64D57 /* Piano.mf.106.m4a in Resources */,
+				1ABEDB341C45333700D64D57 /* Piano.mf.51.m4a in Resources */,
+				1ABEDB661C45333700D64D57 /* Piano.mf.76.m4a in Resources */,
+				1ABEDB641C45333700D64D57 /* Piano.mf.75.m4a in Resources */,
+				1ABEDB701C45333700D64D57 /* Piano.mf.81.m4a in Resources */,
+				1ABEDB4A1C45333700D64D57 /* Piano.mf.62.m4a in Resources */,
+				1ABEDB2E1C45333700D64D57 /* Piano.mf.48.m4a in Resources */,
+				7138AC331CF45DC700E393FA /* flute.nonvib.mf.79.wav in Resources */,
+				7138AC291CF45DC700E393FA /* flute.nonvib.mf.74.wav in Resources */,
+				1ABEDB281C45333700D64D57 /* Piano.mf.45.m4a in Resources */,
+				7138ABCF1CF45DC700E393FA /* flute.nonvib.mf.104.wav in Resources */,
+				7138ABE91CF45DC700E393FA /* flute.nonvib.mf.41.wav in Resources */,
+				7138ABDB1CF45DC700E393FA /* flute.nonvib.mf.34.wav in Resources */,
+				1ABEDAEC1C45333700D64D57 /* Piano.mf.101.m4a in Resources */,
+				1ABEDB5E1C45333700D64D57 /* Piano.mf.72.m4a in Resources */,
+				7138ABD91CF45DC700E393FA /* flute.nonvib.mf.33.wav in Resources */,
+				1ABEDB061C45333700D64D57 /* Piano.mf.28.m4a in Resources */,
+				1ABEDB161C45333700D64D57 /* Piano.mf.36.m4a in Resources */,
+				1ABEDB621C45333700D64D57 /* Piano.mf.74.m4a in Resources */,
+				1ABEDB581C45333700D64D57 /* Piano.mf.69.m4a in Resources */,
+				7138AC0D1CF45DC700E393FA /* flute.nonvib.mf.60.wav in Resources */,
+				1ABEDB901C45333700D64D57 /* Piano.mf.97.m4a in Resources */,
+				1ABEDB681C45333700D64D57 /* Piano.mf.77.m4a in Resources */,
+				7138AB6D1CF30D5300E393FA /* PauseButton.png in Resources */,
+				715CEA671D212B32009B8D34 /* SplashPortraitHiRes.png in Resources */,
+				1ABEDB0A1C45333700D64D57 /* Piano.mf.30.m4a in Resources */,
+				1ABEDB1C1C45333700D64D57 /* Piano.mf.39.m4a in Resources */,
+				1ABEDB001C45333700D64D57 /* Piano.mf.25.m4a in Resources */,
+				1ABEDB721C45333700D64D57 /* Piano.mf.82.m4a in Resources */,
+				7138ABCB1CF45DC700E393FA /* flute.nonvib.mf.102.wav in Resources */,
+				1ABEDB921C45333700D64D57 /* Piano.mf.98.m4a in Resources */,
+				7138AC411CF45DC700E393FA /* flute.nonvib.mf.86.wav in Resources */,
+				7138AC451CF45DC700E393FA /* flute.nonvib.mf.88.wav in Resources */,
+				1ABEDB221C45333700D64D57 /* Piano.mf.42.m4a in Resources */,
+				1ABEDB8E1C45333700D64D57 /* Piano.mf.96.m4a in Resources */,
+				1ABEDB421C45333700D64D57 /* Piano.mf.58.m4a in Resources */,
+				7138ABFD1CF45DC700E393FA /* flute.nonvib.mf.52.wav in Resources */,
+				7138ABF11CF45DC700E393FA /* flute.nonvib.mf.46.wav in Resources */,
+				7138AC271CF45DC700E393FA /* flute.nonvib.mf.73.wav in Resources */,
+				1ABEDB1E1C45333700D64D57 /* Piano.mf.40.m4a in Resources */,
+				7138AB691CF30D5300E393FA /* Playbutton.png in Resources */,
+				7138AC251CF45DC700E393FA /* flute.nonvib.mf.72.wav in Resources */,
+				1ABEDB941C45333700D64D57 /* Piano.mf.99.m4a in Resources */,
+				7138ABD31CF45DC700E393FA /* flute.nonvib.mf.106.wav in Resources */,
+				1ABEDB121C45333700D64D57 /* Piano.mf.34.m4a in Resources */,
+				7138ABD71CF45DC700E393FA /* flute.nonvib.mf.108.wav in Resources */,
+				1ABEDB3E1C45333700D64D57 /* Piano.mf.56.m4a in Resources */,
+				7138AC531CF45DC700E393FA /* flute.nonvib.mf.95.wav in Resources */,
+				7138AC011CF45DC700E393FA /* flute.nonvib.mf.54.wav in Resources */,
+				7138AC1B1CF45DC700E393FA /* flute.nonvib.mf.67.wav in Resources */,
+				7138AC551CF45DC700E393FA /* flute.nonvib.mf.96.wav in Resources */,
+				7138ABC71CF45DC700E393FA /* flute.nonvib.mf.100.wav in Resources */,
+				7138AC211CF45DC700E393FA /* flute.nonvib.mf.70.wav in Resources */,
+				7138AC351CF45DC700E393FA /* flute.nonvib.mf.80.wav in Resources */,
+				1ABEDB041C45333700D64D57 /* Piano.mf.27.m4a in Resources */,
+				7138AC371CF45DC700E393FA /* flute.nonvib.mf.81.wav in Resources */,
+				1ABEDAF01C45333700D64D57 /* Piano.mf.103.m4a in Resources */,
+				1ABEDB6E1C45333700D64D57 /* Piano.mf.80.m4a in Resources */,
+				1ABEDB141C45333700D64D57 /* Piano.mf.35.m4a in Resources */,
+				7138AC111CF45DC700E393FA /* flute.nonvib.mf.62.wav in Resources */,
+				717D2EFD1D0EC4C500D40B5E /* bluetoothoff.png in Resources */,
+				7138AC191CF45DC700E393FA /* flute.nonvib.mf.66.wav in Resources */,
+				7138AC1D1CF45DC700E393FA /* flute.nonvib.mf.68.wav in Resources */,
+				1ABEDB481C45333700D64D57 /* Piano.mf.61.m4a in Resources */,
+				1ABEDB441C45333700D64D57 /* Piano.mf.59.m4a in Resources */,
+				1ABEDB741C45333700D64D57 /* Piano.mf.83.m4a in Resources */,
+				71A8AA301CEE15CA0089FB82 /* Bluetooth-CONNECTED.png in Resources */,
+				7138AB771CF3246900E393FA /* playbuttonTINY.png in Resources */,
+				1ABEDB881C45333700D64D57 /* Piano.mf.93.m4a in Resources */,
+				1ABEDB1A1C45333700D64D57 /* Piano.mf.38.m4a in Resources */,
+				1ABEDB821C45333700D64D57 /* Piano.mf.90.m4a in Resources */,
+				1ABEDB7A1C45333700D64D57 /* Piano.mf.86.m4a in Resources */,
+				1ABEDB601C45333700D64D57 /* Piano.mf.73.m4a in Resources */,
+				717D2EFB1D0EC4C500D40B5E /* bluetooth.png in Resources */,
+				7138ABDF1CF45DC700E393FA /* flute.nonvib.mf.36.wav in Resources */,
+				7138AB791CF3246900E393FA /* pausebuttonTINY.png in Resources */,
+				7138ABCD1CF45DC700E393FA /* flute.nonvib.mf.103.wav in Resources */,
+				7138AC231CF45DC700E393FA /* flute.nonvib.mf.71.wav in Resources */,
+				7138AC391CF45DC700E393FA /* flute.nonvib.mf.82.wav in Resources */,
+				1ABEDB7C1C45333700D64D57 /* Piano.mf.87.m4a in Resources */,
+				7138AB671CF30D5300E393FA /* EXHALEButton.png in Resources */,
+				1ABEDB2C1C45333700D64D57 /* Piano.mf.47.m4a in Resources */,
+				7138ABED1CF45DC700E393FA /* flute.nonvib.mf.43.wav in Resources */,
+				1ABEDAF81C45333700D64D57 /* Piano.mf.107.m4a in Resources */,
+				1ABEDAFA1C45333700D64D57 /* Piano.mf.108.m4a in Resources */,
+				1ABEDB401C45333700D64D57 /* Piano.mf.57.m4a in Resources */,
+				7138ABFF1CF45DC700E393FA /* flute.nonvib.mf.53.wav in Resources */,
+				7138AC051CF45DC700E393FA /* flute.nonvib.mf.56.wav in Resources */,
+				1ABEDB201C45333700D64D57 /* Piano.mf.41.m4a in Resources */,
+				1ABEDB801C45333700D64D57 /* Piano.mf.89.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		717BE7F61D1C184900D8FBFF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A008A40165D03C60071B846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A008A55165D03C60071B846 /* main.m in Sources */,
+				1AFF5CBE1C5A4EF100C0552B /* evaluation_key.c in Sources */,
+				1AFAEF3C1C71ED9600E45285 /* SSDragItem.m in Sources */,
+				1A9C37DD1B4A88ED00DF673D /* SSScrollView.m in Sources */,
+				1AFAEF391C71ECE300E45285 /* SSTurnControl.m in Sources */,
+				1A008A59165D03C60071B846 /* SSSampleAppDelegate.m in Sources */,
+				1A2597C11C7B39F200173744 /* SSEditCursor.m in Sources */,
+				1A400FA016FE58E40031D721 /* SettingsViewController.m in Sources */,
+				1A6AF8781C6A289B002D1751 /* SSEditLayer.m in Sources */,
+				1A20481D1C2C0802000FC6C4 /* Sample.swift in Sources */,
+				717D2EFE1D0EC4C500D40B5E /* BTLEManager.m in Sources */,
+				1A51257F1B4C2033009D3EF4 /* SSBarControl.m in Sources */,
+				1A9C37A31B4A777D00DF673D /* SSSampleViewController.m in Sources */,
+				717D2F021D0EC4C500D40B5E /* NSData+NSData_Conversion.m in Sources */,
+				1A6AF8731C6A0A97002D1751 /* SSPlayLoopGraphics.m in Sources */,
+				1A9C37DE1B4A88ED00DF673D /* SSSystemView.m in Sources */,
+				1A43D0F21C8C935A006B8307 /* SSDeleteButtonView.m in Sources */,
+				1A9C37A81B4A77B700DF673D /* InfoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEEB75B1BBE7B1000A66A2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFF5CBF1C5A4EF100C0552B /* evaluation_key.c in Sources */,
+				1AD9BEDF1CB42E600033B2EC /* SSDragItem.m in Sources */,
+				1AEEB75D1BBE7B1000A66A2E /* main.m in Sources */,
+				1AEEB75E1BBE7B1000A66A2E /* SSScrollView.m in Sources */,
+				1AEEB75F1BBE7B1000A66A2E /* SSSampleAppDelegate.m in Sources */,
+				1AD47C231CA2F3D600FE5024 /* SSTurnControl.m in Sources */,
+				1A6AF8791C6A289B002D1751 /* SSEditLayer.m in Sources */,
+				1AD47C211CA2F3C700FE5024 /* SSEditCursor.m in Sources */,
+				717D2F031D0EC4C500D40B5E /* NSData+NSData_Conversion.m in Sources */,
+				1A6AF8741C6A0A97002D1751 /* SSPlayLoopGraphics.m in Sources */,
+				1AEEB7601BBE7B1000A66A2E /* SettingsViewController.m in Sources */,
+				717D2EFF1D0EC4C500D40B5E /* BTLEManager.m in Sources */,
+				1A43D0F31C8C935A006B8307 /* SSDeleteButtonView.m in Sources */,
+				1AEEB7611BBE7B1000A66A2E /* SSBarControl.m in Sources */,
+				1AEEB7621BBE7B1000A66A2E /* SSSampleViewController.m in Sources */,
+				1AEEB7631BBE7B1000A66A2E /* SSSystemView.m in Sources */,
+				1AEEB7641BBE7B1000A66A2E /* InfoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A008A51165D03C60071B846 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A008A52165D03C60071B846 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A008A60165D03C60071B846 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A008A61165D03C60071B846 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1A008A63165D03C60071B846 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A008A64165D03C60071B846 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A008A69165D03C60071B846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Culann mac Cabe (LKJH8XK6SF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/SeeScoreLib.framework/Headers\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A008A6A165D03C60071B846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Culann mac Cabe (LKJH8XK6SF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/SeeScoreLib.framework/Headers\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A008A6C165D03C60071B846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/SeeScoreLib/Universal";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "SeeScoreIOS/BreathScore-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/SeeScoreIOS \"$(SRCROOT)/SeeScoreIOS/btlemanager/libMelodySmart",
+					"\"$(SRCROOT)/SeeScoreIOS/btlemanager",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiorhoon.breathscore;
+				PRODUCT_NAME = BreathScore;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SeeScoreIOS/SeeScoreIOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A008A6D165D03C60071B846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/SeeScoreLib/Universal";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "SeeScoreIOS/BreathScore-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/SeeScoreIOS \"$(SRCROOT)/SeeScoreIOS/btlemanager/libMelodySmart",
+					"\"$(SRCROOT)/SeeScoreIOS/btlemanager",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiorhoon.breathscore;
+				PRODUCT_NAME = BreathScore;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SeeScoreIOS/SeeScoreIOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1AEEB7DD1BBE7B1000A66A2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeeScoreLib/AppStore-Release",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "SeeScoreIOS/BreathScore-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeeScoreIOS",
+					"$(PROJECT_DIR)/SeeScoreIOS/btlemanager/libMelodySmart",
+					"$(PROJECT_DIR)/SeeScoreIOS/btlemanager",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiorhoon.breathscore;
+				PRODUCT_NAME = BreathScore;
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1AEEB7DE1BBE7B1000A66A2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeeScoreLib/AppStore-Release",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "SeeScoreIOS/BreathScore-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeeScoreIOS",
+					"$(PROJECT_DIR)/SeeScoreIOS/btlemanager/libMelodySmart",
+					"$(PROJECT_DIR)/SeeScoreIOS/btlemanager",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiorhoon.breathscore;
+				PRODUCT_NAME = BreathScore;
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A008A3E165D03C50071B846 /* Build configuration list for PBXProject "BreathScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A008A69165D03C60071B846 /* Debug */,
+				1A008A6A165D03C60071B846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A008A6B165D03C60071B846 /* Build configuration list for PBXNativeTarget "BreathScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A008A6C165D03C60071B846 /* Debug */,
+				1A008A6D165D03C60071B846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEEB7DC1BBE7B1000A66A2E /* Build configuration list for PBXNativeTarget "BreathScore AppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEEB7DD1BBE7B1000A66A2E /* Debug */,
+				1AEEB7DE1BBE7B1000A66A2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A008A3B165D03C50071B846 /* Project object */;
+}
