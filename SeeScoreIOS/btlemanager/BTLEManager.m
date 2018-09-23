@@ -74,11 +74,10 @@
     self.manager.delegate = self;
     self.btleState=BTLEState_Stopped;
     
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4.0 * NSEC_PER_SEC)), _queue, ^{
+    //ios12
+    //dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4.0 * NSEC_PER_SEC)), _queue, ^{
         [self startScanning];
-        
-    });
+    ///});
     
     [self startTimerWithInterval:interval];
 }
@@ -170,10 +169,12 @@
 {
     self.melody = [MelodyManager foundDeviceAtIndex:0];
     self.melody.delegate = self;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), _queue, ^{ //WAS 1
+    
+    //ios12
+    //dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), _queue, ^{ //WAS 1
         
         [self.melody connect];
-    });
+    //  });
 }
 
 #pragma mark -
