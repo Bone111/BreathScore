@@ -202,7 +202,7 @@
                                 <items>
                                     <barButtonItem style="plain" id="X4W-zE-Phi">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="7q1-CQ-QNd">
-                                            <rect key="frame" x="20" y="22" width="254" height="30"/>
+                                            <rect key="frame" x="20" y="22" width="390" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Tap to select song..."/>
                                             <connections>
@@ -210,31 +210,9 @@
                                             </connections>
                                         </button>
                                     </barButtonItem>
-                                    <barButtonItem enabled="NO" systemItem="edit" id="jkQ-nv-C0m">
-                                        <connections>
-                                            <action selector="edit:" destination="2" id="G1r-if-2tu"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem enabled="NO" title="L" id="WP2-w8-oRL">
-                                        <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <action selector="tapL:" destination="2" id="Ee9-va-igJ"/>
-                                        </connections>
-                                    </barButtonItem>
                                     <barButtonItem enabled="NO" systemItem="redo" id="ePH-Mo-KpZ">
                                         <connections>
                                             <action selector="redo:" destination="2" id="2YJ-90-B5B"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem enabled="NO" title="R" id="VnX-Bd-Fug">
-                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <action selector="tapR:" destination="2" id="Dlm-9l-xAj"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem enabled="NO" systemItem="undo" id="kb0-sc-jZw">
-                                        <connections>
-                                            <action selector="undo:" destination="2" id="aGs-lx-UiP"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem enabled="NO" systemItem="save" id="hao-8T-hsj">
@@ -253,16 +231,6 @@
                                     <barButtonItem image="playbuttonTINY.png" style="plain" id="eg0-pN-6eY">
                                         <connections>
                                             <action selector="play:" destination="2" id="pBG-6r-IdG"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem image="rightrepeat.png" id="6W2-uu-Sa8">
-                                        <connections>
-                                            <action selector="tapRRepeat:" destination="2" id="DH7-6X-uJu"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem image="leftrepeat.png" id="csZ-T9-msi">
-                                        <connections>
-                                            <action selector="tapLRepeat:" destination="2" id="Gv5-Mg-pBV"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -360,15 +328,11 @@
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="L_label" destination="WP2-w8-oRL" id="qZa-Gm-Soe"/>
-                        <outlet property="R_label" destination="VnX-Bd-Fug" id="ptW-UG-y5C"/>
                         <outlet property="barControl" destination="zAq-ZE-JA2" id="uyQ-Yk-eAM"/>
                         <outlet property="beatTapLabel" destination="6Vz-au-Jvs" id="iBm-Zs-9uE"/>
                         <outlet property="breathGauge" destination="GvS-Ge-SYP" id="4Qh-oU-PCt"/>
                         <outlet property="countInLabel" destination="c3n-wI-K7h" id="dbW-r0-Tna"/>
-                        <outlet property="editButton" destination="jkQ-nv-C0m" id="mcb-Fp-m71"/>
                         <outlet property="ignoreXMLLayoutSwitch" destination="Gir-wB-6Di" id="KZy-hk-Lzj"/>
-                        <outlet property="leftLoopButton" destination="csZ-T9-msi" id="AvH-OM-72R"/>
                         <outlet property="metronomeSwitch" destination="0jk-2s-glH" id="OYc-3l-GWD"/>
                         <outlet property="myBluetoothStatusImage" destination="KhF-Jx-Uw7" id="bYy-kH-gzc"/>
                         <outlet property="myOpenDropdownButton" destination="7q1-CQ-QNd" id="SV7-bm-Oje"/>
@@ -376,7 +340,6 @@
                         <outlet property="nextFileButton" destination="pfO-3U-OwO" id="8fS-j3-F2D"/>
                         <outlet property="playButton" destination="eg0-pN-6eY" id="chm-a0-shn"/>
                         <outlet property="redoButton" destination="ePH-Mo-KpZ" id="7TY-64-5nh"/>
-                        <outlet property="rightLoopButton" destination="6W2-uu-Sa8" id="zTq-7j-e2K"/>
                         <outlet property="saveButton" destination="hao-8T-hsj" id="WwX-MK-d64"/>
                         <outlet property="settingsButton" destination="IUd-TE-tV7" id="ygB-PO-p0j"/>
                         <outlet property="sysScrollView" destination="dFA-I4-fVo" id="rUC-4b-c2X"/>
@@ -385,7 +348,6 @@
                         <outlet property="thresholdSliderUnit" destination="3UH-Os-tRQ" id="Cli-4y-MY0"/>
                         <outlet property="titleLabel" destination="0Gc-MC-8CB" id="aP6-xl-rKy"/>
                         <outlet property="transposeLabel" destination="Abc-bK-LAr" id="wb6-7t-uFH"/>
-                        <outlet property="undoButton" destination="kb0-sc-jZw" id="loW-zD-cbb"/>
                         <outlet property="versionLabel" destination="KxK-v6-O32" id="K7I-To-q0r"/>
                         <outlet property="warningLabel" destination="yyL-o4-rU7" id="xzO-e8-GM0"/>
                     </connections>
@@ -481,8 +443,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="leftrepeat.png" width="14" height="30"/>
         <image name="playbuttonTINY.png" width="40" height="40"/>
-        <image name="rightrepeat.png" width="14" height="29"/>
     </resources>
 </document>
