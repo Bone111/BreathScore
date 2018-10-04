@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeeScoreIOS/SSSampleViewController.h"
-            timestampString = "485357007.869943"
+            timestampString = "559826885.621372"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
             landmarkName = "score"
-            landmarkType = "19">
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeeScoreIOS/SSSampleViewController.h"
-            timestampString = "487086873.686212"
+            timestampString = "559826885.647864"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
             endingLineNumber = "93"
             landmarkName = "-openDDButton:"
-            landmarkType = "4">
+            landmarkType = "6">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -90,13 +90,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeeScoreIOS/SSSampleViewController.h"
-            timestampString = "487086873.686212"
+            timestampString = "559826885.648047"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "75"
             endingLineNumber = "75"
             landmarkName = "-metronomeSwitched:"
-            landmarkType = "4">
+            landmarkType = "6">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -154,13 +154,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeeScoreIOS/SSSampleViewController.h"
-            timestampString = "485863069.091869"
+            timestampString = "559826885.648268"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
             landmarkName = "tempoSlider"
-            landmarkType = "19">
+            landmarkType = "24">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -218,12 +218,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeeScoreIOS/SSSampleViewController.h"
-            timestampString = "485692814.513819"
+            timestampString = "559826885.648558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "@interface SSSampleViewController"
+            landmarkName = "SSSampleViewController"
             landmarkType = "2">
             <Locations>
                <Location
@@ -505,13 +505,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeeScoreIOS/SSSampleViewController.h"
-            timestampString = "485967762.094542"
+            timestampString = "559826885.649361"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "@protocol SETTINGS_DELEGATE"
-            landmarkType = "2">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -569,13 +569,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeeScoreIOS/SSSampleViewController.h"
-            timestampString = "487086873.686212"
+            timestampString = "559826885.649551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "101"
             endingLineNumber = "101"
             landmarkName = "-toggleDropDownWindow:"
-            landmarkType = "4">
+            landmarkType = "6">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

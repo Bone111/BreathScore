@@ -76,9 +76,9 @@
                                 <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                                 <subviews>
                                     <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VOB-xL-dtI">
-                                        <rect key="frame" x="160" y="23.5" width="150" height="2"/>
+                                        <rect key="frame" x="310" y="23.5" width="111" height="2"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="j8J-k5-t2U"/>
+                                            <constraint firstAttribute="width" constant="111" id="j8J-k5-t2U"/>
                                         </constraints>
                                     </progressView>
                                     <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNA-gw-e0q">
@@ -116,7 +116,7 @@
                                 <constraints>
                                     <constraint firstItem="qbI-jg-jWE" firstAttribute="leading" secondItem="zAq-ZE-JA2" secondAttribute="leading" constant="256" id="0NX-kr-oMO"/>
                                     <constraint firstItem="Cpv-v5-1yx" firstAttribute="baseline" secondItem="FNA-gw-e0q" secondAttribute="firstBaseline" id="5eO-dQ-NI1"/>
-                                    <constraint firstItem="VOB-xL-dtI" firstAttribute="leading" secondItem="zAq-ZE-JA2" secondAttribute="leading" constant="160" id="7lN-02-hom"/>
+                                    <constraint firstItem="VOB-xL-dtI" firstAttribute="leading" secondItem="zAq-ZE-JA2" secondAttribute="leading" constant="310" id="7lN-02-hom"/>
                                     <constraint firstItem="Gir-wB-6Di" firstAttribute="leading" secondItem="Cpv-v5-1yx" secondAttribute="trailing" constant="22" id="7p0-ZU-IcN"/>
                                     <constraint firstItem="Cpv-v5-1yx" firstAttribute="centerY" secondItem="qbI-jg-jWE" secondAttribute="centerY" id="Nd0-sz-rqW"/>
                                     <constraint firstItem="FNA-gw-e0q" firstAttribute="centerY" secondItem="Gir-wB-6Di" secondAttribute="centerY" id="VZT-jj-l8t"/>
@@ -200,10 +200,20 @@
                                     <constraint firstAttribute="height" constant="74" id="wtW-Pn-OnW"/>
                                 </constraints>
                                 <items>
+                                    <barButtonItem image="playbuttonTINY.png" style="plain" id="eg0-pN-6eY">
+                                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="play:" destination="2" id="pBG-6r-IdG"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" id="X4W-zE-Phi">
+                                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="7q1-CQ-QNd">
-                                            <rect key="frame" x="20" y="22" width="390" height="30"/>
+                                            <rect key="frame" x="65" y="22" width="390" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <inset key="titleEdgeInsets" minX="8" minY="10" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             <state key="normal" title="Tap to select song..."/>
                                             <connections>
                                                 <action selector="openDDButton:" destination="2" eventType="touchDown" id="5xw-tc-67d"/>
@@ -228,11 +238,6 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem enabled="NO" title="Next" width="352" id="pfO-3U-OwO"/>
-                                    <barButtonItem image="playbuttonTINY.png" style="plain" id="eg0-pN-6eY">
-                                        <connections>
-                                            <action selector="play:" destination="2" id="pBG-6r-IdG"/>
-                                        </connections>
-                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.29560788418126188" green="0.75316138716144454" blue="0.89159667491912842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
